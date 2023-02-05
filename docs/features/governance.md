@@ -196,7 +196,7 @@ The community pool funds can be spent through the governance process.
 echo '{
     "title": "Community Pool Spend",
     "description": "Developer rewards",
-    "recipient": "iaa1s5afhd6gxevu37mkqcvvsj8qeylhn0rz46zdlq",
+    "recipient": "gridaa1s5afhd6gxevu37mkqcvvsj8qeylhn0rz46zdlq",
     "amount": "10000grid",
     "deposit": "1000grid"
 }' > proposal.json

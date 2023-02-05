@@ -58,7 +58,7 @@ Example Output:
 ```bash
 - name: node0
     type: local
-    address: iaa1w9lvhwlvkwqvg08q84n2k4nn896u9pqx93velx
+    address: gridaa1w9lvhwlvkwqvg08q84n2k4nn896u9pqx93velx
     pubkey: iap1addwnpepq03g7u43y3gwfz3pd4gkwz7d4mt600kzsc5cj2ysx58a5hp84qyduxtw28r
     mnemonic: ""
     threshold: 0

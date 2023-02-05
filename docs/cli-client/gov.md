@@ -191,8 +191,8 @@ where proposal.json contains:
   "messages": [
     {
       "@type": "/cosmos.bank.v1beta1.MsgSend",
-      "from_address": "iaa1...", // The gov module module address
-      "to_address": "iaa1...",
+      "from_address": "gridaa1...", // The gov module module address
+      "to_address": "gridaa1...",
       "amount":[{"denom": "stake","amount": "10"}]
     }
   ],
@@ -222,7 +222,7 @@ Where proposal.json contains:
 {
     "title": "Community Pool Spend",
     "description": "Pay me some Atoms!",
-    "recipient": "iaa1mjk4p68mmulwla3x5uzlgjwsc3zrms448rel3q",
+    "recipient": "gridaa1mjk4p68mmulwla3x5uzlgjwsc3zrms448rel3q",
     "amount": "1000ugrid",
     "deposit": "1000ugrid"
 }

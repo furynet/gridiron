@@ -13,7 +13,7 @@ A tool for simple debugging.
 ### grid debug addr
 
 ```bash
-grid debug addr iaa1rulhmls7g9cjh239vnkjnw870t5urrutsfwvmc
+grid debug addr gridaa1rulhmls7g9cjh239vnkjnw870t5urrutsfwvmc
 ```
 
 returns
@@ -21,7 +21,7 @@ returns
 ```bash
 Address: [31 63 125 254 30 65 113 43 170 37 100 237 41 184 254 122 233 193 143 139]
 Address (hex): 1F3F7DFE1E41712BAA2564ED29B8FE7AE9C18F8B
-Bech32 Acc: iaa1rulhmls7g9cjh239vnkjnw870t5urrutsfwvmc
+Bech32 Acc: gridaa1rulhmls7g9cjh239vnkjnw870t5urrutsfwvmc
 Bech32 Val: iva1rulhmls7g9cjh239vnkjnw870t5urrut9cyrxl
 ```
 

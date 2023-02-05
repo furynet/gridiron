@@ -24,7 +24,7 @@ output:
 
 ```json
 {
-    "address":"iaa1k2j3ws7ghwl9qha36xdcmwuu4rend2yr9tw05q",
+    "address":"gridaa1k2j3ws7ghwl9qha36xdcmwuu4rend2yr9tw05q",
     "crypto":{
         "cipher":"aes-128-ctr",
         "ciphertext":"b5e586baf1126f982ee89ffa9fd23fc68e0a25e1d561d6d59896a0b4878a4d5f",
@@ -63,7 +63,7 @@ output:
 Enter keyring passphrase:
 - name: n2
 type: local
-address: iaa1k2j3ws7ghwl9qha36xdcmwuu4rend2yr9tw05q
+address: gridaa1k2j3ws7ghwl9qha36xdcmwuu4rend2yr9tw05q
 pubkey: iap1addwnpepqgrj4yshwmq7v7akp04empq9rrn6w26e8q6gpl7jkfjaexk93deq2pwa3m6
 mnemonic: ""
 threshold: 0

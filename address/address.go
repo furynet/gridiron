@@ -5,7 +5,7 @@ import sdk "github.com/cosmos/cosmos-sdk/types"
 const (
 
 	// Bech32ChainPrefix defines the prefix of this chain
-	Bech32ChainPrefix = "i"
+	Bech32ChainPrefix = "grid"
 
 	// PrefixAcc is the prefix for account
 	PrefixAcc = "a"
