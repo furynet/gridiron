@@ -8153,7 +8153,7 @@ Query creates service with guardian as RPC
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `Supers` | [QuerySupersRequest](#gridiron.guardian.QuerySupersRequest) | [QuerySupersResponse](#gridiron.guardian.QuerySupersResponse) | Supers returns all Supers | GET|/gridiron/guardian/supers|
+| `Supers` | [QuerySupersRequest](#gridiron.guardian.QuerySupersRequest) | [QuerySupersResponse](#gridiron.guardian.QuerySupersResponse) | Supers returns all Supers | GET|/gridiron/modules/guardian/supers|
 
  <!-- end services -->
 

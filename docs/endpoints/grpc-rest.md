@@ -146,7 +146,7 @@ For application developers, you may want to generate your own Swagger definition
 | `GET` `/irismod/random/randoms/{req_id}`                                                                                                    | Query the random result                                                                          |                                                                                   |
 | `GET` `/irismod/record/records/{record_id}`                                                                                                 | Query the record by the given record ID                                                          |                                                                                   |
 | `GET` `/gridiron/mint/params`                                                                                                                | Query the mint parameters                                                                        |                                                                                   |
-| `GET` `/gridiron/guardian/supers`                                                                                                            | Return all Supers                                                                                |                                                                                   |
+| `GET` `/gridiron/modules/guardian/supers`                                                                                                            | Return all Supers                                                                                |                                                                                   |
 
 **Tendermint API Endpoints**
 

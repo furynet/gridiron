@@ -37402,7 +37402,7 @@ paths:
                       format: byte
       tags:
         - Query
-  /gridiron/guardian/supers:
+  /gridiron/modules/guardian/supers:
     get:
       summary: Supers returns all Supers
       operationId: Supers
