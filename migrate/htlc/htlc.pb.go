@@ -66,7 +66,7 @@ type OldHTLC struct {
 	Secret               string                                   `protobuf:"bytes,5,opt,name=secret,proto3" json:"secret,omitempty"`
 	Timestamp            uint64                                   `protobuf:"varint,6,opt,name=timestamp,proto3" json:"timestamp,omitempty"`
 	ExpirationHeight     uint64                                   `protobuf:"varint,7,opt,name=expiration_height,json=expirationHeight,proto3" json:"expiration_height,omitempty" yaml:"expiration_height"`
-	State                HTLCStatus                               `protobuf:"varint,8,opt,name=state,proto3,enum=gridmod.htlc.HTLCStatus" json:"state,omitempty"`
+	State                HTLCStatus                               `protobuf:"varint,8,opt,name=state,proto3,enum=irismod.htlc.HTLCStatus" json:"state,omitempty"`
 }
 
 func (m *OldHTLC) Reset()         { *m = OldHTLC{} }
@@ -101,8 +101,8 @@ func (m *OldHTLC) XXX_DiscardUnknown() {
 var xxx_messageInfo_HTLC proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterEnum("gridmod.htlc.HTLCStatus", HTLCStatus_name, HTLCStatus_value)
-	proto.RegisterType((*OldHTLC)(nil), "gridmod.htlc.OldHTLC")
+	proto.RegisterEnum("irismod.htlc.HTLCStatus", HTLCStatus_name, HTLCStatus_value)
+	proto.RegisterType((*OldHTLC)(nil), "irismod.htlc.OldHTLC")
 }
 
 func (this *OldHTLC) Equal(that interface{}) bool {

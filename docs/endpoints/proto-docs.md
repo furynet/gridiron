@@ -14,36 +14,36 @@ order: 6
     - [IntProto](#cosmos.base.v1beta1.IntProto)
   
 - [coinswap/coinswap.proto](#coinswap/coinswap.proto)
-    - [Input](#gridmod.coinswap.Input)
-    - [Output](#gridmod.coinswap.Output)
-    - [Params](#gridmod.coinswap.Params)
-    - [Pool](#gridmod.coinswap.Pool)
+    - [Input](#irismod.coinswap.Input)
+    - [Output](#irismod.coinswap.Output)
+    - [Params](#irismod.coinswap.Params)
+    - [Pool](#irismod.coinswap.Pool)
   
 - [coinswap/genesis.proto](#coinswap/genesis.proto)
-    - [GenesisState](#gridmod.coinswap.GenesisState)
+    - [GenesisState](#irismod.coinswap.GenesisState)
   
 - [cosmos/base/query/v1beta1/pagination.proto](#cosmos/base/query/v1beta1/pagination.proto)
     - [PageRequest](#cosmos.base.query.v1beta1.PageRequest)
     - [PageResponse](#cosmos.base.query.v1beta1.PageResponse)
   
 - [coinswap/query.proto](#coinswap/query.proto)
-    - [PoolInfo](#gridmod.coinswap.PoolInfo)
-    - [QueryLiquidityPoolRequest](#gridmod.coinswap.QueryLiquidityPoolRequest)
-    - [QueryLiquidityPoolResponse](#gridmod.coinswap.QueryLiquidityPoolResponse)
-    - [QueryLiquidityPoolsRequest](#gridmod.coinswap.QueryLiquidityPoolsRequest)
-    - [QueryLiquidityPoolsResponse](#gridmod.coinswap.QueryLiquidityPoolsResponse)
+    - [PoolInfo](#irismod.coinswap.PoolInfo)
+    - [QueryLiquidityPoolRequest](#irismod.coinswap.QueryLiquidityPoolRequest)
+    - [QueryLiquidityPoolResponse](#irismod.coinswap.QueryLiquidityPoolResponse)
+    - [QueryLiquidityPoolsRequest](#irismod.coinswap.QueryLiquidityPoolsRequest)
+    - [QueryLiquidityPoolsResponse](#irismod.coinswap.QueryLiquidityPoolsResponse)
   
-    - [Query](#gridmod.coinswap.Query)
+    - [Query](#irismod.coinswap.Query)
   
 - [coinswap/tx.proto](#coinswap/tx.proto)
-    - [MsgAddLiquidity](#gridmod.coinswap.MsgAddLiquidity)
-    - [MsgAddLiquidityResponse](#gridmod.coinswap.MsgAddLiquidityResponse)
-    - [MsgRemoveLiquidity](#gridmod.coinswap.MsgRemoveLiquidity)
-    - [MsgRemoveLiquidityResponse](#gridmod.coinswap.MsgRemoveLiquidityResponse)
-    - [MsgSwapCoinResponse](#gridmod.coinswap.MsgSwapCoinResponse)
-    - [MsgSwapOrder](#gridmod.coinswap.MsgSwapOrder)
+    - [MsgAddLiquidity](#irismod.coinswap.MsgAddLiquidity)
+    - [MsgAddLiquidityResponse](#irismod.coinswap.MsgAddLiquidityResponse)
+    - [MsgRemoveLiquidity](#irismod.coinswap.MsgRemoveLiquidity)
+    - [MsgRemoveLiquidityResponse](#irismod.coinswap.MsgRemoveLiquidityResponse)
+    - [MsgSwapCoinResponse](#irismod.coinswap.MsgSwapCoinResponse)
+    - [MsgSwapOrder](#irismod.coinswap.MsgSwapOrder)
   
-    - [Msg](#gridmod.coinswap.Msg)
+    - [Msg](#irismod.coinswap.Msg)
   
 - [cosmos/auth/v1beta1/auth.proto](#cosmos/auth/v1beta1/auth.proto)
     - [BaseAccount](#cosmos.auth.v1beta1.BaseAccount)
@@ -492,43 +492,43 @@ order: 6
     - [PeriodicVestingAccount](#cosmos.vesting.v1beta1.PeriodicVestingAccount)
   
 - [farm/farm.proto](#farm/farm.proto)
-    - [FarmInfo](#gridmod.farm.FarmInfo)
-    - [FarmPool](#gridmod.farm.FarmPool)
-    - [Params](#gridmod.farm.Params)
-    - [RewardRule](#gridmod.farm.RewardRule)
+    - [FarmInfo](#irismod.farm.FarmInfo)
+    - [FarmPool](#irismod.farm.FarmPool)
+    - [Params](#irismod.farm.Params)
+    - [RewardRule](#irismod.farm.RewardRule)
   
 - [farm/genesis.proto](#farm/genesis.proto)
-    - [GenesisState](#gridmod.farm.GenesisState)
+    - [GenesisState](#irismod.farm.GenesisState)
   
 - [farm/query.proto](#farm/query.proto)
-    - [FarmPoolEntry](#gridmod.farm.FarmPoolEntry)
-    - [LockedInfo](#gridmod.farm.LockedInfo)
-    - [QueryFarmPoolRequest](#gridmod.farm.QueryFarmPoolRequest)
-    - [QueryFarmPoolResponse](#gridmod.farm.QueryFarmPoolResponse)
-    - [QueryFarmPoolsRequest](#gridmod.farm.QueryFarmPoolsRequest)
-    - [QueryFarmPoolsResponse](#gridmod.farm.QueryFarmPoolsResponse)
-    - [QueryFarmerRequest](#gridmod.farm.QueryFarmerRequest)
-    - [QueryFarmerResponse](#gridmod.farm.QueryFarmerResponse)
-    - [QueryParamsRequest](#gridmod.farm.QueryParamsRequest)
-    - [QueryParamsResponse](#gridmod.farm.QueryParamsResponse)
+    - [FarmPoolEntry](#irismod.farm.FarmPoolEntry)
+    - [LockedInfo](#irismod.farm.LockedInfo)
+    - [QueryFarmPoolRequest](#irismod.farm.QueryFarmPoolRequest)
+    - [QueryFarmPoolResponse](#irismod.farm.QueryFarmPoolResponse)
+    - [QueryFarmPoolsRequest](#irismod.farm.QueryFarmPoolsRequest)
+    - [QueryFarmPoolsResponse](#irismod.farm.QueryFarmPoolsResponse)
+    - [QueryFarmerRequest](#irismod.farm.QueryFarmerRequest)
+    - [QueryFarmerResponse](#irismod.farm.QueryFarmerResponse)
+    - [QueryParamsRequest](#irismod.farm.QueryParamsRequest)
+    - [QueryParamsResponse](#irismod.farm.QueryParamsResponse)
   
-    - [Query](#gridmod.farm.Query)
+    - [Query](#irismod.farm.Query)
   
 - [farm/tx.proto](#farm/tx.proto)
-    - [MsgAdjustPool](#gridmod.farm.MsgAdjustPool)
-    - [MsgAdjustPoolResponse](#gridmod.farm.MsgAdjustPoolResponse)
-    - [MsgCreatePool](#gridmod.farm.MsgCreatePool)
-    - [MsgCreatePoolResponse](#gridmod.farm.MsgCreatePoolResponse)
-    - [MsgDestroyPool](#gridmod.farm.MsgDestroyPool)
-    - [MsgDestroyPoolResponse](#gridmod.farm.MsgDestroyPoolResponse)
-    - [MsgHarvest](#gridmod.farm.MsgHarvest)
-    - [MsgHarvestResponse](#gridmod.farm.MsgHarvestResponse)
-    - [MsgStake](#gridmod.farm.MsgStake)
-    - [MsgStakeResponse](#gridmod.farm.MsgStakeResponse)
-    - [MsgUnstake](#gridmod.farm.MsgUnstake)
-    - [MsgUnstakeResponse](#gridmod.farm.MsgUnstakeResponse)
+    - [MsgAdjustPool](#irismod.farm.MsgAdjustPool)
+    - [MsgAdjustPoolResponse](#irismod.farm.MsgAdjustPoolResponse)
+    - [MsgCreatePool](#irismod.farm.MsgCreatePool)
+    - [MsgCreatePoolResponse](#irismod.farm.MsgCreatePoolResponse)
+    - [MsgDestroyPool](#irismod.farm.MsgDestroyPool)
+    - [MsgDestroyPoolResponse](#irismod.farm.MsgDestroyPoolResponse)
+    - [MsgHarvest](#irismod.farm.MsgHarvest)
+    - [MsgHarvestResponse](#irismod.farm.MsgHarvestResponse)
+    - [MsgStake](#irismod.farm.MsgStake)
+    - [MsgStakeResponse](#irismod.farm.MsgStakeResponse)
+    - [MsgUnstake](#irismod.farm.MsgUnstake)
+    - [MsgUnstakeResponse](#irismod.farm.MsgUnstakeResponse)
   
-    - [Msg](#gridmod.farm.Msg)
+    - [Msg](#irismod.farm.Msg)
   
 - [guardian/guardian.proto](#guardian/guardian.proto)
     - [Super](#gridiron.guardian.Super)
@@ -553,37 +553,37 @@ order: 6
     - [Msg](#gridiron.guardian.Msg)
   
 - [htlc/htlc.proto](#htlc/htlc.proto)
-    - [AssetParam](#gridmod.htlc.AssetParam)
-    - [AssetSupply](#gridmod.htlc.AssetSupply)
-    - [HTLC](#gridmod.htlc.HTLC)
-    - [Params](#gridmod.htlc.Params)
-    - [SupplyLimit](#gridmod.htlc.SupplyLimit)
+    - [AssetParam](#irismod.htlc.AssetParam)
+    - [AssetSupply](#irismod.htlc.AssetSupply)
+    - [HTLC](#irismod.htlc.HTLC)
+    - [Params](#irismod.htlc.Params)
+    - [SupplyLimit](#irismod.htlc.SupplyLimit)
   
-    - [HTLCState](#gridmod.htlc.HTLCState)
-    - [SwapDirection](#gridmod.htlc.SwapDirection)
+    - [HTLCState](#irismod.htlc.HTLCState)
+    - [SwapDirection](#irismod.htlc.SwapDirection)
   
 - [htlc/genesis.proto](#htlc/genesis.proto)
-    - [GenesisState](#gridmod.htlc.GenesisState)
+    - [GenesisState](#irismod.htlc.GenesisState)
   
 - [htlc/query.proto](#htlc/query.proto)
-    - [QueryAssetSuppliesRequest](#gridmod.htlc.QueryAssetSuppliesRequest)
-    - [QueryAssetSuppliesResponse](#gridmod.htlc.QueryAssetSuppliesResponse)
-    - [QueryAssetSupplyRequest](#gridmod.htlc.QueryAssetSupplyRequest)
-    - [QueryAssetSupplyResponse](#gridmod.htlc.QueryAssetSupplyResponse)
-    - [QueryHTLCRequest](#gridmod.htlc.QueryHTLCRequest)
-    - [QueryHTLCResponse](#gridmod.htlc.QueryHTLCResponse)
-    - [QueryParamsRequest](#gridmod.htlc.QueryParamsRequest)
-    - [QueryParamsResponse](#gridmod.htlc.QueryParamsResponse)
+    - [QueryAssetSuppliesRequest](#irismod.htlc.QueryAssetSuppliesRequest)
+    - [QueryAssetSuppliesResponse](#irismod.htlc.QueryAssetSuppliesResponse)
+    - [QueryAssetSupplyRequest](#irismod.htlc.QueryAssetSupplyRequest)
+    - [QueryAssetSupplyResponse](#irismod.htlc.QueryAssetSupplyResponse)
+    - [QueryHTLCRequest](#irismod.htlc.QueryHTLCRequest)
+    - [QueryHTLCResponse](#irismod.htlc.QueryHTLCResponse)
+    - [QueryParamsRequest](#irismod.htlc.QueryParamsRequest)
+    - [QueryParamsResponse](#irismod.htlc.QueryParamsResponse)
   
-    - [Query](#gridmod.htlc.Query)
+    - [Query](#irismod.htlc.Query)
   
 - [htlc/tx.proto](#htlc/tx.proto)
-    - [MsgClaimHTLC](#gridmod.htlc.MsgClaimHTLC)
-    - [MsgClaimHTLCResponse](#gridmod.htlc.MsgClaimHTLCResponse)
-    - [MsgCreateHTLC](#gridmod.htlc.MsgCreateHTLC)
-    - [MsgCreateHTLCResponse](#gridmod.htlc.MsgCreateHTLCResponse)
+    - [MsgClaimHTLC](#irismod.htlc.MsgClaimHTLC)
+    - [MsgClaimHTLCResponse](#irismod.htlc.MsgClaimHTLCResponse)
+    - [MsgCreateHTLC](#irismod.htlc.MsgCreateHTLC)
+    - [MsgCreateHTLCResponse](#irismod.htlc.MsgCreateHTLCResponse)
   
-    - [Msg](#gridmod.htlc.Msg)
+    - [Msg](#irismod.htlc.Msg)
   
 - [ibc/applications/transfer/v1/transfer.proto](#ibc/applications/transfer/v1/transfer.proto)
     - [DenomTrace](#ibc.applications.transfer.v1.DenomTrace)
@@ -809,236 +809,236 @@ order: 6
     - [Query](#gridiron.mint.Query)
   
 - [nft/nft.proto](#nft/nft.proto)
-    - [BaseNFT](#gridmod.nft.BaseNFT)
-    - [Collection](#gridmod.nft.Collection)
-    - [Denom](#gridmod.nft.Denom)
-    - [IDCollection](#gridmod.nft.IDCollection)
-    - [Owner](#gridmod.nft.Owner)
+    - [BaseNFT](#irismod.nft.BaseNFT)
+    - [Collection](#irismod.nft.Collection)
+    - [Denom](#irismod.nft.Denom)
+    - [IDCollection](#irismod.nft.IDCollection)
+    - [Owner](#irismod.nft.Owner)
   
 - [nft/genesis.proto](#nft/genesis.proto)
-    - [GenesisState](#gridmod.nft.GenesisState)
+    - [GenesisState](#irismod.nft.GenesisState)
   
 - [nft/query.proto](#nft/query.proto)
-    - [QueryCollectionRequest](#gridmod.nft.QueryCollectionRequest)
-    - [QueryCollectionResponse](#gridmod.nft.QueryCollectionResponse)
-    - [QueryDenomRequest](#gridmod.nft.QueryDenomRequest)
-    - [QueryDenomResponse](#gridmod.nft.QueryDenomResponse)
-    - [QueryDenomsRequest](#gridmod.nft.QueryDenomsRequest)
-    - [QueryDenomsResponse](#gridmod.nft.QueryDenomsResponse)
-    - [QueryNFTRequest](#gridmod.nft.QueryNFTRequest)
-    - [QueryNFTResponse](#gridmod.nft.QueryNFTResponse)
-    - [QueryOwnerRequest](#gridmod.nft.QueryOwnerRequest)
-    - [QueryOwnerResponse](#gridmod.nft.QueryOwnerResponse)
-    - [QuerySupplyRequest](#gridmod.nft.QuerySupplyRequest)
-    - [QuerySupplyResponse](#gridmod.nft.QuerySupplyResponse)
+    - [QueryCollectionRequest](#irismod.nft.QueryCollectionRequest)
+    - [QueryCollectionResponse](#irismod.nft.QueryCollectionResponse)
+    - [QueryDenomRequest](#irismod.nft.QueryDenomRequest)
+    - [QueryDenomResponse](#irismod.nft.QueryDenomResponse)
+    - [QueryDenomsRequest](#irismod.nft.QueryDenomsRequest)
+    - [QueryDenomsResponse](#irismod.nft.QueryDenomsResponse)
+    - [QueryNFTRequest](#irismod.nft.QueryNFTRequest)
+    - [QueryNFTResponse](#irismod.nft.QueryNFTResponse)
+    - [QueryOwnerRequest](#irismod.nft.QueryOwnerRequest)
+    - [QueryOwnerResponse](#irismod.nft.QueryOwnerResponse)
+    - [QuerySupplyRequest](#irismod.nft.QuerySupplyRequest)
+    - [QuerySupplyResponse](#irismod.nft.QuerySupplyResponse)
   
-    - [Query](#gridmod.nft.Query)
+    - [Query](#irismod.nft.Query)
   
 - [nft/tx.proto](#nft/tx.proto)
-    - [MsgBurnNFT](#gridmod.nft.MsgBurnNFT)
-    - [MsgBurnNFTResponse](#gridmod.nft.MsgBurnNFTResponse)
-    - [MsgEditNFT](#gridmod.nft.MsgEditNFT)
-    - [MsgEditNFTResponse](#gridmod.nft.MsgEditNFTResponse)
-    - [MsgIssueDenom](#gridmod.nft.MsgIssueDenom)
-    - [MsgIssueDenomResponse](#gridmod.nft.MsgIssueDenomResponse)
-    - [MsgMintNFT](#gridmod.nft.MsgMintNFT)
-    - [MsgMintNFTResponse](#gridmod.nft.MsgMintNFTResponse)
-    - [MsgTransferDenom](#gridmod.nft.MsgTransferDenom)
-    - [MsgTransferDenomResponse](#gridmod.nft.MsgTransferDenomResponse)
-    - [MsgTransferNFT](#gridmod.nft.MsgTransferNFT)
-    - [MsgTransferNFTResponse](#gridmod.nft.MsgTransferNFTResponse)
+    - [MsgBurnNFT](#irismod.nft.MsgBurnNFT)
+    - [MsgBurnNFTResponse](#irismod.nft.MsgBurnNFTResponse)
+    - [MsgEditNFT](#irismod.nft.MsgEditNFT)
+    - [MsgEditNFTResponse](#irismod.nft.MsgEditNFTResponse)
+    - [MsgIssueDenom](#irismod.nft.MsgIssueDenom)
+    - [MsgIssueDenomResponse](#irismod.nft.MsgIssueDenomResponse)
+    - [MsgMintNFT](#irismod.nft.MsgMintNFT)
+    - [MsgMintNFTResponse](#irismod.nft.MsgMintNFTResponse)
+    - [MsgTransferDenom](#irismod.nft.MsgTransferDenom)
+    - [MsgTransferDenomResponse](#irismod.nft.MsgTransferDenomResponse)
+    - [MsgTransferNFT](#irismod.nft.MsgTransferNFT)
+    - [MsgTransferNFTResponse](#irismod.nft.MsgTransferNFTResponse)
   
-    - [Msg](#gridmod.nft.Msg)
+    - [Msg](#irismod.nft.Msg)
   
 - [oracle/oracle.proto](#oracle/oracle.proto)
-    - [Feed](#gridmod.oracle.Feed)
-    - [FeedValue](#gridmod.oracle.FeedValue)
+    - [Feed](#irismod.oracle.Feed)
+    - [FeedValue](#irismod.oracle.FeedValue)
   
 - [service/service.proto](#service/service.proto)
-    - [CompactRequest](#gridmod.service.CompactRequest)
-    - [Params](#gridmod.service.Params)
-    - [Pricing](#gridmod.service.Pricing)
-    - [PromotionByTime](#gridmod.service.PromotionByTime)
-    - [PromotionByVolume](#gridmod.service.PromotionByVolume)
-    - [Request](#gridmod.service.Request)
-    - [RequestContext](#gridmod.service.RequestContext)
-    - [Response](#gridmod.service.Response)
-    - [ServiceBinding](#gridmod.service.ServiceBinding)
-    - [ServiceDefinition](#gridmod.service.ServiceDefinition)
+    - [CompactRequest](#irismod.service.CompactRequest)
+    - [Params](#irismod.service.Params)
+    - [Pricing](#irismod.service.Pricing)
+    - [PromotionByTime](#irismod.service.PromotionByTime)
+    - [PromotionByVolume](#irismod.service.PromotionByVolume)
+    - [Request](#irismod.service.Request)
+    - [RequestContext](#irismod.service.RequestContext)
+    - [Response](#irismod.service.Response)
+    - [ServiceBinding](#irismod.service.ServiceBinding)
+    - [ServiceDefinition](#irismod.service.ServiceDefinition)
   
-    - [RequestContextBatchState](#gridmod.service.RequestContextBatchState)
-    - [RequestContextState](#gridmod.service.RequestContextState)
+    - [RequestContextBatchState](#irismod.service.RequestContextBatchState)
+    - [RequestContextState](#irismod.service.RequestContextState)
   
 - [oracle/genesis.proto](#oracle/genesis.proto)
-    - [FeedEntry](#gridmod.oracle.FeedEntry)
-    - [GenesisState](#gridmod.oracle.GenesisState)
+    - [FeedEntry](#irismod.oracle.FeedEntry)
+    - [GenesisState](#irismod.oracle.GenesisState)
   
 - [oracle/query.proto](#oracle/query.proto)
-    - [FeedContext](#gridmod.oracle.FeedContext)
-    - [QueryFeedRequest](#gridmod.oracle.QueryFeedRequest)
-    - [QueryFeedResponse](#gridmod.oracle.QueryFeedResponse)
-    - [QueryFeedValueRequest](#gridmod.oracle.QueryFeedValueRequest)
-    - [QueryFeedValueResponse](#gridmod.oracle.QueryFeedValueResponse)
-    - [QueryFeedsRequest](#gridmod.oracle.QueryFeedsRequest)
-    - [QueryFeedsResponse](#gridmod.oracle.QueryFeedsResponse)
+    - [FeedContext](#irismod.oracle.FeedContext)
+    - [QueryFeedRequest](#irismod.oracle.QueryFeedRequest)
+    - [QueryFeedResponse](#irismod.oracle.QueryFeedResponse)
+    - [QueryFeedValueRequest](#irismod.oracle.QueryFeedValueRequest)
+    - [QueryFeedValueResponse](#irismod.oracle.QueryFeedValueResponse)
+    - [QueryFeedsRequest](#irismod.oracle.QueryFeedsRequest)
+    - [QueryFeedsResponse](#irismod.oracle.QueryFeedsResponse)
   
-    - [Query](#gridmod.oracle.Query)
+    - [Query](#irismod.oracle.Query)
   
 - [oracle/tx.proto](#oracle/tx.proto)
-    - [MsgCreateFeed](#gridmod.oracle.MsgCreateFeed)
-    - [MsgCreateFeedResponse](#gridmod.oracle.MsgCreateFeedResponse)
-    - [MsgEditFeed](#gridmod.oracle.MsgEditFeed)
-    - [MsgEditFeedResponse](#gridmod.oracle.MsgEditFeedResponse)
-    - [MsgPauseFeed](#gridmod.oracle.MsgPauseFeed)
-    - [MsgPauseFeedResponse](#gridmod.oracle.MsgPauseFeedResponse)
-    - [MsgStartFeed](#gridmod.oracle.MsgStartFeed)
-    - [MsgStartFeedResponse](#gridmod.oracle.MsgStartFeedResponse)
+    - [MsgCreateFeed](#irismod.oracle.MsgCreateFeed)
+    - [MsgCreateFeedResponse](#irismod.oracle.MsgCreateFeedResponse)
+    - [MsgEditFeed](#irismod.oracle.MsgEditFeed)
+    - [MsgEditFeedResponse](#irismod.oracle.MsgEditFeedResponse)
+    - [MsgPauseFeed](#irismod.oracle.MsgPauseFeed)
+    - [MsgPauseFeedResponse](#irismod.oracle.MsgPauseFeedResponse)
+    - [MsgStartFeed](#irismod.oracle.MsgStartFeed)
+    - [MsgStartFeedResponse](#irismod.oracle.MsgStartFeedResponse)
   
-    - [Msg](#gridmod.oracle.Msg)
+    - [Msg](#irismod.oracle.Msg)
   
 - [random/random.proto](#random/random.proto)
-    - [Random](#gridmod.random.Random)
-    - [Request](#gridmod.random.Request)
+    - [Random](#irismod.random.Random)
+    - [Request](#irismod.random.Request)
   
 - [random/genesis.proto](#random/genesis.proto)
-    - [GenesisState](#gridmod.random.GenesisState)
-    - [GenesisState.PendingRandomRequestsEntry](#gridmod.random.GenesisState.PendingRandomRequestsEntry)
-    - [Requests](#gridmod.random.Requests)
+    - [GenesisState](#irismod.random.GenesisState)
+    - [GenesisState.PendingRandomRequestsEntry](#irismod.random.GenesisState.PendingRandomRequestsEntry)
+    - [Requests](#irismod.random.Requests)
   
 - [random/query.proto](#random/query.proto)
-    - [QueryRandomRequest](#gridmod.random.QueryRandomRequest)
-    - [QueryRandomRequestQueueRequest](#gridmod.random.QueryRandomRequestQueueRequest)
-    - [QueryRandomRequestQueueResponse](#gridmod.random.QueryRandomRequestQueueResponse)
-    - [QueryRandomResponse](#gridmod.random.QueryRandomResponse)
+    - [QueryRandomRequest](#irismod.random.QueryRandomRequest)
+    - [QueryRandomRequestQueueRequest](#irismod.random.QueryRandomRequestQueueRequest)
+    - [QueryRandomRequestQueueResponse](#irismod.random.QueryRandomRequestQueueResponse)
+    - [QueryRandomResponse](#irismod.random.QueryRandomResponse)
   
-    - [Query](#gridmod.random.Query)
+    - [Query](#irismod.random.Query)
   
 - [random/tx.proto](#random/tx.proto)
-    - [MsgRequestRandom](#gridmod.random.MsgRequestRandom)
-    - [MsgRequestRandomResponse](#gridmod.random.MsgRequestRandomResponse)
+    - [MsgRequestRandom](#irismod.random.MsgRequestRandom)
+    - [MsgRequestRandomResponse](#irismod.random.MsgRequestRandomResponse)
   
-    - [Msg](#gridmod.random.Msg)
+    - [Msg](#irismod.random.Msg)
   
 - [record/record.proto](#record/record.proto)
-    - [Content](#gridmod.record.Content)
-    - [Record](#gridmod.record.Record)
+    - [Content](#irismod.record.Content)
+    - [Record](#irismod.record.Record)
   
 - [record/genesis.proto](#record/genesis.proto)
-    - [GenesisState](#gridmod.record.GenesisState)
+    - [GenesisState](#irismod.record.GenesisState)
   
 - [record/query.proto](#record/query.proto)
-    - [QueryRecordRequest](#gridmod.record.QueryRecordRequest)
-    - [QueryRecordResponse](#gridmod.record.QueryRecordResponse)
+    - [QueryRecordRequest](#irismod.record.QueryRecordRequest)
+    - [QueryRecordResponse](#irismod.record.QueryRecordResponse)
   
-    - [Query](#gridmod.record.Query)
+    - [Query](#irismod.record.Query)
   
 - [record/tx.proto](#record/tx.proto)
-    - [MsgCreateRecord](#gridmod.record.MsgCreateRecord)
-    - [MsgCreateRecordResponse](#gridmod.record.MsgCreateRecordResponse)
+    - [MsgCreateRecord](#irismod.record.MsgCreateRecord)
+    - [MsgCreateRecordResponse](#irismod.record.MsgCreateRecordResponse)
   
-    - [Msg](#gridmod.record.Msg)
+    - [Msg](#irismod.record.Msg)
   
 - [service/genesis.proto](#service/genesis.proto)
-    - [GenesisState](#gridmod.service.GenesisState)
-    - [GenesisState.RequestContextsEntry](#gridmod.service.GenesisState.RequestContextsEntry)
-    - [GenesisState.WithdrawAddressesEntry](#gridmod.service.GenesisState.WithdrawAddressesEntry)
+    - [GenesisState](#irismod.service.GenesisState)
+    - [GenesisState.RequestContextsEntry](#irismod.service.GenesisState.RequestContextsEntry)
+    - [GenesisState.WithdrawAddressesEntry](#irismod.service.GenesisState.WithdrawAddressesEntry)
   
 - [service/query.proto](#service/query.proto)
-    - [QueryBindingRequest](#gridmod.service.QueryBindingRequest)
-    - [QueryBindingResponse](#gridmod.service.QueryBindingResponse)
-    - [QueryBindingsRequest](#gridmod.service.QueryBindingsRequest)
-    - [QueryBindingsResponse](#gridmod.service.QueryBindingsResponse)
-    - [QueryDefinitionRequest](#gridmod.service.QueryDefinitionRequest)
-    - [QueryDefinitionResponse](#gridmod.service.QueryDefinitionResponse)
-    - [QueryEarnedFeesRequest](#gridmod.service.QueryEarnedFeesRequest)
-    - [QueryEarnedFeesResponse](#gridmod.service.QueryEarnedFeesResponse)
-    - [QueryParamsRequest](#gridmod.service.QueryParamsRequest)
-    - [QueryParamsResponse](#gridmod.service.QueryParamsResponse)
-    - [QueryRequestContextRequest](#gridmod.service.QueryRequestContextRequest)
-    - [QueryRequestContextResponse](#gridmod.service.QueryRequestContextResponse)
-    - [QueryRequestRequest](#gridmod.service.QueryRequestRequest)
-    - [QueryRequestResponse](#gridmod.service.QueryRequestResponse)
-    - [QueryRequestsByReqCtxRequest](#gridmod.service.QueryRequestsByReqCtxRequest)
-    - [QueryRequestsByReqCtxResponse](#gridmod.service.QueryRequestsByReqCtxResponse)
-    - [QueryRequestsRequest](#gridmod.service.QueryRequestsRequest)
-    - [QueryRequestsResponse](#gridmod.service.QueryRequestsResponse)
-    - [QueryResponseRequest](#gridmod.service.QueryResponseRequest)
-    - [QueryResponseResponse](#gridmod.service.QueryResponseResponse)
-    - [QueryResponsesRequest](#gridmod.service.QueryResponsesRequest)
-    - [QueryResponsesResponse](#gridmod.service.QueryResponsesResponse)
-    - [QuerySchemaRequest](#gridmod.service.QuerySchemaRequest)
-    - [QuerySchemaResponse](#gridmod.service.QuerySchemaResponse)
-    - [QueryWithdrawAddressRequest](#gridmod.service.QueryWithdrawAddressRequest)
-    - [QueryWithdrawAddressResponse](#gridmod.service.QueryWithdrawAddressResponse)
+    - [QueryBindingRequest](#irismod.service.QueryBindingRequest)
+    - [QueryBindingResponse](#irismod.service.QueryBindingResponse)
+    - [QueryBindingsRequest](#irismod.service.QueryBindingsRequest)
+    - [QueryBindingsResponse](#irismod.service.QueryBindingsResponse)
+    - [QueryDefinitionRequest](#irismod.service.QueryDefinitionRequest)
+    - [QueryDefinitionResponse](#irismod.service.QueryDefinitionResponse)
+    - [QueryEarnedFeesRequest](#irismod.service.QueryEarnedFeesRequest)
+    - [QueryEarnedFeesResponse](#irismod.service.QueryEarnedFeesResponse)
+    - [QueryParamsRequest](#irismod.service.QueryParamsRequest)
+    - [QueryParamsResponse](#irismod.service.QueryParamsResponse)
+    - [QueryRequestContextRequest](#irismod.service.QueryRequestContextRequest)
+    - [QueryRequestContextResponse](#irismod.service.QueryRequestContextResponse)
+    - [QueryRequestRequest](#irismod.service.QueryRequestRequest)
+    - [QueryRequestResponse](#irismod.service.QueryRequestResponse)
+    - [QueryRequestsByReqCtxRequest](#irismod.service.QueryRequestsByReqCtxRequest)
+    - [QueryRequestsByReqCtxResponse](#irismod.service.QueryRequestsByReqCtxResponse)
+    - [QueryRequestsRequest](#irismod.service.QueryRequestsRequest)
+    - [QueryRequestsResponse](#irismod.service.QueryRequestsResponse)
+    - [QueryResponseRequest](#irismod.service.QueryResponseRequest)
+    - [QueryResponseResponse](#irismod.service.QueryResponseResponse)
+    - [QueryResponsesRequest](#irismod.service.QueryResponsesRequest)
+    - [QueryResponsesResponse](#irismod.service.QueryResponsesResponse)
+    - [QuerySchemaRequest](#irismod.service.QuerySchemaRequest)
+    - [QuerySchemaResponse](#irismod.service.QuerySchemaResponse)
+    - [QueryWithdrawAddressRequest](#irismod.service.QueryWithdrawAddressRequest)
+    - [QueryWithdrawAddressResponse](#irismod.service.QueryWithdrawAddressResponse)
   
-    - [Query](#gridmod.service.Query)
+    - [Query](#irismod.service.Query)
   
 - [service/tx.proto](#service/tx.proto)
-    - [MsgBindService](#gridmod.service.MsgBindService)
-    - [MsgBindServiceResponse](#gridmod.service.MsgBindServiceResponse)
-    - [MsgCallService](#gridmod.service.MsgCallService)
-    - [MsgCallServiceResponse](#gridmod.service.MsgCallServiceResponse)
-    - [MsgDefineService](#gridmod.service.MsgDefineService)
-    - [MsgDefineServiceResponse](#gridmod.service.MsgDefineServiceResponse)
-    - [MsgDisableServiceBinding](#gridmod.service.MsgDisableServiceBinding)
-    - [MsgDisableServiceBindingResponse](#gridmod.service.MsgDisableServiceBindingResponse)
-    - [MsgEnableServiceBinding](#gridmod.service.MsgEnableServiceBinding)
-    - [MsgEnableServiceBindingResponse](#gridmod.service.MsgEnableServiceBindingResponse)
-    - [MsgKillRequestContext](#gridmod.service.MsgKillRequestContext)
-    - [MsgKillRequestContextResponse](#gridmod.service.MsgKillRequestContextResponse)
-    - [MsgPauseRequestContext](#gridmod.service.MsgPauseRequestContext)
-    - [MsgPauseRequestContextResponse](#gridmod.service.MsgPauseRequestContextResponse)
-    - [MsgRefundServiceDeposit](#gridmod.service.MsgRefundServiceDeposit)
-    - [MsgRefundServiceDepositResponse](#gridmod.service.MsgRefundServiceDepositResponse)
-    - [MsgRespondService](#gridmod.service.MsgRespondService)
-    - [MsgRespondServiceResponse](#gridmod.service.MsgRespondServiceResponse)
-    - [MsgSetWithdrawAddress](#gridmod.service.MsgSetWithdrawAddress)
-    - [MsgSetWithdrawAddressResponse](#gridmod.service.MsgSetWithdrawAddressResponse)
-    - [MsgStartRequestContext](#gridmod.service.MsgStartRequestContext)
-    - [MsgStartRequestContextResponse](#gridmod.service.MsgStartRequestContextResponse)
-    - [MsgUpdateRequestContext](#gridmod.service.MsgUpdateRequestContext)
-    - [MsgUpdateRequestContextResponse](#gridmod.service.MsgUpdateRequestContextResponse)
-    - [MsgUpdateServiceBinding](#gridmod.service.MsgUpdateServiceBinding)
-    - [MsgUpdateServiceBindingResponse](#gridmod.service.MsgUpdateServiceBindingResponse)
-    - [MsgWithdrawEarnedFees](#gridmod.service.MsgWithdrawEarnedFees)
-    - [MsgWithdrawEarnedFeesResponse](#gridmod.service.MsgWithdrawEarnedFeesResponse)
+    - [MsgBindService](#irismod.service.MsgBindService)
+    - [MsgBindServiceResponse](#irismod.service.MsgBindServiceResponse)
+    - [MsgCallService](#irismod.service.MsgCallService)
+    - [MsgCallServiceResponse](#irismod.service.MsgCallServiceResponse)
+    - [MsgDefineService](#irismod.service.MsgDefineService)
+    - [MsgDefineServiceResponse](#irismod.service.MsgDefineServiceResponse)
+    - [MsgDisableServiceBinding](#irismod.service.MsgDisableServiceBinding)
+    - [MsgDisableServiceBindingResponse](#irismod.service.MsgDisableServiceBindingResponse)
+    - [MsgEnableServiceBinding](#irismod.service.MsgEnableServiceBinding)
+    - [MsgEnableServiceBindingResponse](#irismod.service.MsgEnableServiceBindingResponse)
+    - [MsgKillRequestContext](#irismod.service.MsgKillRequestContext)
+    - [MsgKillRequestContextResponse](#irismod.service.MsgKillRequestContextResponse)
+    - [MsgPauseRequestContext](#irismod.service.MsgPauseRequestContext)
+    - [MsgPauseRequestContextResponse](#irismod.service.MsgPauseRequestContextResponse)
+    - [MsgRefundServiceDeposit](#irismod.service.MsgRefundServiceDeposit)
+    - [MsgRefundServiceDepositResponse](#irismod.service.MsgRefundServiceDepositResponse)
+    - [MsgRespondService](#irismod.service.MsgRespondService)
+    - [MsgRespondServiceResponse](#irismod.service.MsgRespondServiceResponse)
+    - [MsgSetWithdrawAddress](#irismod.service.MsgSetWithdrawAddress)
+    - [MsgSetWithdrawAddressResponse](#irismod.service.MsgSetWithdrawAddressResponse)
+    - [MsgStartRequestContext](#irismod.service.MsgStartRequestContext)
+    - [MsgStartRequestContextResponse](#irismod.service.MsgStartRequestContextResponse)
+    - [MsgUpdateRequestContext](#irismod.service.MsgUpdateRequestContext)
+    - [MsgUpdateRequestContextResponse](#irismod.service.MsgUpdateRequestContextResponse)
+    - [MsgUpdateServiceBinding](#irismod.service.MsgUpdateServiceBinding)
+    - [MsgUpdateServiceBindingResponse](#irismod.service.MsgUpdateServiceBindingResponse)
+    - [MsgWithdrawEarnedFees](#irismod.service.MsgWithdrawEarnedFees)
+    - [MsgWithdrawEarnedFeesResponse](#irismod.service.MsgWithdrawEarnedFeesResponse)
   
-    - [Msg](#gridmod.service.Msg)
+    - [Msg](#irismod.service.Msg)
   
 - [token/token.proto](#token/token.proto)
-    - [Params](#gridmod.token.Params)
-    - [Token](#gridmod.token.Token)
+    - [Params](#irismod.token.Params)
+    - [Token](#irismod.token.Token)
   
 - [token/genesis.proto](#token/genesis.proto)
-    - [GenesisState](#gridmod.token.GenesisState)
+    - [GenesisState](#irismod.token.GenesisState)
   
 - [token/query.proto](#token/query.proto)
-    - [QueryFeesRequest](#gridmod.token.QueryFeesRequest)
-    - [QueryFeesResponse](#gridmod.token.QueryFeesResponse)
-    - [QueryParamsRequest](#gridmod.token.QueryParamsRequest)
-    - [QueryParamsResponse](#gridmod.token.QueryParamsResponse)
-    - [QueryTokenRequest](#gridmod.token.QueryTokenRequest)
-    - [QueryTokenResponse](#gridmod.token.QueryTokenResponse)
-    - [QueryTokensRequest](#gridmod.token.QueryTokensRequest)
-    - [QueryTokensResponse](#gridmod.token.QueryTokensResponse)
-    - [QueryTotalBurnRequest](#gridmod.token.QueryTotalBurnRequest)
-    - [QueryTotalBurnResponse](#gridmod.token.QueryTotalBurnResponse)
+    - [QueryFeesRequest](#irismod.token.QueryFeesRequest)
+    - [QueryFeesResponse](#irismod.token.QueryFeesResponse)
+    - [QueryParamsRequest](#irismod.token.QueryParamsRequest)
+    - [QueryParamsResponse](#irismod.token.QueryParamsResponse)
+    - [QueryTokenRequest](#irismod.token.QueryTokenRequest)
+    - [QueryTokenResponse](#irismod.token.QueryTokenResponse)
+    - [QueryTokensRequest](#irismod.token.QueryTokensRequest)
+    - [QueryTokensResponse](#irismod.token.QueryTokensResponse)
+    - [QueryTotalBurnRequest](#irismod.token.QueryTotalBurnRequest)
+    - [QueryTotalBurnResponse](#irismod.token.QueryTotalBurnResponse)
   
-    - [Query](#gridmod.token.Query)
+    - [Query](#irismod.token.Query)
   
 - [token/tx.proto](#token/tx.proto)
-    - [MsgBurnToken](#gridmod.token.MsgBurnToken)
-    - [MsgBurnTokenResponse](#gridmod.token.MsgBurnTokenResponse)
-    - [MsgEditToken](#gridmod.token.MsgEditToken)
-    - [MsgEditTokenResponse](#gridmod.token.MsgEditTokenResponse)
-    - [MsgIssueToken](#gridmod.token.MsgIssueToken)
-    - [MsgIssueTokenResponse](#gridmod.token.MsgIssueTokenResponse)
-    - [MsgMintToken](#gridmod.token.MsgMintToken)
-    - [MsgMintTokenResponse](#gridmod.token.MsgMintTokenResponse)
-    - [MsgTransferTokenOwner](#gridmod.token.MsgTransferTokenOwner)
-    - [MsgTransferTokenOwnerResponse](#gridmod.token.MsgTransferTokenOwnerResponse)
+    - [MsgBurnToken](#irismod.token.MsgBurnToken)
+    - [MsgBurnTokenResponse](#irismod.token.MsgBurnTokenResponse)
+    - [MsgEditToken](#irismod.token.MsgEditToken)
+    - [MsgEditTokenResponse](#irismod.token.MsgEditTokenResponse)
+    - [MsgIssueToken](#irismod.token.MsgIssueToken)
+    - [MsgIssueTokenResponse](#irismod.token.MsgIssueTokenResponse)
+    - [MsgMintToken](#irismod.token.MsgMintToken)
+    - [MsgMintTokenResponse](#irismod.token.MsgMintTokenResponse)
+    - [MsgTransferTokenOwner](#irismod.token.MsgTransferTokenOwner)
+    - [MsgTransferTokenOwnerResponse](#irismod.token.MsgTransferTokenOwnerResponse)
   
-    - [Msg](#gridmod.token.Msg)
+    - [Msg](#irismod.token.Msg)
   
 - [Scalar Value Types](#scalar-value-types)
 
@@ -1135,7 +1135,7 @@ IntProto defines a Protobuf wrapper around an Int object.
 
 
 
-<a name="gridmod.coinswap.Input"></a>
+<a name="irismod.coinswap.Input"></a>
 
 ### Input
 Input defines the properties of order's input
@@ -1151,7 +1151,7 @@ Input defines the properties of order's input
 
 
 
-<a name="gridmod.coinswap.Output"></a>
+<a name="irismod.coinswap.Output"></a>
 
 ### Output
 Output defines the properties of order's output
@@ -1167,7 +1167,7 @@ Output defines the properties of order's output
 
 
 
-<a name="gridmod.coinswap.Params"></a>
+<a name="irismod.coinswap.Params"></a>
 
 ### Params
 Params defines token module's parameters
@@ -1182,7 +1182,7 @@ Params defines token module's parameters
 
 
 
-<a name="gridmod.coinswap.Pool"></a>
+<a name="irismod.coinswap.Pool"></a>
 
 ### Pool
 
@@ -1217,7 +1217,7 @@ Params defines token module's parameters
 
 
 
-<a name="gridmod.coinswap.GenesisState"></a>
+<a name="irismod.coinswap.GenesisState"></a>
 
 ### GenesisState
 GenesisState defines the coinswap module's genesis state
@@ -1225,9 +1225,9 @@ GenesisState defines the coinswap module's genesis state
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#gridmod.coinswap.Params) |  |  |
+| `params` | [Params](#irismod.coinswap.Params) |  |  |
 | `standard_denom` | [string](#string) |  |  |
-| `pool` | [Pool](#gridmod.coinswap.Pool) | repeated |  |
+| `pool` | [Pool](#irismod.coinswap.Pool) | repeated |  |
 | `sequence` | [uint64](#uint64) |  |  |
 
 
@@ -1313,7 +1313,7 @@ corresponding request message has used PageRequest.
 
 
 
-<a name="gridmod.coinswap.PoolInfo"></a>
+<a name="irismod.coinswap.PoolInfo"></a>
 
 ### PoolInfo
 
@@ -1333,7 +1333,7 @@ corresponding request message has used PageRequest.
 
 
 
-<a name="gridmod.coinswap.QueryLiquidityPoolRequest"></a>
+<a name="irismod.coinswap.QueryLiquidityPoolRequest"></a>
 
 ### QueryLiquidityPoolRequest
 QueryLiquidityPoolRequest is request type for the Query/LiquidityPool RPC
@@ -1349,7 +1349,7 @@ method
 
 
 
-<a name="gridmod.coinswap.QueryLiquidityPoolResponse"></a>
+<a name="irismod.coinswap.QueryLiquidityPoolResponse"></a>
 
 ### QueryLiquidityPoolResponse
 QueryLiquidityPoolResponse is response type for the Query/LiquidityPool RPC
@@ -1358,14 +1358,14 @@ method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `pool` | [PoolInfo](#gridmod.coinswap.PoolInfo) |  |  |
+| `pool` | [PoolInfo](#irismod.coinswap.PoolInfo) |  |  |
 
 
 
 
 
 
-<a name="gridmod.coinswap.QueryLiquidityPoolsRequest"></a>
+<a name="irismod.coinswap.QueryLiquidityPoolsRequest"></a>
 
 ### QueryLiquidityPoolsRequest
 QueryLiquidityPoolsRequest is request type for the Query/LiquidityPools RPC
@@ -1381,7 +1381,7 @@ method
 
 
 
-<a name="gridmod.coinswap.QueryLiquidityPoolsResponse"></a>
+<a name="irismod.coinswap.QueryLiquidityPoolsResponse"></a>
 
 ### QueryLiquidityPoolsResponse
 QueryLiquidityPoolsResponse is response type for the Query/LiquidityPools RPC
@@ -1390,7 +1390,7 @@ method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `pools` | [PoolInfo](#gridmod.coinswap.PoolInfo) | repeated |  |
+| `pools` | [PoolInfo](#irismod.coinswap.PoolInfo) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  |  |
 
 
@@ -1404,15 +1404,15 @@ method
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.coinswap.Query"></a>
+<a name="irismod.coinswap.Query"></a>
 
 ### Query
 Query creates service with coinswap as rpc
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `LiquidityPool` | [QueryLiquidityPoolRequest](#gridmod.coinswap.QueryLiquidityPoolRequest) | [QueryLiquidityPoolResponse](#gridmod.coinswap.QueryLiquidityPoolResponse) | LiquidityPool returns the liquidity pool for the provided lpt_denom | GET|/gridmod/coinswap/pools/{lpt_denom}|
-| `LiquidityPools` | [QueryLiquidityPoolsRequest](#gridmod.coinswap.QueryLiquidityPoolsRequest) | [QueryLiquidityPoolsResponse](#gridmod.coinswap.QueryLiquidityPoolsResponse) | LiquidityPools returns all the liquidity pools available | GET|/gridmod/coinswap/pools|
+| `LiquidityPool` | [QueryLiquidityPoolRequest](#irismod.coinswap.QueryLiquidityPoolRequest) | [QueryLiquidityPoolResponse](#irismod.coinswap.QueryLiquidityPoolResponse) | LiquidityPool returns the liquidity pool for the provided lpt_denom | GET|/irismod/coinswap/pools/{lpt_denom}|
+| `LiquidityPools` | [QueryLiquidityPoolsRequest](#irismod.coinswap.QueryLiquidityPoolsRequest) | [QueryLiquidityPoolsResponse](#irismod.coinswap.QueryLiquidityPoolsResponse) | LiquidityPools returns all the liquidity pools available | GET|/irismod/coinswap/pools|
 
  <!-- end services -->
 
@@ -1425,7 +1425,7 @@ Query creates service with coinswap as rpc
 
 
 
-<a name="gridmod.coinswap.MsgAddLiquidity"></a>
+<a name="irismod.coinswap.MsgAddLiquidity"></a>
 
 ### MsgAddLiquidity
 MsgAddLiquidity defines a msg for adding liquidity to a reserve pool
@@ -1444,7 +1444,7 @@ MsgAddLiquidity defines a msg for adding liquidity to a reserve pool
 
 
 
-<a name="gridmod.coinswap.MsgAddLiquidityResponse"></a>
+<a name="irismod.coinswap.MsgAddLiquidityResponse"></a>
 
 ### MsgAddLiquidityResponse
 MsgAddLiquidityResponse defines the Msg/AddLiquidity response type
@@ -1459,7 +1459,7 @@ MsgAddLiquidityResponse defines the Msg/AddLiquidity response type
 
 
 
-<a name="gridmod.coinswap.MsgRemoveLiquidity"></a>
+<a name="irismod.coinswap.MsgRemoveLiquidity"></a>
 
 ### MsgRemoveLiquidity
 MsgRemoveLiquidity defines a msg for removing liquidity from a reserve pool
@@ -1478,7 +1478,7 @@ MsgRemoveLiquidity defines a msg for removing liquidity from a reserve pool
 
 
 
-<a name="gridmod.coinswap.MsgRemoveLiquidityResponse"></a>
+<a name="irismod.coinswap.MsgRemoveLiquidityResponse"></a>
 
 ### MsgRemoveLiquidityResponse
 MsgRemoveLiquidityResponse defines the Msg/RemoveLiquidity response type
@@ -1493,7 +1493,7 @@ MsgRemoveLiquidityResponse defines the Msg/RemoveLiquidity response type
 
 
 
-<a name="gridmod.coinswap.MsgSwapCoinResponse"></a>
+<a name="irismod.coinswap.MsgSwapCoinResponse"></a>
 
 ### MsgSwapCoinResponse
 MsgSwapCoinResponse defines the Msg/SwapCoin response type
@@ -1503,7 +1503,7 @@ MsgSwapCoinResponse defines the Msg/SwapCoin response type
 
 
 
-<a name="gridmod.coinswap.MsgSwapOrder"></a>
+<a name="irismod.coinswap.MsgSwapOrder"></a>
 
 ### MsgSwapOrder
 MsgSwapOrder defines a msg for swap order
@@ -1511,8 +1511,8 @@ MsgSwapOrder defines a msg for swap order
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `input` | [Input](#gridmod.coinswap.Input) |  |  |
-| `output` | [Output](#gridmod.coinswap.Output) |  |  |
+| `input` | [Input](#irismod.coinswap.Input) |  |  |
+| `output` | [Output](#irismod.coinswap.Output) |  |  |
 | `deadline` | [int64](#int64) |  |  |
 | `is_buy_order` | [bool](#bool) |  |  |
 
@@ -1527,16 +1527,16 @@ MsgSwapOrder defines a msg for swap order
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.coinswap.Msg"></a>
+<a name="irismod.coinswap.Msg"></a>
 
 ### Msg
 Msg defines the coinswap Msg service
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `AddLiquidity` | [MsgAddLiquidity](#gridmod.coinswap.MsgAddLiquidity) | [MsgAddLiquidityResponse](#gridmod.coinswap.MsgAddLiquidityResponse) | AddLiquidity defines a method for depositing some tokens to the liquidity pool | |
-| `RemoveLiquidity` | [MsgRemoveLiquidity](#gridmod.coinswap.MsgRemoveLiquidity) | [MsgRemoveLiquidityResponse](#gridmod.coinswap.MsgRemoveLiquidityResponse) | RemoveLiquidity defines a method for withdraw some tokens from the liquidity pool | |
-| `SwapCoin` | [MsgSwapOrder](#gridmod.coinswap.MsgSwapOrder) | [MsgSwapCoinResponse](#gridmod.coinswap.MsgSwapCoinResponse) | SwapCoin defines a method for swapping a token with the other token from the liquidity pool | |
+| `AddLiquidity` | [MsgAddLiquidity](#irismod.coinswap.MsgAddLiquidity) | [MsgAddLiquidityResponse](#irismod.coinswap.MsgAddLiquidityResponse) | AddLiquidity defines a method for depositing some tokens to the liquidity pool | |
+| `RemoveLiquidity` | [MsgRemoveLiquidity](#irismod.coinswap.MsgRemoveLiquidity) | [MsgRemoveLiquidityResponse](#irismod.coinswap.MsgRemoveLiquidityResponse) | RemoveLiquidity defines a method for withdraw some tokens from the liquidity pool | |
+| `SwapCoin` | [MsgSwapOrder](#irismod.coinswap.MsgSwapOrder) | [MsgSwapCoinResponse](#irismod.coinswap.MsgSwapCoinResponse) | SwapCoin defines a method for swapping a token with the other token from the liquidity pool | |
 
  <!-- end services -->
 
@@ -7506,7 +7506,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.FarmInfo"></a>
+<a name="irismod.farm.FarmInfo"></a>
 
 ### FarmInfo
 
@@ -7524,7 +7524,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.FarmPool"></a>
+<a name="irismod.farm.FarmPool"></a>
 
 ### FarmPool
 
@@ -7540,14 +7540,14 @@ periodically vests by unlocking coins during each specified period.
 | `last_height_distr_rewards` | [int64](#int64) |  |  |
 | `editable` | [bool](#bool) |  |  |
 | `total_lpt_locked` | [cosmos.base.v1beta1.Coin](#cosmos.base.v1beta1.Coin) |  |  |
-| `rules` | [RewardRule](#gridmod.farm.RewardRule) | repeated |  |
+| `rules` | [RewardRule](#irismod.farm.RewardRule) | repeated |  |
 
 
 
 
 
 
-<a name="gridmod.farm.Params"></a>
+<a name="irismod.farm.Params"></a>
 
 ### Params
 
@@ -7563,7 +7563,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.RewardRule"></a>
+<a name="irismod.farm.RewardRule"></a>
 
 ### RewardRule
 
@@ -7598,7 +7598,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.GenesisState"></a>
+<a name="irismod.farm.GenesisState"></a>
 
 ### GenesisState
 
@@ -7606,9 +7606,9 @@ periodically vests by unlocking coins during each specified period.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#gridmod.farm.Params) |  |  |
-| `pools` | [FarmPool](#gridmod.farm.FarmPool) | repeated |  |
-| `farm_infos` | [FarmInfo](#gridmod.farm.FarmInfo) | repeated |  |
+| `params` | [Params](#irismod.farm.Params) |  |  |
+| `pools` | [FarmPool](#irismod.farm.FarmPool) | repeated |  |
+| `farm_infos` | [FarmInfo](#irismod.farm.FarmInfo) | repeated |  |
 
 
 
@@ -7631,7 +7631,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.FarmPoolEntry"></a>
+<a name="irismod.farm.FarmPoolEntry"></a>
 
 ### FarmPoolEntry
 
@@ -7656,7 +7656,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.LockedInfo"></a>
+<a name="irismod.farm.LockedInfo"></a>
 
 ### LockedInfo
 
@@ -7673,7 +7673,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.QueryFarmPoolRequest"></a>
+<a name="irismod.farm.QueryFarmPoolRequest"></a>
 
 ### QueryFarmPoolRequest
 
@@ -7688,7 +7688,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.QueryFarmPoolResponse"></a>
+<a name="irismod.farm.QueryFarmPoolResponse"></a>
 
 ### QueryFarmPoolResponse
 
@@ -7696,14 +7696,14 @@ periodically vests by unlocking coins during each specified period.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `pool` | [FarmPoolEntry](#gridmod.farm.FarmPoolEntry) |  |  |
+| `pool` | [FarmPoolEntry](#irismod.farm.FarmPoolEntry) |  |  |
 
 
 
 
 
 
-<a name="gridmod.farm.QueryFarmPoolsRequest"></a>
+<a name="irismod.farm.QueryFarmPoolsRequest"></a>
 
 ### QueryFarmPoolsRequest
 
@@ -7718,7 +7718,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.QueryFarmPoolsResponse"></a>
+<a name="irismod.farm.QueryFarmPoolsResponse"></a>
 
 ### QueryFarmPoolsResponse
 
@@ -7726,7 +7726,7 @@ periodically vests by unlocking coins during each specified period.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `pools` | [FarmPoolEntry](#gridmod.farm.FarmPoolEntry) | repeated |  |
+| `pools` | [FarmPoolEntry](#irismod.farm.FarmPoolEntry) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  |  |
 
 
@@ -7734,7 +7734,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.QueryFarmerRequest"></a>
+<a name="irismod.farm.QueryFarmerRequest"></a>
 
 ### QueryFarmerRequest
 
@@ -7750,7 +7750,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.QueryFarmerResponse"></a>
+<a name="irismod.farm.QueryFarmerResponse"></a>
 
 ### QueryFarmerResponse
 
@@ -7758,7 +7758,7 @@ periodically vests by unlocking coins during each specified period.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `list` | [LockedInfo](#gridmod.farm.LockedInfo) | repeated |  |
+| `list` | [LockedInfo](#irismod.farm.LockedInfo) | repeated |  |
 | `height` | [int64](#int64) |  |  |
 
 
@@ -7766,7 +7766,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.QueryParamsRequest"></a>
+<a name="irismod.farm.QueryParamsRequest"></a>
 
 ### QueryParamsRequest
 
@@ -7776,7 +7776,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.QueryParamsResponse"></a>
+<a name="irismod.farm.QueryParamsResponse"></a>
 
 ### QueryParamsResponse
 
@@ -7784,7 +7784,7 @@ periodically vests by unlocking coins during each specified period.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#gridmod.farm.Params) |  |  |
+| `params` | [Params](#irismod.farm.Params) |  |  |
 
 
 
@@ -7797,17 +7797,17 @@ periodically vests by unlocking coins during each specified period.
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.farm.Query"></a>
+<a name="irismod.farm.Query"></a>
 
 ### Query
 
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `FarmPools` | [QueryFarmPoolsRequest](#gridmod.farm.QueryFarmPoolsRequest) | [QueryFarmPoolsResponse](#gridmod.farm.QueryFarmPoolsResponse) |  | GET|/gridmod/farm/pools|
-| `FarmPool` | [QueryFarmPoolRequest](#gridmod.farm.QueryFarmPoolRequest) | [QueryFarmPoolResponse](#gridmod.farm.QueryFarmPoolResponse) |  | GET|/gridmod/farm/pool/{name}|
-| `Farmer` | [QueryFarmerRequest](#gridmod.farm.QueryFarmerRequest) | [QueryFarmerResponse](#gridmod.farm.QueryFarmerResponse) |  | GET|/gridmod/farm/farmers/{farmer}|
-| `Params` | [QueryParamsRequest](#gridmod.farm.QueryParamsRequest) | [QueryParamsResponse](#gridmod.farm.QueryParamsResponse) | Params queries the htlc parameters | GET|/gridmod/farm/params|
+| `FarmPools` | [QueryFarmPoolsRequest](#irismod.farm.QueryFarmPoolsRequest) | [QueryFarmPoolsResponse](#irismod.farm.QueryFarmPoolsResponse) |  | GET|/irismod/farm/pools|
+| `FarmPool` | [QueryFarmPoolRequest](#irismod.farm.QueryFarmPoolRequest) | [QueryFarmPoolResponse](#irismod.farm.QueryFarmPoolResponse) |  | GET|/irismod/farm/pool/{name}|
+| `Farmer` | [QueryFarmerRequest](#irismod.farm.QueryFarmerRequest) | [QueryFarmerResponse](#irismod.farm.QueryFarmerResponse) |  | GET|/irismod/farm/farmers/{farmer}|
+| `Params` | [QueryParamsRequest](#irismod.farm.QueryParamsRequest) | [QueryParamsResponse](#irismod.farm.QueryParamsResponse) | Params queries the htlc parameters | GET|/irismod/farm/params|
 
  <!-- end services -->
 
@@ -7820,7 +7820,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.MsgAdjustPool"></a>
+<a name="irismod.farm.MsgAdjustPool"></a>
 
 ### MsgAdjustPool
 
@@ -7838,7 +7838,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.MsgAdjustPoolResponse"></a>
+<a name="irismod.farm.MsgAdjustPoolResponse"></a>
 
 ### MsgAdjustPoolResponse
 
@@ -7848,7 +7848,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.MsgCreatePool"></a>
+<a name="irismod.farm.MsgCreatePool"></a>
 
 ### MsgCreatePool
 
@@ -7870,7 +7870,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.MsgCreatePoolResponse"></a>
+<a name="irismod.farm.MsgCreatePoolResponse"></a>
 
 ### MsgCreatePoolResponse
 
@@ -7880,7 +7880,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.MsgDestroyPool"></a>
+<a name="irismod.farm.MsgDestroyPool"></a>
 
 ### MsgDestroyPool
 
@@ -7896,7 +7896,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.MsgDestroyPoolResponse"></a>
+<a name="irismod.farm.MsgDestroyPoolResponse"></a>
 
 ### MsgDestroyPoolResponse
 
@@ -7906,7 +7906,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.MsgHarvest"></a>
+<a name="irismod.farm.MsgHarvest"></a>
 
 ### MsgHarvest
 
@@ -7922,7 +7922,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.MsgHarvestResponse"></a>
+<a name="irismod.farm.MsgHarvestResponse"></a>
 
 ### MsgHarvestResponse
 
@@ -7937,7 +7937,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.MsgStake"></a>
+<a name="irismod.farm.MsgStake"></a>
 
 ### MsgStake
 
@@ -7954,7 +7954,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.MsgStakeResponse"></a>
+<a name="irismod.farm.MsgStakeResponse"></a>
 
 ### MsgStakeResponse
 
@@ -7969,7 +7969,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.MsgUnstake"></a>
+<a name="irismod.farm.MsgUnstake"></a>
 
 ### MsgUnstake
 
@@ -7986,7 +7986,7 @@ periodically vests by unlocking coins during each specified period.
 
 
 
-<a name="gridmod.farm.MsgUnstakeResponse"></a>
+<a name="irismod.farm.MsgUnstakeResponse"></a>
 
 ### MsgUnstakeResponse
 
@@ -8007,19 +8007,19 @@ periodically vests by unlocking coins during each specified period.
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.farm.Msg"></a>
+<a name="irismod.farm.Msg"></a>
 
 ### Msg
 Msg defines the farm Msg service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `CreatePool` | [MsgCreatePool](#gridmod.farm.MsgCreatePool) | [MsgCreatePoolResponse](#gridmod.farm.MsgCreatePoolResponse) | CreatePool defines a method for creating a new farm pool | |
-| `DestroyPool` | [MsgDestroyPool](#gridmod.farm.MsgDestroyPool) | [MsgDestroyPoolResponse](#gridmod.farm.MsgDestroyPoolResponse) | DestroyPool defines a method for destroying a existed farm pool | |
-| `AdjustPool` | [MsgAdjustPool](#gridmod.farm.MsgAdjustPool) | [MsgAdjustPoolResponse](#gridmod.farm.MsgAdjustPoolResponse) | AdjustPool defines a method for adjusting the farm pool params | |
-| `Stake` | [MsgStake](#gridmod.farm.MsgStake) | [MsgStakeResponse](#gridmod.farm.MsgStakeResponse) | Stake defines a method for staking some lp token to a farm pool | |
-| `Unstake` | [MsgUnstake](#gridmod.farm.MsgUnstake) | [MsgUnstakeResponse](#gridmod.farm.MsgUnstakeResponse) | Unstake defines a method for unstaking some lp token from a farm pool and withdraw some reward | |
-| `Harvest` | [MsgHarvest](#gridmod.farm.MsgHarvest) | [MsgHarvestResponse](#gridmod.farm.MsgHarvestResponse) | Harvest defines a method withdraw some reward from a farm pool | |
+| `CreatePool` | [MsgCreatePool](#irismod.farm.MsgCreatePool) | [MsgCreatePoolResponse](#irismod.farm.MsgCreatePoolResponse) | CreatePool defines a method for creating a new farm pool | |
+| `DestroyPool` | [MsgDestroyPool](#irismod.farm.MsgDestroyPool) | [MsgDestroyPoolResponse](#irismod.farm.MsgDestroyPoolResponse) | DestroyPool defines a method for destroying a existed farm pool | |
+| `AdjustPool` | [MsgAdjustPool](#irismod.farm.MsgAdjustPool) | [MsgAdjustPoolResponse](#irismod.farm.MsgAdjustPoolResponse) | AdjustPool defines a method for adjusting the farm pool params | |
+| `Stake` | [MsgStake](#irismod.farm.MsgStake) | [MsgStakeResponse](#irismod.farm.MsgStakeResponse) | Stake defines a method for staking some lp token to a farm pool | |
+| `Unstake` | [MsgUnstake](#irismod.farm.MsgUnstake) | [MsgUnstakeResponse](#irismod.farm.MsgUnstakeResponse) | Unstake defines a method for unstaking some lp token from a farm pool and withdraw some reward | |
+| `Harvest` | [MsgHarvest](#irismod.farm.MsgHarvest) | [MsgHarvestResponse](#irismod.farm.MsgHarvestResponse) | Harvest defines a method withdraw some reward from a farm pool | |
 
  <!-- end services -->
 
@@ -8246,7 +8246,7 @@ Msg defines the guardian Msg service
 
 
 
-<a name="gridmod.htlc.AssetParam"></a>
+<a name="irismod.htlc.AssetParam"></a>
 
 ### AssetParam
 
@@ -8255,7 +8255,7 @@ Msg defines the guardian Msg service
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | `denom` | [string](#string) |  | name of the asset |
-| `supply_limit` | [SupplyLimit](#gridmod.htlc.SupplyLimit) |  | asset supply limit |
+| `supply_limit` | [SupplyLimit](#irismod.htlc.SupplyLimit) |  | asset supply limit |
 | `active` | [bool](#bool) |  | denotes if asset is available or paused |
 | `deputy_address` | [string](#string) |  | the address of the relayer process |
 | `fixed_fee` | [string](#string) |  | the fixed fee charged by the relayer process for outgoing swaps |
@@ -8269,7 +8269,7 @@ Msg defines the guardian Msg service
 
 
 
-<a name="gridmod.htlc.AssetSupply"></a>
+<a name="irismod.htlc.AssetSupply"></a>
 
 ### AssetSupply
 
@@ -8288,7 +8288,7 @@ Msg defines the guardian Msg service
 
 
 
-<a name="gridmod.htlc.HTLC"></a>
+<a name="irismod.htlc.HTLC"></a>
 
 ### HTLC
 HTLC defines the struct of an HTLC
@@ -8306,17 +8306,17 @@ HTLC defines the struct of an HTLC
 | `secret` | [string](#string) |  |  |
 | `timestamp` | [uint64](#uint64) |  |  |
 | `expiration_height` | [uint64](#uint64) |  |  |
-| `state` | [HTLCState](#gridmod.htlc.HTLCState) |  |  |
+| `state` | [HTLCState](#irismod.htlc.HTLCState) |  |  |
 | `closed_block` | [uint64](#uint64) |  |  |
 | `transfer` | [bool](#bool) |  |  |
-| `direction` | [SwapDirection](#gridmod.htlc.SwapDirection) |  |  |
+| `direction` | [SwapDirection](#irismod.htlc.SwapDirection) |  |  |
 
 
 
 
 
 
-<a name="gridmod.htlc.Params"></a>
+<a name="irismod.htlc.Params"></a>
 
 ### Params
 Params defines token module's parameters
@@ -8324,14 +8324,14 @@ Params defines token module's parameters
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `asset_params` | [AssetParam](#gridmod.htlc.AssetParam) | repeated |  |
+| `asset_params` | [AssetParam](#irismod.htlc.AssetParam) | repeated |  |
 
 
 
 
 
 
-<a name="gridmod.htlc.SupplyLimit"></a>
+<a name="irismod.htlc.SupplyLimit"></a>
 
 ### SupplyLimit
 
@@ -8351,7 +8351,7 @@ Params defines token module's parameters
  <!-- end messages -->
 
 
-<a name="gridmod.htlc.HTLCState"></a>
+<a name="irismod.htlc.HTLCState"></a>
 
 ### HTLCState
 HTLCState defines the state of an HTLC
@@ -8364,7 +8364,7 @@ HTLCState defines the state of an HTLC
 
 
 
-<a name="gridmod.htlc.SwapDirection"></a>
+<a name="irismod.htlc.SwapDirection"></a>
 
 ### SwapDirection
 SwapDirection defines the direction of an HTLT
@@ -8391,7 +8391,7 @@ SwapDirection defines the direction of an HTLT
 
 
 
-<a name="gridmod.htlc.GenesisState"></a>
+<a name="irismod.htlc.GenesisState"></a>
 
 ### GenesisState
 GenesisState defines the HTLC module's genesis state
@@ -8399,9 +8399,9 @@ GenesisState defines the HTLC module's genesis state
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#gridmod.htlc.Params) |  |  |
-| `htlcs` | [HTLC](#gridmod.htlc.HTLC) | repeated |  |
-| `supplies` | [AssetSupply](#gridmod.htlc.AssetSupply) | repeated |  |
+| `params` | [Params](#irismod.htlc.Params) |  |  |
+| `htlcs` | [HTLC](#irismod.htlc.HTLC) | repeated |  |
+| `supplies` | [AssetSupply](#irismod.htlc.AssetSupply) | repeated |  |
 | `previous_block_time` | [google.protobuf.Timestamp](#google.protobuf.Timestamp) |  |  |
 
 
@@ -8425,7 +8425,7 @@ GenesisState defines the HTLC module's genesis state
 
 
 
-<a name="gridmod.htlc.QueryAssetSuppliesRequest"></a>
+<a name="irismod.htlc.QueryAssetSuppliesRequest"></a>
 
 ### QueryAssetSuppliesRequest
 QueryAssetSuppliesRequest is request type for the Query/AssetSupplies RPC method
@@ -8435,7 +8435,7 @@ QueryAssetSuppliesRequest is request type for the Query/AssetSupplies RPC method
 
 
 
-<a name="gridmod.htlc.QueryAssetSuppliesResponse"></a>
+<a name="irismod.htlc.QueryAssetSuppliesResponse"></a>
 
 ### QueryAssetSuppliesResponse
 QueryAssetSuppliesResponse is response type for the Query/AssetSupplies RPC method
@@ -8443,14 +8443,14 @@ QueryAssetSuppliesResponse is response type for the Query/AssetSupplies RPC meth
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `asset_supplies` | [AssetSupply](#gridmod.htlc.AssetSupply) | repeated |  |
+| `asset_supplies` | [AssetSupply](#irismod.htlc.AssetSupply) | repeated |  |
 
 
 
 
 
 
-<a name="gridmod.htlc.QueryAssetSupplyRequest"></a>
+<a name="irismod.htlc.QueryAssetSupplyRequest"></a>
 
 ### QueryAssetSupplyRequest
 QueryAssetSupplyRequest is request type for the Query/AssetSupply RPC method
@@ -8465,7 +8465,7 @@ QueryAssetSupplyRequest is request type for the Query/AssetSupply RPC method
 
 
 
-<a name="gridmod.htlc.QueryAssetSupplyResponse"></a>
+<a name="irismod.htlc.QueryAssetSupplyResponse"></a>
 
 ### QueryAssetSupplyResponse
 QueryAssetSupplyResponse is response type for the Query/AssetSupply RPC method
@@ -8473,14 +8473,14 @@ QueryAssetSupplyResponse is response type for the Query/AssetSupply RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `asset_supply` | [AssetSupply](#gridmod.htlc.AssetSupply) |  |  |
+| `asset_supply` | [AssetSupply](#irismod.htlc.AssetSupply) |  |  |
 
 
 
 
 
 
-<a name="gridmod.htlc.QueryHTLCRequest"></a>
+<a name="irismod.htlc.QueryHTLCRequest"></a>
 
 ### QueryHTLCRequest
 QueryHTLCRequest is the request type for the Query/HTLC RPC method
@@ -8495,7 +8495,7 @@ QueryHTLCRequest is the request type for the Query/HTLC RPC method
 
 
 
-<a name="gridmod.htlc.QueryHTLCResponse"></a>
+<a name="irismod.htlc.QueryHTLCResponse"></a>
 
 ### QueryHTLCResponse
 QueryBalanceResponse is the response type for the Query/HTLC RPC method
@@ -8503,14 +8503,14 @@ QueryBalanceResponse is the response type for the Query/HTLC RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `htlc` | [HTLC](#gridmod.htlc.HTLC) |  |  |
+| `htlc` | [HTLC](#irismod.htlc.HTLC) |  |  |
 
 
 
 
 
 
-<a name="gridmod.htlc.QueryParamsRequest"></a>
+<a name="irismod.htlc.QueryParamsRequest"></a>
 
 ### QueryParamsRequest
 QueryParamsRequest is request type for the Query/Parameters RPC method
@@ -8520,7 +8520,7 @@ QueryParamsRequest is request type for the Query/Parameters RPC method
 
 
 
-<a name="gridmod.htlc.QueryParamsResponse"></a>
+<a name="irismod.htlc.QueryParamsResponse"></a>
 
 ### QueryParamsResponse
 QueryParamsResponse is response type for the Query/Parameters RPC method
@@ -8528,7 +8528,7 @@ QueryParamsResponse is response type for the Query/Parameters RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#gridmod.htlc.Params) |  |  |
+| `params` | [Params](#irismod.htlc.Params) |  |  |
 
 
 
@@ -8541,17 +8541,17 @@ QueryParamsResponse is response type for the Query/Parameters RPC method
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.htlc.Query"></a>
+<a name="irismod.htlc.Query"></a>
 
 ### Query
 Query provides defines the gRPC querier service
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `HTLC` | [QueryHTLCRequest](#gridmod.htlc.QueryHTLCRequest) | [QueryHTLCResponse](#gridmod.htlc.QueryHTLCResponse) | HTLC queries the HTLC by the specified hash lock | GET|/gridmod/htlc/htlcs/{id}|
-| `AssetSupply` | [QueryAssetSupplyRequest](#gridmod.htlc.QueryAssetSupplyRequest) | [QueryAssetSupplyResponse](#gridmod.htlc.QueryAssetSupplyResponse) | AssetSupply queries the supply of an asset | GET|/gridmod/htlc/supplies/{denom}|
-| `AssetSupplies` | [QueryAssetSuppliesRequest](#gridmod.htlc.QueryAssetSuppliesRequest) | [QueryAssetSuppliesResponse](#gridmod.htlc.QueryAssetSuppliesResponse) | AssetSupplies queries the supplies of all assets | GET|/gridmod/htlc/supplies|
-| `Params` | [QueryParamsRequest](#gridmod.htlc.QueryParamsRequest) | [QueryParamsResponse](#gridmod.htlc.QueryParamsResponse) | Params queries the htlc parameters | GET|/gridmod/htlc/params|
+| `HTLC` | [QueryHTLCRequest](#irismod.htlc.QueryHTLCRequest) | [QueryHTLCResponse](#irismod.htlc.QueryHTLCResponse) | HTLC queries the HTLC by the specified hash lock | GET|/irismod/htlc/htlcs/{id}|
+| `AssetSupply` | [QueryAssetSupplyRequest](#irismod.htlc.QueryAssetSupplyRequest) | [QueryAssetSupplyResponse](#irismod.htlc.QueryAssetSupplyResponse) | AssetSupply queries the supply of an asset | GET|/irismod/htlc/supplies/{denom}|
+| `AssetSupplies` | [QueryAssetSuppliesRequest](#irismod.htlc.QueryAssetSuppliesRequest) | [QueryAssetSuppliesResponse](#irismod.htlc.QueryAssetSuppliesResponse) | AssetSupplies queries the supplies of all assets | GET|/irismod/htlc/supplies|
+| `Params` | [QueryParamsRequest](#irismod.htlc.QueryParamsRequest) | [QueryParamsResponse](#irismod.htlc.QueryParamsResponse) | Params queries the htlc parameters | GET|/irismod/htlc/params|
 
  <!-- end services -->
 
@@ -8564,7 +8564,7 @@ Query provides defines the gRPC querier service
 
 
 
-<a name="gridmod.htlc.MsgClaimHTLC"></a>
+<a name="irismod.htlc.MsgClaimHTLC"></a>
 
 ### MsgClaimHTLC
 MsgClaimHTLC defines a message to claim an HTLC
@@ -8581,7 +8581,7 @@ MsgClaimHTLC defines a message to claim an HTLC
 
 
 
-<a name="gridmod.htlc.MsgClaimHTLCResponse"></a>
+<a name="irismod.htlc.MsgClaimHTLCResponse"></a>
 
 ### MsgClaimHTLCResponse
 MsgClaimHTLCResponse defines the Msg/ClaimHTLC response type
@@ -8591,7 +8591,7 @@ MsgClaimHTLCResponse defines the Msg/ClaimHTLC response type
 
 
 
-<a name="gridmod.htlc.MsgCreateHTLC"></a>
+<a name="irismod.htlc.MsgCreateHTLC"></a>
 
 ### MsgCreateHTLC
 MsgCreateHTLC defines a message to create an HTLC
@@ -8614,7 +8614,7 @@ MsgCreateHTLC defines a message to create an HTLC
 
 
 
-<a name="gridmod.htlc.MsgCreateHTLCResponse"></a>
+<a name="irismod.htlc.MsgCreateHTLCResponse"></a>
 
 ### MsgCreateHTLCResponse
 MsgCreateHTLCResponse defines the Msg/CreateHTLC response type
@@ -8635,15 +8635,15 @@ MsgCreateHTLCResponse defines the Msg/CreateHTLC response type
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.htlc.Msg"></a>
+<a name="irismod.htlc.Msg"></a>
 
 ### Msg
 Msg defines the HTLC Msg service
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `CreateHTLC` | [MsgCreateHTLC](#gridmod.htlc.MsgCreateHTLC) | [MsgCreateHTLCResponse](#gridmod.htlc.MsgCreateHTLCResponse) | CreateHTLC defines a method for creating a HTLC | |
-| `ClaimHTLC` | [MsgClaimHTLC](#gridmod.htlc.MsgClaimHTLC) | [MsgClaimHTLCResponse](#gridmod.htlc.MsgClaimHTLCResponse) | ClaimHTLC defines a method for claiming a HTLC | |
+| `CreateHTLC` | [MsgCreateHTLC](#irismod.htlc.MsgCreateHTLC) | [MsgCreateHTLCResponse](#irismod.htlc.MsgCreateHTLCResponse) | CreateHTLC defines a method for creating a HTLC | |
+| `ClaimHTLC` | [MsgClaimHTLC](#irismod.htlc.MsgClaimHTLC) | [MsgClaimHTLCResponse](#irismod.htlc.MsgClaimHTLCResponse) | ClaimHTLC defines a method for claiming a HTLC | |
 
  <!-- end services -->
 
@@ -11784,7 +11784,7 @@ Query creates service with guardian as rpc
 
 
 
-<a name="gridmod.nft.BaseNFT"></a>
+<a name="irismod.nft.BaseNFT"></a>
 
 ### BaseNFT
 BaseNFT defines a non-fungible token
@@ -11803,7 +11803,7 @@ BaseNFT defines a non-fungible token
 
 
 
-<a name="gridmod.nft.Collection"></a>
+<a name="irismod.nft.Collection"></a>
 
 ### Collection
 Collection defines a type of collection
@@ -11811,15 +11811,15 @@ Collection defines a type of collection
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `denom` | [Denom](#gridmod.nft.Denom) |  |  |
-| `nfts` | [BaseNFT](#gridmod.nft.BaseNFT) | repeated |  |
+| `denom` | [Denom](#irismod.nft.Denom) |  |  |
+| `nfts` | [BaseNFT](#irismod.nft.BaseNFT) | repeated |  |
 
 
 
 
 
 
-<a name="gridmod.nft.Denom"></a>
+<a name="irismod.nft.Denom"></a>
 
 ### Denom
 Denom defines a type of NFT
@@ -11840,7 +11840,7 @@ Denom defines a type of NFT
 
 
 
-<a name="gridmod.nft.IDCollection"></a>
+<a name="irismod.nft.IDCollection"></a>
 
 ### IDCollection
 IDCollection defines a type of collection with specified ID
@@ -11856,7 +11856,7 @@ IDCollection defines a type of collection with specified ID
 
 
 
-<a name="gridmod.nft.Owner"></a>
+<a name="irismod.nft.Owner"></a>
 
 ### Owner
 Owner defines a type of owner
@@ -11865,7 +11865,7 @@ Owner defines a type of owner
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | `address` | [string](#string) |  |  |
-| `id_collections` | [IDCollection](#gridmod.nft.IDCollection) | repeated |  |
+| `id_collections` | [IDCollection](#irismod.nft.IDCollection) | repeated |  |
 
 
 
@@ -11888,7 +11888,7 @@ Owner defines a type of owner
 
 
 
-<a name="gridmod.nft.GenesisState"></a>
+<a name="irismod.nft.GenesisState"></a>
 
 ### GenesisState
 GenesisState defines the NFT module's genesis state
@@ -11896,7 +11896,7 @@ GenesisState defines the NFT module's genesis state
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `collections` | [Collection](#gridmod.nft.Collection) | repeated |  |
+| `collections` | [Collection](#irismod.nft.Collection) | repeated |  |
 
 
 
@@ -11919,7 +11919,7 @@ GenesisState defines the NFT module's genesis state
 
 
 
-<a name="gridmod.nft.QueryCollectionRequest"></a>
+<a name="irismod.nft.QueryCollectionRequest"></a>
 
 ### QueryCollectionRequest
 QueryCollectionRequest is the request type for the Query/Collection RPC method
@@ -11935,7 +11935,7 @@ QueryCollectionRequest is the request type for the Query/Collection RPC method
 
 
 
-<a name="gridmod.nft.QueryCollectionResponse"></a>
+<a name="irismod.nft.QueryCollectionResponse"></a>
 
 ### QueryCollectionResponse
 QueryCollectionResponse is the response type for the Query/Collection RPC method
@@ -11943,7 +11943,7 @@ QueryCollectionResponse is the response type for the Query/Collection RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `collection` | [Collection](#gridmod.nft.Collection) |  |  |
+| `collection` | [Collection](#irismod.nft.Collection) |  |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  |  |
 
 
@@ -11951,7 +11951,7 @@ QueryCollectionResponse is the response type for the Query/Collection RPC method
 
 
 
-<a name="gridmod.nft.QueryDenomRequest"></a>
+<a name="irismod.nft.QueryDenomRequest"></a>
 
 ### QueryDenomRequest
 QueryDenomRequest is the request type for the Query/Denom RPC method
@@ -11966,7 +11966,7 @@ QueryDenomRequest is the request type for the Query/Denom RPC method
 
 
 
-<a name="gridmod.nft.QueryDenomResponse"></a>
+<a name="irismod.nft.QueryDenomResponse"></a>
 
 ### QueryDenomResponse
 QueryDenomResponse is the response type for the Query/Denom RPC method
@@ -11974,14 +11974,14 @@ QueryDenomResponse is the response type for the Query/Denom RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `denom` | [Denom](#gridmod.nft.Denom) |  |  |
+| `denom` | [Denom](#irismod.nft.Denom) |  |  |
 
 
 
 
 
 
-<a name="gridmod.nft.QueryDenomsRequest"></a>
+<a name="irismod.nft.QueryDenomsRequest"></a>
 
 ### QueryDenomsRequest
 QueryDenomsRequest is the request type for the Query/Denoms RPC method
@@ -11996,7 +11996,7 @@ QueryDenomsRequest is the request type for the Query/Denoms RPC method
 
 
 
-<a name="gridmod.nft.QueryDenomsResponse"></a>
+<a name="irismod.nft.QueryDenomsResponse"></a>
 
 ### QueryDenomsResponse
 QueryDenomsResponse is the response type for the Query/Denoms RPC method
@@ -12004,7 +12004,7 @@ QueryDenomsResponse is the response type for the Query/Denoms RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `denoms` | [Denom](#gridmod.nft.Denom) | repeated |  |
+| `denoms` | [Denom](#irismod.nft.Denom) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  |  |
 
 
@@ -12012,7 +12012,7 @@ QueryDenomsResponse is the response type for the Query/Denoms RPC method
 
 
 
-<a name="gridmod.nft.QueryNFTRequest"></a>
+<a name="irismod.nft.QueryNFTRequest"></a>
 
 ### QueryNFTRequest
 QueryNFTRequest is the request type for the Query/NFT RPC method
@@ -12028,7 +12028,7 @@ QueryNFTRequest is the request type for the Query/NFT RPC method
 
 
 
-<a name="gridmod.nft.QueryNFTResponse"></a>
+<a name="irismod.nft.QueryNFTResponse"></a>
 
 ### QueryNFTResponse
 QueryNFTResponse is the response type for the Query/NFT RPC method
@@ -12036,14 +12036,14 @@ QueryNFTResponse is the response type for the Query/NFT RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `nft` | [BaseNFT](#gridmod.nft.BaseNFT) |  |  |
+| `nft` | [BaseNFT](#irismod.nft.BaseNFT) |  |  |
 
 
 
 
 
 
-<a name="gridmod.nft.QueryOwnerRequest"></a>
+<a name="irismod.nft.QueryOwnerRequest"></a>
 
 ### QueryOwnerRequest
 QueryOwnerRequest is the request type for the Query/Owner RPC method
@@ -12060,7 +12060,7 @@ QueryOwnerRequest is the request type for the Query/Owner RPC method
 
 
 
-<a name="gridmod.nft.QueryOwnerResponse"></a>
+<a name="irismod.nft.QueryOwnerResponse"></a>
 
 ### QueryOwnerResponse
 QueryOwnerResponse is the response type for the Query/Owner RPC method
@@ -12068,7 +12068,7 @@ QueryOwnerResponse is the response type for the Query/Owner RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `owner` | [Owner](#gridmod.nft.Owner) |  |  |
+| `owner` | [Owner](#irismod.nft.Owner) |  |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  |  |
 
 
@@ -12076,7 +12076,7 @@ QueryOwnerResponse is the response type for the Query/Owner RPC method
 
 
 
-<a name="gridmod.nft.QuerySupplyRequest"></a>
+<a name="irismod.nft.QuerySupplyRequest"></a>
 
 ### QuerySupplyRequest
 QuerySupplyRequest is the request type for the Query/HTLC RPC method
@@ -12092,7 +12092,7 @@ QuerySupplyRequest is the request type for the Query/HTLC RPC method
 
 
 
-<a name="gridmod.nft.QuerySupplyResponse"></a>
+<a name="irismod.nft.QuerySupplyResponse"></a>
 
 ### QuerySupplyResponse
 QuerySupplyResponse is the response type for the Query/Supply RPC method
@@ -12113,19 +12113,19 @@ QuerySupplyResponse is the response type for the Query/Supply RPC method
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.nft.Query"></a>
+<a name="irismod.nft.Query"></a>
 
 ### Query
 Query defines the gRPC querier service for NFT module
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `Supply` | [QuerySupplyRequest](#gridmod.nft.QuerySupplyRequest) | [QuerySupplyResponse](#gridmod.nft.QuerySupplyResponse) | Supply queries the total supply of a given denom or owner | GET|/gridmod/nft/collections/{denom_id}/supply|
-| `Owner` | [QueryOwnerRequest](#gridmod.nft.QueryOwnerRequest) | [QueryOwnerResponse](#gridmod.nft.QueryOwnerResponse) | Owner queries the NFTs of the specified owner | GET|/gridmod/nft/nfts|
-| `Collection` | [QueryCollectionRequest](#gridmod.nft.QueryCollectionRequest) | [QueryCollectionResponse](#gridmod.nft.QueryCollectionResponse) | Collection queries the NFTs of the specified denom | GET|/gridmod/nft/collections/{denom_id}|
-| `Denom` | [QueryDenomRequest](#gridmod.nft.QueryDenomRequest) | [QueryDenomResponse](#gridmod.nft.QueryDenomResponse) | Denom queries the definition of a given denom | GET|/gridmod/nft/denoms/{denom_id}|
-| `Denoms` | [QueryDenomsRequest](#gridmod.nft.QueryDenomsRequest) | [QueryDenomsResponse](#gridmod.nft.QueryDenomsResponse) | Denoms queries all the denoms | GET|/gridmod/nft/denoms|
-| `NFT` | [QueryNFTRequest](#gridmod.nft.QueryNFTRequest) | [QueryNFTResponse](#gridmod.nft.QueryNFTResponse) | NFT queries the NFT for the given denom and token ID | GET|/gridmod/nft/nfts/{denom_id}/{token_id}|
+| `Supply` | [QuerySupplyRequest](#irismod.nft.QuerySupplyRequest) | [QuerySupplyResponse](#irismod.nft.QuerySupplyResponse) | Supply queries the total supply of a given denom or owner | GET|/irismod/nft/collections/{denom_id}/supply|
+| `Owner` | [QueryOwnerRequest](#irismod.nft.QueryOwnerRequest) | [QueryOwnerResponse](#irismod.nft.QueryOwnerResponse) | Owner queries the NFTs of the specified owner | GET|/irismod/nft/nfts|
+| `Collection` | [QueryCollectionRequest](#irismod.nft.QueryCollectionRequest) | [QueryCollectionResponse](#irismod.nft.QueryCollectionResponse) | Collection queries the NFTs of the specified denom | GET|/irismod/nft/collections/{denom_id}|
+| `Denom` | [QueryDenomRequest](#irismod.nft.QueryDenomRequest) | [QueryDenomResponse](#irismod.nft.QueryDenomResponse) | Denom queries the definition of a given denom | GET|/irismod/nft/denoms/{denom_id}|
+| `Denoms` | [QueryDenomsRequest](#irismod.nft.QueryDenomsRequest) | [QueryDenomsResponse](#irismod.nft.QueryDenomsResponse) | Denoms queries all the denoms | GET|/irismod/nft/denoms|
+| `NFT` | [QueryNFTRequest](#irismod.nft.QueryNFTRequest) | [QueryNFTResponse](#irismod.nft.QueryNFTResponse) | NFT queries the NFT for the given denom and token ID | GET|/irismod/nft/nfts/{denom_id}/{token_id}|
 
  <!-- end services -->
 
@@ -12138,7 +12138,7 @@ Query defines the gRPC querier service for NFT module
 
 
 
-<a name="gridmod.nft.MsgBurnNFT"></a>
+<a name="irismod.nft.MsgBurnNFT"></a>
 
 ### MsgBurnNFT
 MsgBurnNFT defines an SDK message for burning a NFT.
@@ -12155,7 +12155,7 @@ MsgBurnNFT defines an SDK message for burning a NFT.
 
 
 
-<a name="gridmod.nft.MsgBurnNFTResponse"></a>
+<a name="irismod.nft.MsgBurnNFTResponse"></a>
 
 ### MsgBurnNFTResponse
 MsgBurnNFTResponse defines the Msg/BurnNFT response type.
@@ -12165,7 +12165,7 @@ MsgBurnNFTResponse defines the Msg/BurnNFT response type.
 
 
 
-<a name="gridmod.nft.MsgEditNFT"></a>
+<a name="irismod.nft.MsgEditNFT"></a>
 
 ### MsgEditNFT
 MsgEditNFT defines an SDK message for editing a nft.
@@ -12185,7 +12185,7 @@ MsgEditNFT defines an SDK message for editing a nft.
 
 
 
-<a name="gridmod.nft.MsgEditNFTResponse"></a>
+<a name="irismod.nft.MsgEditNFTResponse"></a>
 
 ### MsgEditNFTResponse
 MsgEditNFTResponse defines the Msg/EditNFT response type.
@@ -12195,7 +12195,7 @@ MsgEditNFTResponse defines the Msg/EditNFT response type.
 
 
 
-<a name="gridmod.nft.MsgIssueDenom"></a>
+<a name="irismod.nft.MsgIssueDenom"></a>
 
 ### MsgIssueDenom
 MsgIssueDenom defines an SDK message for creating a new denom.
@@ -12216,7 +12216,7 @@ MsgIssueDenom defines an SDK message for creating a new denom.
 
 
 
-<a name="gridmod.nft.MsgIssueDenomResponse"></a>
+<a name="irismod.nft.MsgIssueDenomResponse"></a>
 
 ### MsgIssueDenomResponse
 MsgIssueDenomResponse defines the Msg/IssueDenom response type.
@@ -12226,7 +12226,7 @@ MsgIssueDenomResponse defines the Msg/IssueDenom response type.
 
 
 
-<a name="gridmod.nft.MsgMintNFT"></a>
+<a name="irismod.nft.MsgMintNFT"></a>
 
 ### MsgMintNFT
 MsgMintNFT defines an SDK message for creating a new NFT.
@@ -12247,7 +12247,7 @@ MsgMintNFT defines an SDK message for creating a new NFT.
 
 
 
-<a name="gridmod.nft.MsgMintNFTResponse"></a>
+<a name="irismod.nft.MsgMintNFTResponse"></a>
 
 ### MsgMintNFTResponse
 MsgMintNFTResponse defines the Msg/MintNFT response type.
@@ -12257,7 +12257,7 @@ MsgMintNFTResponse defines the Msg/MintNFT response type.
 
 
 
-<a name="gridmod.nft.MsgTransferDenom"></a>
+<a name="irismod.nft.MsgTransferDenom"></a>
 
 ### MsgTransferDenom
 MsgTransferDenom defines an SDK message for transferring an denom to recipient.
@@ -12274,7 +12274,7 @@ MsgTransferDenom defines an SDK message for transferring an denom to recipient.
 
 
 
-<a name="gridmod.nft.MsgTransferDenomResponse"></a>
+<a name="irismod.nft.MsgTransferDenomResponse"></a>
 
 ### MsgTransferDenomResponse
 MsgTransferDenomResponse defines the Msg/TransferDenom response type.
@@ -12284,7 +12284,7 @@ MsgTransferDenomResponse defines the Msg/TransferDenom response type.
 
 
 
-<a name="gridmod.nft.MsgTransferNFT"></a>
+<a name="irismod.nft.MsgTransferNFT"></a>
 
 ### MsgTransferNFT
 MsgTransferNFT defines an SDK message for transferring an NFT to recipient.
@@ -12305,7 +12305,7 @@ MsgTransferNFT defines an SDK message for transferring an NFT to recipient.
 
 
 
-<a name="gridmod.nft.MsgTransferNFTResponse"></a>
+<a name="irismod.nft.MsgTransferNFTResponse"></a>
 
 ### MsgTransferNFTResponse
 MsgTransferNFTResponse defines the Msg/TransferNFT response type.
@@ -12321,19 +12321,19 @@ MsgTransferNFTResponse defines the Msg/TransferNFT response type.
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.nft.Msg"></a>
+<a name="irismod.nft.Msg"></a>
 
 ### Msg
 Msg defines the nft Msg service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `IssueDenom` | [MsgIssueDenom](#gridmod.nft.MsgIssueDenom) | [MsgIssueDenomResponse](#gridmod.nft.MsgIssueDenomResponse) | IssueDenom defines a method for issue a denom. | |
-| `MintNFT` | [MsgMintNFT](#gridmod.nft.MsgMintNFT) | [MsgMintNFTResponse](#gridmod.nft.MsgMintNFTResponse) | MintNFT defines a method for mint a new nft | |
-| `EditNFT` | [MsgEditNFT](#gridmod.nft.MsgEditNFT) | [MsgEditNFTResponse](#gridmod.nft.MsgEditNFTResponse) | RefundHTLC defines a method for editing a nft. | |
-| `TransferNFT` | [MsgTransferNFT](#gridmod.nft.MsgTransferNFT) | [MsgTransferNFTResponse](#gridmod.nft.MsgTransferNFTResponse) | TransferNFT defines a method for transferring a nft. | |
-| `BurnNFT` | [MsgBurnNFT](#gridmod.nft.MsgBurnNFT) | [MsgBurnNFTResponse](#gridmod.nft.MsgBurnNFTResponse) | BurnNFT defines a method for burning a nft. | |
-| `TransferDenom` | [MsgTransferDenom](#gridmod.nft.MsgTransferDenom) | [MsgTransferDenomResponse](#gridmod.nft.MsgTransferDenomResponse) | TransferDenom defines a method for transferring a denom. | |
+| `IssueDenom` | [MsgIssueDenom](#irismod.nft.MsgIssueDenom) | [MsgIssueDenomResponse](#irismod.nft.MsgIssueDenomResponse) | IssueDenom defines a method for issue a denom. | |
+| `MintNFT` | [MsgMintNFT](#irismod.nft.MsgMintNFT) | [MsgMintNFTResponse](#irismod.nft.MsgMintNFTResponse) | MintNFT defines a method for mint a new nft | |
+| `EditNFT` | [MsgEditNFT](#irismod.nft.MsgEditNFT) | [MsgEditNFTResponse](#irismod.nft.MsgEditNFTResponse) | RefundHTLC defines a method for editing a nft. | |
+| `TransferNFT` | [MsgTransferNFT](#irismod.nft.MsgTransferNFT) | [MsgTransferNFTResponse](#irismod.nft.MsgTransferNFTResponse) | TransferNFT defines a method for transferring a nft. | |
+| `BurnNFT` | [MsgBurnNFT](#irismod.nft.MsgBurnNFT) | [MsgBurnNFTResponse](#irismod.nft.MsgBurnNFTResponse) | BurnNFT defines a method for burning a nft. | |
+| `TransferDenom` | [MsgTransferDenom](#irismod.nft.MsgTransferDenom) | [MsgTransferDenomResponse](#irismod.nft.MsgTransferDenomResponse) | TransferDenom defines a method for transferring a denom. | |
 
  <!-- end services -->
 
@@ -12346,7 +12346,7 @@ Msg defines the nft Msg service.
 
 
 
-<a name="gridmod.oracle.Feed"></a>
+<a name="irismod.oracle.Feed"></a>
 
 ### Feed
 Feed defines the feed standard
@@ -12367,7 +12367,7 @@ Feed defines the feed standard
 
 
 
-<a name="gridmod.oracle.FeedValue"></a>
+<a name="irismod.oracle.FeedValue"></a>
 
 ### FeedValue
 FeedValue defines the feed result standard
@@ -12399,7 +12399,7 @@ FeedValue defines the feed result standard
 
 
 
-<a name="gridmod.service.CompactRequest"></a>
+<a name="irismod.service.CompactRequest"></a>
 
 ### CompactRequest
 CompactRequest defines a standard for compact request
@@ -12419,7 +12419,7 @@ CompactRequest defines a standard for compact request
 
 
 
-<a name="gridmod.service.Params"></a>
+<a name="irismod.service.Params"></a>
 
 ### Params
 Params defines service module's parameters
@@ -12443,7 +12443,7 @@ Params defines service module's parameters
 
 
 
-<a name="gridmod.service.Pricing"></a>
+<a name="irismod.service.Pricing"></a>
 
 ### Pricing
 Pricing defines a standard for service pricing
@@ -12452,15 +12452,15 @@ Pricing defines a standard for service pricing
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | `price` | [cosmos.base.v1beta1.Coin](#cosmos.base.v1beta1.Coin) | repeated |  |
-| `promotions_by_time` | [PromotionByTime](#gridmod.service.PromotionByTime) | repeated |  |
-| `promotions_by_volume` | [PromotionByVolume](#gridmod.service.PromotionByVolume) | repeated |  |
+| `promotions_by_time` | [PromotionByTime](#irismod.service.PromotionByTime) | repeated |  |
+| `promotions_by_volume` | [PromotionByVolume](#irismod.service.PromotionByVolume) | repeated |  |
 
 
 
 
 
 
-<a name="gridmod.service.PromotionByTime"></a>
+<a name="irismod.service.PromotionByTime"></a>
 
 ### PromotionByTime
 PromotionByTime defines a standard for service promotion by time
@@ -12477,7 +12477,7 @@ PromotionByTime defines a standard for service promotion by time
 
 
 
-<a name="gridmod.service.PromotionByVolume"></a>
+<a name="irismod.service.PromotionByVolume"></a>
 
 ### PromotionByVolume
 PromotionByVolume defines a standard for service promotion by volume
@@ -12493,7 +12493,7 @@ PromotionByVolume defines a standard for service promotion by volume
 
 
 
-<a name="gridmod.service.Request"></a>
+<a name="irismod.service.Request"></a>
 
 ### Request
 Request defines a standard for request
@@ -12517,7 +12517,7 @@ Request defines a standard for request
 
 
 
-<a name="gridmod.service.RequestContext"></a>
+<a name="irismod.service.RequestContext"></a>
 
 ### RequestContext
 RequestContext defines a standard for request context
@@ -12540,15 +12540,15 @@ RequestContext defines a standard for request context
 | `batch_response_count` | [uint32](#uint32) |  |  |
 | `batch_response_threshold` | [uint32](#uint32) |  |  |
 | `response_threshold` | [uint32](#uint32) |  |  |
-| `batch_state` | [RequestContextBatchState](#gridmod.service.RequestContextBatchState) |  |  |
-| `state` | [RequestContextState](#gridmod.service.RequestContextState) |  |  |
+| `batch_state` | [RequestContextBatchState](#irismod.service.RequestContextBatchState) |  |  |
+| `state` | [RequestContextState](#irismod.service.RequestContextState) |  |  |
 
 
 
 
 
 
-<a name="gridmod.service.Response"></a>
+<a name="irismod.service.Response"></a>
 
 ### Response
 Response defines a standard for response
@@ -12568,7 +12568,7 @@ Response defines a standard for response
 
 
 
-<a name="gridmod.service.ServiceBinding"></a>
+<a name="irismod.service.ServiceBinding"></a>
 
 ### ServiceBinding
 ServiceBinding defines a standard for service binding
@@ -12591,7 +12591,7 @@ ServiceBinding defines a standard for service binding
 
 
 
-<a name="gridmod.service.ServiceDefinition"></a>
+<a name="irismod.service.ServiceDefinition"></a>
 
 ### ServiceDefinition
 ServiceDefinition defines a standard for service definition
@@ -12613,7 +12613,7 @@ ServiceDefinition defines a standard for service definition
  <!-- end messages -->
 
 
-<a name="gridmod.service.RequestContextBatchState"></a>
+<a name="irismod.service.RequestContextBatchState"></a>
 
 ### RequestContextBatchState
 RequestContextBatchState is a type alias that represents a request batch status as a byte
@@ -12625,7 +12625,7 @@ RequestContextBatchState is a type alias that represents a request batch status 
 
 
 
-<a name="gridmod.service.RequestContextState"></a>
+<a name="irismod.service.RequestContextState"></a>
 
 ### RequestContextState
 RequestContextState is a type alias that represents a request status as a byte
@@ -12652,7 +12652,7 @@ RequestContextState is a type alias that represents a request status as a byte
 
 
 
-<a name="gridmod.oracle.FeedEntry"></a>
+<a name="irismod.oracle.FeedEntry"></a>
 
 ### FeedEntry
 
@@ -12660,16 +12660,16 @@ RequestContextState is a type alias that represents a request status as a byte
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `feed` | [Feed](#gridmod.oracle.Feed) |  |  |
-| `state` | [gridmod.service.RequestContextState](#gridmod.service.RequestContextState) |  |  |
-| `values` | [FeedValue](#gridmod.oracle.FeedValue) | repeated |  |
+| `feed` | [Feed](#irismod.oracle.Feed) |  |  |
+| `state` | [irismod.service.RequestContextState](#irismod.service.RequestContextState) |  |  |
+| `values` | [FeedValue](#irismod.oracle.FeedValue) | repeated |  |
 
 
 
 
 
 
-<a name="gridmod.oracle.GenesisState"></a>
+<a name="irismod.oracle.GenesisState"></a>
 
 ### GenesisState
 GenesisState defines the oracle module's genesis state
@@ -12677,7 +12677,7 @@ GenesisState defines the oracle module's genesis state
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `entries` | [FeedEntry](#gridmod.oracle.FeedEntry) | repeated |  |
+| `entries` | [FeedEntry](#irismod.oracle.FeedEntry) | repeated |  |
 
 
 
@@ -12700,7 +12700,7 @@ GenesisState defines the oracle module's genesis state
 
 
 
-<a name="gridmod.oracle.FeedContext"></a>
+<a name="irismod.oracle.FeedContext"></a>
 
 ### FeedContext
 FeedContext defines the feed context struct
@@ -12708,7 +12708,7 @@ FeedContext defines the feed context struct
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `feed` | [Feed](#gridmod.oracle.Feed) |  |  |
+| `feed` | [Feed](#irismod.oracle.Feed) |  |  |
 | `service_name` | [string](#string) |  |  |
 | `providers` | [string](#string) | repeated |  |
 | `input` | [string](#string) |  |  |
@@ -12716,14 +12716,14 @@ FeedContext defines the feed context struct
 | `service_fee_cap` | [cosmos.base.v1beta1.Coin](#cosmos.base.v1beta1.Coin) | repeated |  |
 | `repeated_frequency` | [uint64](#uint64) |  |  |
 | `response_threshold` | [uint32](#uint32) |  |  |
-| `state` | [gridmod.service.RequestContextState](#gridmod.service.RequestContextState) |  |  |
+| `state` | [irismod.service.RequestContextState](#irismod.service.RequestContextState) |  |  |
 
 
 
 
 
 
-<a name="gridmod.oracle.QueryFeedRequest"></a>
+<a name="irismod.oracle.QueryFeedRequest"></a>
 
 ### QueryFeedRequest
 QueryFeedRequest is request type for the Query/Feed RPC method
@@ -12738,7 +12738,7 @@ QueryFeedRequest is request type for the Query/Feed RPC method
 
 
 
-<a name="gridmod.oracle.QueryFeedResponse"></a>
+<a name="irismod.oracle.QueryFeedResponse"></a>
 
 ### QueryFeedResponse
 QueryFeedResponse is response type for the Query/Feed RPC method
@@ -12746,14 +12746,14 @@ QueryFeedResponse is response type for the Query/Feed RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `feed` | [FeedContext](#gridmod.oracle.FeedContext) |  |  |
+| `feed` | [FeedContext](#irismod.oracle.FeedContext) |  |  |
 
 
 
 
 
 
-<a name="gridmod.oracle.QueryFeedValueRequest"></a>
+<a name="irismod.oracle.QueryFeedValueRequest"></a>
 
 ### QueryFeedValueRequest
 QueryFeedValueRequest is request type for the Query/FeedValue RPC method
@@ -12768,7 +12768,7 @@ QueryFeedValueRequest is request type for the Query/FeedValue RPC method
 
 
 
-<a name="gridmod.oracle.QueryFeedValueResponse"></a>
+<a name="irismod.oracle.QueryFeedValueResponse"></a>
 
 ### QueryFeedValueResponse
 QueryFeedValueResponse is response type for the Query/FeedValue RPC method
@@ -12776,14 +12776,14 @@ QueryFeedValueResponse is response type for the Query/FeedValue RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `feed_values` | [FeedValue](#gridmod.oracle.FeedValue) | repeated |  |
+| `feed_values` | [FeedValue](#irismod.oracle.FeedValue) | repeated |  |
 
 
 
 
 
 
-<a name="gridmod.oracle.QueryFeedsRequest"></a>
+<a name="irismod.oracle.QueryFeedsRequest"></a>
 
 ### QueryFeedsRequest
 QueryFeedsRequest is request type for the Query/Feeds RPC method
@@ -12799,7 +12799,7 @@ QueryFeedsRequest is request type for the Query/Feeds RPC method
 
 
 
-<a name="gridmod.oracle.QueryFeedsResponse"></a>
+<a name="irismod.oracle.QueryFeedsResponse"></a>
 
 ### QueryFeedsResponse
 QueryFeedsResponse is response type for the Query/Feeds RPC method
@@ -12807,7 +12807,7 @@ QueryFeedsResponse is response type for the Query/Feeds RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `feeds` | [FeedContext](#gridmod.oracle.FeedContext) | repeated |  |
+| `feeds` | [FeedContext](#irismod.oracle.FeedContext) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  | pagination defines an optional pagination for the request |
 
 
@@ -12821,16 +12821,16 @@ QueryFeedsResponse is response type for the Query/Feeds RPC method
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.oracle.Query"></a>
+<a name="irismod.oracle.Query"></a>
 
 ### Query
 Query creates service with guardian as rpc
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `Feed` | [QueryFeedRequest](#gridmod.oracle.QueryFeedRequest) | [QueryFeedResponse](#gridmod.oracle.QueryFeedResponse) | Feed queries the feed | GET|/gridmod/oracle/feeds/{feed_name}|
-| `Feeds` | [QueryFeedsRequest](#gridmod.oracle.QueryFeedsRequest) | [QueryFeedsResponse](#gridmod.oracle.QueryFeedsResponse) | Feeds queries the feed list | GET|/gridmod/oracle/feeds|
-| `FeedValue` | [QueryFeedValueRequest](#gridmod.oracle.QueryFeedValueRequest) | [QueryFeedValueResponse](#gridmod.oracle.QueryFeedValueResponse) | FeedValue queries the feed value | GET|/gridmod/oracle/feeds/{feed_name}/values|
+| `Feed` | [QueryFeedRequest](#irismod.oracle.QueryFeedRequest) | [QueryFeedResponse](#irismod.oracle.QueryFeedResponse) | Feed queries the feed | GET|/irismod/oracle/feeds/{feed_name}|
+| `Feeds` | [QueryFeedsRequest](#irismod.oracle.QueryFeedsRequest) | [QueryFeedsResponse](#irismod.oracle.QueryFeedsResponse) | Feeds queries the feed list | GET|/irismod/oracle/feeds|
+| `FeedValue` | [QueryFeedValueRequest](#irismod.oracle.QueryFeedValueRequest) | [QueryFeedValueResponse](#irismod.oracle.QueryFeedValueResponse) | FeedValue queries the feed value | GET|/irismod/oracle/feeds/{feed_name}/values|
 
  <!-- end services -->
 
@@ -12843,7 +12843,7 @@ Query creates service with guardian as rpc
 
 
 
-<a name="gridmod.oracle.MsgCreateFeed"></a>
+<a name="irismod.oracle.MsgCreateFeed"></a>
 
 ### MsgCreateFeed
 MsgCreateFeed defines an sdk.Msg type that supports creating a feed
@@ -12870,7 +12870,7 @@ MsgCreateFeed defines an sdk.Msg type that supports creating a feed
 
 
 
-<a name="gridmod.oracle.MsgCreateFeedResponse"></a>
+<a name="irismod.oracle.MsgCreateFeedResponse"></a>
 
 ### MsgCreateFeedResponse
 MsgCreateFeedResponse defines the Msg/CreateFeed response type
@@ -12880,7 +12880,7 @@ MsgCreateFeedResponse defines the Msg/CreateFeed response type
 
 
 
-<a name="gridmod.oracle.MsgEditFeed"></a>
+<a name="irismod.oracle.MsgEditFeed"></a>
 
 ### MsgEditFeed
 MsgEditFeed defines an sdk.Msg type that supports editing a feed
@@ -12903,7 +12903,7 @@ MsgEditFeed defines an sdk.Msg type that supports editing a feed
 
 
 
-<a name="gridmod.oracle.MsgEditFeedResponse"></a>
+<a name="irismod.oracle.MsgEditFeedResponse"></a>
 
 ### MsgEditFeedResponse
 MsgEditFeedResponse defines the Msg/EditFeed response type
@@ -12913,7 +12913,7 @@ MsgEditFeedResponse defines the Msg/EditFeed response type
 
 
 
-<a name="gridmod.oracle.MsgPauseFeed"></a>
+<a name="irismod.oracle.MsgPauseFeed"></a>
 
 ### MsgPauseFeed
 MsgPauseFeed defines an sdk.Msg type that supports pausing a feed
@@ -12929,7 +12929,7 @@ MsgPauseFeed defines an sdk.Msg type that supports pausing a feed
 
 
 
-<a name="gridmod.oracle.MsgPauseFeedResponse"></a>
+<a name="irismod.oracle.MsgPauseFeedResponse"></a>
 
 ### MsgPauseFeedResponse
 MsgPauseFeedResponse defines the Msg/PauseFeed response type
@@ -12939,7 +12939,7 @@ MsgPauseFeedResponse defines the Msg/PauseFeed response type
 
 
 
-<a name="gridmod.oracle.MsgStartFeed"></a>
+<a name="irismod.oracle.MsgStartFeed"></a>
 
 ### MsgStartFeed
 MsgPauseFeed defines an sdk.Msg type that supports stating a feed
@@ -12955,7 +12955,7 @@ MsgPauseFeed defines an sdk.Msg type that supports stating a feed
 
 
 
-<a name="gridmod.oracle.MsgStartFeedResponse"></a>
+<a name="irismod.oracle.MsgStartFeedResponse"></a>
 
 ### MsgStartFeedResponse
 MsgStartFeedResponse defines the Msg/StartFeed response type
@@ -12971,17 +12971,17 @@ MsgStartFeedResponse defines the Msg/StartFeed response type
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.oracle.Msg"></a>
+<a name="irismod.oracle.Msg"></a>
 
 ### Msg
 Msg defines the oracle Msg service
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `CreateFeed` | [MsgCreateFeed](#gridmod.oracle.MsgCreateFeed) | [MsgCreateFeedResponse](#gridmod.oracle.MsgCreateFeedResponse) | CreateFeed defines a method for creating a new feed | |
-| `EditFeed` | [MsgEditFeed](#gridmod.oracle.MsgEditFeed) | [MsgEditFeedResponse](#gridmod.oracle.MsgEditFeedResponse) | EditFeed defines a method for editing a feed | |
-| `StartFeed` | [MsgStartFeed](#gridmod.oracle.MsgStartFeed) | [MsgStartFeedResponse](#gridmod.oracle.MsgStartFeedResponse) | StartFeed defines a method for starting a feed | |
-| `PauseFeed` | [MsgPauseFeed](#gridmod.oracle.MsgPauseFeed) | [MsgPauseFeedResponse](#gridmod.oracle.MsgPauseFeedResponse) | PauseFeed defines a method for pausing a feed | |
+| `CreateFeed` | [MsgCreateFeed](#irismod.oracle.MsgCreateFeed) | [MsgCreateFeedResponse](#irismod.oracle.MsgCreateFeedResponse) | CreateFeed defines a method for creating a new feed | |
+| `EditFeed` | [MsgEditFeed](#irismod.oracle.MsgEditFeed) | [MsgEditFeedResponse](#irismod.oracle.MsgEditFeedResponse) | EditFeed defines a method for editing a feed | |
+| `StartFeed` | [MsgStartFeed](#irismod.oracle.MsgStartFeed) | [MsgStartFeedResponse](#irismod.oracle.MsgStartFeedResponse) | StartFeed defines a method for starting a feed | |
+| `PauseFeed` | [MsgPauseFeed](#irismod.oracle.MsgPauseFeed) | [MsgPauseFeedResponse](#irismod.oracle.MsgPauseFeedResponse) | PauseFeed defines a method for pausing a feed | |
 
  <!-- end services -->
 
@@ -12994,7 +12994,7 @@ Msg defines the oracle Msg service
 
 
 
-<a name="gridmod.random.Random"></a>
+<a name="irismod.random.Random"></a>
 
 ### Random
 Random defines the feed standard
@@ -13011,7 +13011,7 @@ Random defines the feed standard
 
 
 
-<a name="gridmod.random.Request"></a>
+<a name="irismod.random.Request"></a>
 
 ### Request
 Request defines the random request standard
@@ -13047,7 +13047,7 @@ Request defines the random request standard
 
 
 
-<a name="gridmod.random.GenesisState"></a>
+<a name="irismod.random.GenesisState"></a>
 
 ### GenesisState
 GenesisState defines the random module's genesis state
@@ -13055,14 +13055,14 @@ GenesisState defines the random module's genesis state
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `pending_random_requests` | [GenesisState.PendingRandomRequestsEntry](#gridmod.random.GenesisState.PendingRandomRequestsEntry) | repeated |  |
+| `pending_random_requests` | [GenesisState.PendingRandomRequestsEntry](#irismod.random.GenesisState.PendingRandomRequestsEntry) | repeated |  |
 
 
 
 
 
 
-<a name="gridmod.random.GenesisState.PendingRandomRequestsEntry"></a>
+<a name="irismod.random.GenesisState.PendingRandomRequestsEntry"></a>
 
 ### GenesisState.PendingRandomRequestsEntry
 
@@ -13071,14 +13071,14 @@ GenesisState defines the random module's genesis state
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | `key` | [string](#string) |  |  |
-| `value` | [Requests](#gridmod.random.Requests) |  |  |
+| `value` | [Requests](#irismod.random.Requests) |  |  |
 
 
 
 
 
 
-<a name="gridmod.random.Requests"></a>
+<a name="irismod.random.Requests"></a>
 
 ### Requests
 Requests defines the random requests
@@ -13086,7 +13086,7 @@ Requests defines the random requests
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `requests` | [Request](#gridmod.random.Request) | repeated |  |
+| `requests` | [Request](#irismod.random.Request) | repeated |  |
 
 
 
@@ -13109,7 +13109,7 @@ Requests defines the random requests
 
 
 
-<a name="gridmod.random.QueryRandomRequest"></a>
+<a name="irismod.random.QueryRandomRequest"></a>
 
 ### QueryRandomRequest
 QueryRandomRequest is request type for the Query/Random RPC method
@@ -13124,7 +13124,7 @@ QueryRandomRequest is request type for the Query/Random RPC method
 
 
 
-<a name="gridmod.random.QueryRandomRequestQueueRequest"></a>
+<a name="irismod.random.QueryRandomRequestQueueRequest"></a>
 
 ### QueryRandomRequestQueueRequest
 QueryRandomRequestQueueRequest is request type for the Query/RandomRequestQueue RPC method
@@ -13139,7 +13139,7 @@ QueryRandomRequestQueueRequest is request type for the Query/RandomRequestQueue 
 
 
 
-<a name="gridmod.random.QueryRandomRequestQueueResponse"></a>
+<a name="irismod.random.QueryRandomRequestQueueResponse"></a>
 
 ### QueryRandomRequestQueueResponse
 QueryRandomRequestQueueResponse is response type for the Query/RandomRequestQueue RPC method
@@ -13147,14 +13147,14 @@ QueryRandomRequestQueueResponse is response type for the Query/RandomRequestQueu
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `requests` | [Request](#gridmod.random.Request) | repeated |  |
+| `requests` | [Request](#irismod.random.Request) | repeated |  |
 
 
 
 
 
 
-<a name="gridmod.random.QueryRandomResponse"></a>
+<a name="irismod.random.QueryRandomResponse"></a>
 
 ### QueryRandomResponse
 QueryParametersResponse is response type for the Query/Random RPC method
@@ -13162,7 +13162,7 @@ QueryParametersResponse is response type for the Query/Random RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `random` | [Random](#gridmod.random.Random) |  |  |
+| `random` | [Random](#irismod.random.Random) |  |  |
 
 
 
@@ -13175,15 +13175,15 @@ QueryParametersResponse is response type for the Query/Random RPC method
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.random.Query"></a>
+<a name="irismod.random.Query"></a>
 
 ### Query
 Query creates service with guardian as rpc
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `Random` | [QueryRandomRequest](#gridmod.random.QueryRandomRequest) | [QueryRandomResponse](#gridmod.random.QueryRandomResponse) | Random queries the random result | GET|/gridmod/random/randoms/{req_id}|
-| `RandomRequestQueue` | [QueryRandomRequestQueueRequest](#gridmod.random.QueryRandomRequestQueueRequest) | [QueryRandomRequestQueueResponse](#gridmod.random.QueryRandomRequestQueueResponse) | RandomRequestQueue queries the random request queue | GET|/gridmod/random/queue|
+| `Random` | [QueryRandomRequest](#irismod.random.QueryRandomRequest) | [QueryRandomResponse](#irismod.random.QueryRandomResponse) | Random queries the random result | GET|/irismod/random/randoms/{req_id}|
+| `RandomRequestQueue` | [QueryRandomRequestQueueRequest](#irismod.random.QueryRandomRequestQueueRequest) | [QueryRandomRequestQueueResponse](#irismod.random.QueryRandomRequestQueueResponse) | RandomRequestQueue queries the random request queue | GET|/irismod/random/queue|
 
  <!-- end services -->
 
@@ -13196,7 +13196,7 @@ Query creates service with guardian as rpc
 
 
 
-<a name="gridmod.random.MsgRequestRandom"></a>
+<a name="irismod.random.MsgRequestRandom"></a>
 
 ### MsgRequestRandom
 MsgRequestRandom defines an sdk.Msg type that supports requesting a random number
@@ -13214,7 +13214,7 @@ MsgRequestRandom defines an sdk.Msg type that supports requesting a random numbe
 
 
 
-<a name="gridmod.random.MsgRequestRandomResponse"></a>
+<a name="irismod.random.MsgRequestRandomResponse"></a>
 
 ### MsgRequestRandomResponse
 MsgRequestRandomResponse defines the Msg/RequestRandom response type
@@ -13230,14 +13230,14 @@ MsgRequestRandomResponse defines the Msg/RequestRandom response type
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.random.Msg"></a>
+<a name="irismod.random.Msg"></a>
 
 ### Msg
 Msg defines the oracle Msg service
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `RequestRandom` | [MsgRequestRandom](#gridmod.random.MsgRequestRandom) | [MsgRequestRandomResponse](#gridmod.random.MsgRequestRandomResponse) | RequestRandom defines a method for requesting a new random number | |
+| `RequestRandom` | [MsgRequestRandom](#irismod.random.MsgRequestRandom) | [MsgRequestRandomResponse](#irismod.random.MsgRequestRandomResponse) | RequestRandom defines a method for requesting a new random number | |
 
  <!-- end services -->
 
@@ -13250,7 +13250,7 @@ Msg defines the oracle Msg service
 
 
 
-<a name="gridmod.record.Content"></a>
+<a name="irismod.record.Content"></a>
 
 ### Content
 Content defines the detailed information for a record
@@ -13268,7 +13268,7 @@ Content defines the detailed information for a record
 
 
 
-<a name="gridmod.record.Record"></a>
+<a name="irismod.record.Record"></a>
 
 ### Record
 Record defines the record standard
@@ -13277,7 +13277,7 @@ Record defines the record standard
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | `tx_hash` | [string](#string) |  |  |
-| `contents` | [Content](#gridmod.record.Content) | repeated |  |
+| `contents` | [Content](#irismod.record.Content) | repeated |  |
 | `creator` | [string](#string) |  |  |
 
 
@@ -13301,7 +13301,7 @@ Record defines the record standard
 
 
 
-<a name="gridmod.record.GenesisState"></a>
+<a name="irismod.record.GenesisState"></a>
 
 ### GenesisState
 GenesisState defines the record module's genesis state
@@ -13309,7 +13309,7 @@ GenesisState defines the record module's genesis state
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `records` | [Record](#gridmod.record.Record) | repeated |  |
+| `records` | [Record](#irismod.record.Record) | repeated |  |
 
 
 
@@ -13332,7 +13332,7 @@ GenesisState defines the record module's genesis state
 
 
 
-<a name="gridmod.record.QueryRecordRequest"></a>
+<a name="irismod.record.QueryRecordRequest"></a>
 
 ### QueryRecordRequest
 QueryRecordRequest is the request type for the Query/Record RPC method
@@ -13347,7 +13347,7 @@ QueryRecordRequest is the request type for the Query/Record RPC method
 
 
 
-<a name="gridmod.record.QueryRecordResponse"></a>
+<a name="irismod.record.QueryRecordResponse"></a>
 
 ### QueryRecordResponse
 QueryRecordResponse is the response type for the Query/Record RPC method
@@ -13355,7 +13355,7 @@ QueryRecordResponse is the response type for the Query/Record RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `record` | [Record](#gridmod.record.Record) |  |  |
+| `record` | [Record](#irismod.record.Record) |  |  |
 
 
 
@@ -13368,14 +13368,14 @@ QueryRecordResponse is the response type for the Query/Record RPC method
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.record.Query"></a>
+<a name="irismod.record.Query"></a>
 
 ### Query
 Query defines the gRPC querier service for record module
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `Record` | [QueryRecordRequest](#gridmod.record.QueryRecordRequest) | [QueryRecordResponse](#gridmod.record.QueryRecordResponse) | Record queries the record by the given record ID | GET|/gridmod/record/records/{record_id}|
+| `Record` | [QueryRecordRequest](#irismod.record.QueryRecordRequest) | [QueryRecordResponse](#irismod.record.QueryRecordResponse) | Record queries the record by the given record ID | GET|/irismod/record/records/{record_id}|
 
  <!-- end services -->
 
@@ -13388,7 +13388,7 @@ Query defines the gRPC querier service for record module
 
 
 
-<a name="gridmod.record.MsgCreateRecord"></a>
+<a name="irismod.record.MsgCreateRecord"></a>
 
 ### MsgCreateRecord
 MsgCreateRecord defines an SDK message for creating a new record
@@ -13396,7 +13396,7 @@ MsgCreateRecord defines an SDK message for creating a new record
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `contents` | [Content](#gridmod.record.Content) | repeated |  |
+| `contents` | [Content](#irismod.record.Content) | repeated |  |
 | `creator` | [string](#string) |  |  |
 
 
@@ -13404,7 +13404,7 @@ MsgCreateRecord defines an SDK message for creating a new record
 
 
 
-<a name="gridmod.record.MsgCreateRecordResponse"></a>
+<a name="irismod.record.MsgCreateRecordResponse"></a>
 
 ### MsgCreateRecordResponse
 MsgCreateRecordResponse defines the Msg/CreateRecord response type
@@ -13425,14 +13425,14 @@ MsgCreateRecordResponse defines the Msg/CreateRecord response type
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.record.Msg"></a>
+<a name="irismod.record.Msg"></a>
 
 ### Msg
 Msg defines the oracle Msg service
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `CreateRecord` | [MsgCreateRecord](#gridmod.record.MsgCreateRecord) | [MsgCreateRecordResponse](#gridmod.record.MsgCreateRecordResponse) | CreateRecord defines a method for creating a new record | |
+| `CreateRecord` | [MsgCreateRecord](#irismod.record.MsgCreateRecord) | [MsgCreateRecordResponse](#irismod.record.MsgCreateRecordResponse) | CreateRecord defines a method for creating a new record | |
 
  <!-- end services -->
 
@@ -13445,7 +13445,7 @@ Msg defines the oracle Msg service
 
 
 
-<a name="gridmod.service.GenesisState"></a>
+<a name="irismod.service.GenesisState"></a>
 
 ### GenesisState
 GenesisState defines the service module's genesis state
@@ -13453,18 +13453,18 @@ GenesisState defines the service module's genesis state
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#gridmod.service.Params) |  |  |
-| `definitions` | [ServiceDefinition](#gridmod.service.ServiceDefinition) | repeated |  |
-| `bindings` | [ServiceBinding](#gridmod.service.ServiceBinding) | repeated |  |
-| `withdraw_addresses` | [GenesisState.WithdrawAddressesEntry](#gridmod.service.GenesisState.WithdrawAddressesEntry) | repeated |  |
-| `request_contexts` | [GenesisState.RequestContextsEntry](#gridmod.service.GenesisState.RequestContextsEntry) | repeated |  |
+| `params` | [Params](#irismod.service.Params) |  |  |
+| `definitions` | [ServiceDefinition](#irismod.service.ServiceDefinition) | repeated |  |
+| `bindings` | [ServiceBinding](#irismod.service.ServiceBinding) | repeated |  |
+| `withdraw_addresses` | [GenesisState.WithdrawAddressesEntry](#irismod.service.GenesisState.WithdrawAddressesEntry) | repeated |  |
+| `request_contexts` | [GenesisState.RequestContextsEntry](#irismod.service.GenesisState.RequestContextsEntry) | repeated |  |
 
 
 
 
 
 
-<a name="gridmod.service.GenesisState.RequestContextsEntry"></a>
+<a name="irismod.service.GenesisState.RequestContextsEntry"></a>
 
 ### GenesisState.RequestContextsEntry
 
@@ -13473,14 +13473,14 @@ GenesisState defines the service module's genesis state
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | `key` | [string](#string) |  |  |
-| `value` | [RequestContext](#gridmod.service.RequestContext) |  |  |
+| `value` | [RequestContext](#irismod.service.RequestContext) |  |  |
 
 
 
 
 
 
-<a name="gridmod.service.GenesisState.WithdrawAddressesEntry"></a>
+<a name="irismod.service.GenesisState.WithdrawAddressesEntry"></a>
 
 ### GenesisState.WithdrawAddressesEntry
 
@@ -13512,7 +13512,7 @@ GenesisState defines the service module's genesis state
 
 
 
-<a name="gridmod.service.QueryBindingRequest"></a>
+<a name="irismod.service.QueryBindingRequest"></a>
 
 ### QueryBindingRequest
 QueryBindingRequest is request type for the Query/Binding RPC method
@@ -13528,7 +13528,7 @@ QueryBindingRequest is request type for the Query/Binding RPC method
 
 
 
-<a name="gridmod.service.QueryBindingResponse"></a>
+<a name="irismod.service.QueryBindingResponse"></a>
 
 ### QueryBindingResponse
 QueryDefinitionResponse is response type for the Query/Binding RPC method
@@ -13536,14 +13536,14 @@ QueryDefinitionResponse is response type for the Query/Binding RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `service_binding` | [ServiceBinding](#gridmod.service.ServiceBinding) |  |  |
+| `service_binding` | [ServiceBinding](#irismod.service.ServiceBinding) |  |  |
 
 
 
 
 
 
-<a name="gridmod.service.QueryBindingsRequest"></a>
+<a name="irismod.service.QueryBindingsRequest"></a>
 
 ### QueryBindingsRequest
 QueryBindingsRequest is request type for the Query/Bindings RPC method
@@ -13560,7 +13560,7 @@ QueryBindingsRequest is request type for the Query/Bindings RPC method
 
 
 
-<a name="gridmod.service.QueryBindingsResponse"></a>
+<a name="irismod.service.QueryBindingsResponse"></a>
 
 ### QueryBindingsResponse
 QueryDefinitionsResponse is response type for the Query/Bindings RPC method
@@ -13568,7 +13568,7 @@ QueryDefinitionsResponse is response type for the Query/Bindings RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `service_bindings` | [ServiceBinding](#gridmod.service.ServiceBinding) | repeated |  |
+| `service_bindings` | [ServiceBinding](#irismod.service.ServiceBinding) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  |  |
 
 
@@ -13576,7 +13576,7 @@ QueryDefinitionsResponse is response type for the Query/Bindings RPC method
 
 
 
-<a name="gridmod.service.QueryDefinitionRequest"></a>
+<a name="irismod.service.QueryDefinitionRequest"></a>
 
 ### QueryDefinitionRequest
 QueryDefinitionRequest is request type for the Query/Definition RPC method
@@ -13591,7 +13591,7 @@ QueryDefinitionRequest is request type for the Query/Definition RPC method
 
 
 
-<a name="gridmod.service.QueryDefinitionResponse"></a>
+<a name="irismod.service.QueryDefinitionResponse"></a>
 
 ### QueryDefinitionResponse
 QueryDefinitionResponse is response type for the Query/Definition RPC method
@@ -13599,14 +13599,14 @@ QueryDefinitionResponse is response type for the Query/Definition RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `service_definition` | [ServiceDefinition](#gridmod.service.ServiceDefinition) |  |  |
+| `service_definition` | [ServiceDefinition](#irismod.service.ServiceDefinition) |  |  |
 
 
 
 
 
 
-<a name="gridmod.service.QueryEarnedFeesRequest"></a>
+<a name="irismod.service.QueryEarnedFeesRequest"></a>
 
 ### QueryEarnedFeesRequest
 QueryEarnedFeesRequest is request type for the Query/EarnedFees RPC method
@@ -13621,7 +13621,7 @@ QueryEarnedFeesRequest is request type for the Query/EarnedFees RPC method
 
 
 
-<a name="gridmod.service.QueryEarnedFeesResponse"></a>
+<a name="irismod.service.QueryEarnedFeesResponse"></a>
 
 ### QueryEarnedFeesResponse
 QueryEarnedFeesResponse is response type for the Query/EarnedFees RPC method
@@ -13636,7 +13636,7 @@ QueryEarnedFeesResponse is response type for the Query/EarnedFees RPC method
 
 
 
-<a name="gridmod.service.QueryParamsRequest"></a>
+<a name="irismod.service.QueryParamsRequest"></a>
 
 ### QueryParamsRequest
 QueryParametersRequest is request type for the Query/Parameters RPC method
@@ -13646,7 +13646,7 @@ QueryParametersRequest is request type for the Query/Parameters RPC method
 
 
 
-<a name="gridmod.service.QueryParamsResponse"></a>
+<a name="irismod.service.QueryParamsResponse"></a>
 
 ### QueryParamsResponse
 QueryParametersResponse is response type for the Query/Parameters RPC method
@@ -13654,7 +13654,7 @@ QueryParametersResponse is response type for the Query/Parameters RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#gridmod.service.Params) |  |  |
+| `params` | [Params](#irismod.service.Params) |  |  |
 | `res` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  |  |
 
 
@@ -13662,7 +13662,7 @@ QueryParametersResponse is response type for the Query/Parameters RPC method
 
 
 
-<a name="gridmod.service.QueryRequestContextRequest"></a>
+<a name="irismod.service.QueryRequestContextRequest"></a>
 
 ### QueryRequestContextRequest
 QueryRequestContextRequest is request type for the Query/RequestContext RPC method
@@ -13677,7 +13677,7 @@ QueryRequestContextRequest is request type for the Query/RequestContext RPC meth
 
 
 
-<a name="gridmod.service.QueryRequestContextResponse"></a>
+<a name="irismod.service.QueryRequestContextResponse"></a>
 
 ### QueryRequestContextResponse
 QueryRequestContextResponse is response type for the Query/RequestContext RPC method
@@ -13685,14 +13685,14 @@ QueryRequestContextResponse is response type for the Query/RequestContext RPC me
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `request_context` | [RequestContext](#gridmod.service.RequestContext) |  |  |
+| `request_context` | [RequestContext](#irismod.service.RequestContext) |  |  |
 
 
 
 
 
 
-<a name="gridmod.service.QueryRequestRequest"></a>
+<a name="irismod.service.QueryRequestRequest"></a>
 
 ### QueryRequestRequest
 QueryRequestRequest is request type for the Query/Request RPC method
@@ -13707,7 +13707,7 @@ QueryRequestRequest is request type for the Query/Request RPC method
 
 
 
-<a name="gridmod.service.QueryRequestResponse"></a>
+<a name="irismod.service.QueryRequestResponse"></a>
 
 ### QueryRequestResponse
 QueryRequestResponse is response type for the Query/Request RPC method
@@ -13715,14 +13715,14 @@ QueryRequestResponse is response type for the Query/Request RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `request` | [Request](#gridmod.service.Request) |  |  |
+| `request` | [Request](#irismod.service.Request) |  |  |
 
 
 
 
 
 
-<a name="gridmod.service.QueryRequestsByReqCtxRequest"></a>
+<a name="irismod.service.QueryRequestsByReqCtxRequest"></a>
 
 ### QueryRequestsByReqCtxRequest
 QueryRequestsByReqCtxRequest is request type for the Query/RequestsByReqCtx RPC method
@@ -13739,7 +13739,7 @@ QueryRequestsByReqCtxRequest is request type for the Query/RequestsByReqCtx RPC 
 
 
 
-<a name="gridmod.service.QueryRequestsByReqCtxResponse"></a>
+<a name="irismod.service.QueryRequestsByReqCtxResponse"></a>
 
 ### QueryRequestsByReqCtxResponse
 QueryRequestsByReqCtxResponse is response type for the Query/RequestsByReqCtx RPC method
@@ -13747,7 +13747,7 @@ QueryRequestsByReqCtxResponse is response type for the Query/RequestsByReqCtx RP
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `requests` | [Request](#gridmod.service.Request) | repeated |  |
+| `requests` | [Request](#irismod.service.Request) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  |  |
 
 
@@ -13755,7 +13755,7 @@ QueryRequestsByReqCtxResponse is response type for the Query/RequestsByReqCtx RP
 
 
 
-<a name="gridmod.service.QueryRequestsRequest"></a>
+<a name="irismod.service.QueryRequestsRequest"></a>
 
 ### QueryRequestsRequest
 QueryRequestsRequest is request type for the Query/Requests RPC method
@@ -13772,7 +13772,7 @@ QueryRequestsRequest is request type for the Query/Requests RPC method
 
 
 
-<a name="gridmod.service.QueryRequestsResponse"></a>
+<a name="irismod.service.QueryRequestsResponse"></a>
 
 ### QueryRequestsResponse
 QueryRequestsResponse is response type for the Query/Requests RPC method
@@ -13780,7 +13780,7 @@ QueryRequestsResponse is response type for the Query/Requests RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `requests` | [Request](#gridmod.service.Request) | repeated |  |
+| `requests` | [Request](#irismod.service.Request) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  |  |
 
 
@@ -13788,7 +13788,7 @@ QueryRequestsResponse is response type for the Query/Requests RPC method
 
 
 
-<a name="gridmod.service.QueryResponseRequest"></a>
+<a name="irismod.service.QueryResponseRequest"></a>
 
 ### QueryResponseRequest
 QueryResponseRequest is request type for the Query/Response RPC method
@@ -13803,7 +13803,7 @@ QueryResponseRequest is request type for the Query/Response RPC method
 
 
 
-<a name="gridmod.service.QueryResponseResponse"></a>
+<a name="irismod.service.QueryResponseResponse"></a>
 
 ### QueryResponseResponse
 QueryResponseResponse is response type for the Query/Response RPC method
@@ -13811,14 +13811,14 @@ QueryResponseResponse is response type for the Query/Response RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `response` | [Response](#gridmod.service.Response) |  |  |
+| `response` | [Response](#irismod.service.Response) |  |  |
 
 
 
 
 
 
-<a name="gridmod.service.QueryResponsesRequest"></a>
+<a name="irismod.service.QueryResponsesRequest"></a>
 
 ### QueryResponsesRequest
 QueryResponsesRequest is request type for the Query/Responses RPC method
@@ -13835,7 +13835,7 @@ QueryResponsesRequest is request type for the Query/Responses RPC method
 
 
 
-<a name="gridmod.service.QueryResponsesResponse"></a>
+<a name="irismod.service.QueryResponsesResponse"></a>
 
 ### QueryResponsesResponse
 QueryResponsesResponse is response type for the Query/Responses RPC method
@@ -13843,7 +13843,7 @@ QueryResponsesResponse is response type for the Query/Responses RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `responses` | [Response](#gridmod.service.Response) | repeated |  |
+| `responses` | [Response](#irismod.service.Response) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  |  |
 
 
@@ -13851,7 +13851,7 @@ QueryResponsesResponse is response type for the Query/Responses RPC method
 
 
 
-<a name="gridmod.service.QuerySchemaRequest"></a>
+<a name="irismod.service.QuerySchemaRequest"></a>
 
 ### QuerySchemaRequest
 QuerySchemaRequest is request type for the Query/Schema RPC method
@@ -13866,7 +13866,7 @@ QuerySchemaRequest is request type for the Query/Schema RPC method
 
 
 
-<a name="gridmod.service.QuerySchemaResponse"></a>
+<a name="irismod.service.QuerySchemaResponse"></a>
 
 ### QuerySchemaResponse
 QuerySchemaResponse is response type for the Query/Schema RPC method
@@ -13881,7 +13881,7 @@ QuerySchemaResponse is response type for the Query/Schema RPC method
 
 
 
-<a name="gridmod.service.QueryWithdrawAddressRequest"></a>
+<a name="irismod.service.QueryWithdrawAddressRequest"></a>
 
 ### QueryWithdrawAddressRequest
 QueryWithdrawAddressRequest is request type for the Query/WithdrawAddress RPC method
@@ -13896,7 +13896,7 @@ QueryWithdrawAddressRequest is request type for the Query/WithdrawAddress RPC me
 
 
 
-<a name="gridmod.service.QueryWithdrawAddressResponse"></a>
+<a name="irismod.service.QueryWithdrawAddressResponse"></a>
 
 ### QueryWithdrawAddressResponse
 QueryWithdrawAddressResponse is response type for the Query/WithdrawAddress RPC method
@@ -13917,26 +13917,26 @@ QueryWithdrawAddressResponse is response type for the Query/WithdrawAddress RPC 
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.service.Query"></a>
+<a name="irismod.service.Query"></a>
 
 ### Query
 Query creates service with iservice as rpc
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `Definition` | [QueryDefinitionRequest](#gridmod.service.QueryDefinitionRequest) | [QueryDefinitionResponse](#gridmod.service.QueryDefinitionResponse) | Definition returns service definition | GET|/gridmod/service/definitions/{service_name}|
-| `Binding` | [QueryBindingRequest](#gridmod.service.QueryBindingRequest) | [QueryBindingResponse](#gridmod.service.QueryBindingResponse) | Binding returns service Binding with service name and provider | GET|/gridmod/service/bindings/{service_name}/{provider}|
-| `Bindings` | [QueryBindingsRequest](#gridmod.service.QueryBindingsRequest) | [QueryBindingsResponse](#gridmod.service.QueryBindingsResponse) | Bindings returns all service Bindings with service name and owner | GET|/gridmod/service/bindings/{service_name}|
-| `WithdrawAddress` | [QueryWithdrawAddressRequest](#gridmod.service.QueryWithdrawAddressRequest) | [QueryWithdrawAddressResponse](#gridmod.service.QueryWithdrawAddressResponse) | WithdrawAddress returns the withdraw address of the binding owner | GET|/gridmod/service/owners/{owner}/withdraw-address|
-| `RequestContext` | [QueryRequestContextRequest](#gridmod.service.QueryRequestContextRequest) | [QueryRequestContextResponse](#gridmod.service.QueryRequestContextResponse) | RequestContext returns the request context | GET|/gridmod/service/contexts/{request_context_id}|
-| `Request` | [QueryRequestRequest](#gridmod.service.QueryRequestRequest) | [QueryRequestResponse](#gridmod.service.QueryRequestResponse) | Request returns the request | GET|/gridmod/service/requests/{request_id}|
-| `Requests` | [QueryRequestsRequest](#gridmod.service.QueryRequestsRequest) | [QueryRequestsResponse](#gridmod.service.QueryRequestsResponse) | Request returns all requests of one service with provider | GET|/gridmod/service/requests/{service_name}/{provider}|
-| `RequestsByReqCtx` | [QueryRequestsByReqCtxRequest](#gridmod.service.QueryRequestsByReqCtxRequest) | [QueryRequestsByReqCtxResponse](#gridmod.service.QueryRequestsByReqCtxResponse) | RequestsByReqCtx returns all requests of one service call batch | GET|/gridmod/service/requests/{request_context_id}/{batch_counter}|
-| `Response` | [QueryResponseRequest](#gridmod.service.QueryResponseRequest) | [QueryResponseResponse](#gridmod.service.QueryResponseResponse) | Response returns the response of request | GET|/gridmod/service/responses/{request_id}|
-| `Responses` | [QueryResponsesRequest](#gridmod.service.QueryResponsesRequest) | [QueryResponsesResponse](#gridmod.service.QueryResponsesResponse) | Responses returns all responses of one service call batch | GET|/gridmod/service/responses/{request_context_id}/{batch_counter}|
-| `EarnedFees` | [QueryEarnedFeesRequest](#gridmod.service.QueryEarnedFeesRequest) | [QueryEarnedFeesResponse](#gridmod.service.QueryEarnedFeesResponse) | EarnedFees returns the earned service fee of one provider | GET|/gridmod/service/fees/{provider}|
-| `Schema` | [QuerySchemaRequest](#gridmod.service.QuerySchemaRequest) | [QuerySchemaResponse](#gridmod.service.QuerySchemaResponse) | Schema returns the schema | GET|/gridmod/service/schemas/{schema_name}|
-| `Params` | [QueryParamsRequest](#gridmod.service.QueryParamsRequest) | [QueryParamsResponse](#gridmod.service.QueryParamsResponse) | Params queries the service parameters | GET|/gridmod/service/params|
+| `Definition` | [QueryDefinitionRequest](#irismod.service.QueryDefinitionRequest) | [QueryDefinitionResponse](#irismod.service.QueryDefinitionResponse) | Definition returns service definition | GET|/irismod/service/definitions/{service_name}|
+| `Binding` | [QueryBindingRequest](#irismod.service.QueryBindingRequest) | [QueryBindingResponse](#irismod.service.QueryBindingResponse) | Binding returns service Binding with service name and provider | GET|/irismod/service/bindings/{service_name}/{provider}|
+| `Bindings` | [QueryBindingsRequest](#irismod.service.QueryBindingsRequest) | [QueryBindingsResponse](#irismod.service.QueryBindingsResponse) | Bindings returns all service Bindings with service name and owner | GET|/irismod/service/bindings/{service_name}|
+| `WithdrawAddress` | [QueryWithdrawAddressRequest](#irismod.service.QueryWithdrawAddressRequest) | [QueryWithdrawAddressResponse](#irismod.service.QueryWithdrawAddressResponse) | WithdrawAddress returns the withdraw address of the binding owner | GET|/irismod/service/owners/{owner}/withdraw-address|
+| `RequestContext` | [QueryRequestContextRequest](#irismod.service.QueryRequestContextRequest) | [QueryRequestContextResponse](#irismod.service.QueryRequestContextResponse) | RequestContext returns the request context | GET|/irismod/service/contexts/{request_context_id}|
+| `Request` | [QueryRequestRequest](#irismod.service.QueryRequestRequest) | [QueryRequestResponse](#irismod.service.QueryRequestResponse) | Request returns the request | GET|/irismod/service/requests/{request_id}|
+| `Requests` | [QueryRequestsRequest](#irismod.service.QueryRequestsRequest) | [QueryRequestsResponse](#irismod.service.QueryRequestsResponse) | Request returns all requests of one service with provider | GET|/irismod/service/requests/{service_name}/{provider}|
+| `RequestsByReqCtx` | [QueryRequestsByReqCtxRequest](#irismod.service.QueryRequestsByReqCtxRequest) | [QueryRequestsByReqCtxResponse](#irismod.service.QueryRequestsByReqCtxResponse) | RequestsByReqCtx returns all requests of one service call batch | GET|/irismod/service/requests/{request_context_id}/{batch_counter}|
+| `Response` | [QueryResponseRequest](#irismod.service.QueryResponseRequest) | [QueryResponseResponse](#irismod.service.QueryResponseResponse) | Response returns the response of request | GET|/irismod/service/responses/{request_id}|
+| `Responses` | [QueryResponsesRequest](#irismod.service.QueryResponsesRequest) | [QueryResponsesResponse](#irismod.service.QueryResponsesResponse) | Responses returns all responses of one service call batch | GET|/irismod/service/responses/{request_context_id}/{batch_counter}|
+| `EarnedFees` | [QueryEarnedFeesRequest](#irismod.service.QueryEarnedFeesRequest) | [QueryEarnedFeesResponse](#irismod.service.QueryEarnedFeesResponse) | EarnedFees returns the earned service fee of one provider | GET|/irismod/service/fees/{provider}|
+| `Schema` | [QuerySchemaRequest](#irismod.service.QuerySchemaRequest) | [QuerySchemaResponse](#irismod.service.QuerySchemaResponse) | Schema returns the schema | GET|/irismod/service/schemas/{schema_name}|
+| `Params` | [QueryParamsRequest](#irismod.service.QueryParamsRequest) | [QueryParamsResponse](#irismod.service.QueryParamsResponse) | Params queries the service parameters | GET|/irismod/service/params|
 
  <!-- end services -->
 
@@ -13949,7 +13949,7 @@ Query creates service with iservice as rpc
 
 
 
-<a name="gridmod.service.MsgBindService"></a>
+<a name="irismod.service.MsgBindService"></a>
 
 ### MsgBindService
 MsgBindService defines an SDK message for binding to an existing service
@@ -13970,7 +13970,7 @@ MsgBindService defines an SDK message for binding to an existing service
 
 
 
-<a name="gridmod.service.MsgBindServiceResponse"></a>
+<a name="irismod.service.MsgBindServiceResponse"></a>
 
 ### MsgBindServiceResponse
 MsgBindServiceResponse defines the Msg/BindService response type
@@ -13980,7 +13980,7 @@ MsgBindServiceResponse defines the Msg/BindService response type
 
 
 
-<a name="gridmod.service.MsgCallService"></a>
+<a name="irismod.service.MsgCallService"></a>
 
 ### MsgCallService
 MsgCallService defines an SDK message to initiate a service request context
@@ -14003,7 +14003,7 @@ MsgCallService defines an SDK message to initiate a service request context
 
 
 
-<a name="gridmod.service.MsgCallServiceResponse"></a>
+<a name="irismod.service.MsgCallServiceResponse"></a>
 
 ### MsgCallServiceResponse
 MsgCallServiceResponse defines the Msg/CallService response type
@@ -14018,7 +14018,7 @@ MsgCallServiceResponse defines the Msg/CallService response type
 
 
 
-<a name="gridmod.service.MsgDefineService"></a>
+<a name="irismod.service.MsgDefineService"></a>
 
 ### MsgDefineService
 MsgDefineService defines an SDK message for defining a new service
@@ -14038,7 +14038,7 @@ MsgDefineService defines an SDK message for defining a new service
 
 
 
-<a name="gridmod.service.MsgDefineServiceResponse"></a>
+<a name="irismod.service.MsgDefineServiceResponse"></a>
 
 ### MsgDefineServiceResponse
 MsgDefineServiceResponse defines the Msg/DefineService response type
@@ -14048,7 +14048,7 @@ MsgDefineServiceResponse defines the Msg/DefineService response type
 
 
 
-<a name="gridmod.service.MsgDisableServiceBinding"></a>
+<a name="irismod.service.MsgDisableServiceBinding"></a>
 
 ### MsgDisableServiceBinding
 MsgDisableServiceBinding defines an SDK message to disable a service binding
@@ -14065,7 +14065,7 @@ MsgDisableServiceBinding defines an SDK message to disable a service binding
 
 
 
-<a name="gridmod.service.MsgDisableServiceBindingResponse"></a>
+<a name="irismod.service.MsgDisableServiceBindingResponse"></a>
 
 ### MsgDisableServiceBindingResponse
 MsgDisableServiceBindingResponse defines the Msg/DisableServiceBinding response type
@@ -14075,7 +14075,7 @@ MsgDisableServiceBindingResponse defines the Msg/DisableServiceBinding response 
 
 
 
-<a name="gridmod.service.MsgEnableServiceBinding"></a>
+<a name="irismod.service.MsgEnableServiceBinding"></a>
 
 ### MsgEnableServiceBinding
 MsgEnableServiceBinding defines an SDK message to enable a service binding
@@ -14093,7 +14093,7 @@ MsgEnableServiceBinding defines an SDK message to enable a service binding
 
 
 
-<a name="gridmod.service.MsgEnableServiceBindingResponse"></a>
+<a name="irismod.service.MsgEnableServiceBindingResponse"></a>
 
 ### MsgEnableServiceBindingResponse
 MsgEnableServiceBindingResponse defines the Msg/EnableServiceBinding response type
@@ -14103,7 +14103,7 @@ MsgEnableServiceBindingResponse defines the Msg/EnableServiceBinding response ty
 
 
 
-<a name="gridmod.service.MsgKillRequestContext"></a>
+<a name="irismod.service.MsgKillRequestContext"></a>
 
 ### MsgKillRequestContext
 MsgKillRequestContext defines an SDK message to terminate a service request
@@ -14119,7 +14119,7 @@ MsgKillRequestContext defines an SDK message to terminate a service request
 
 
 
-<a name="gridmod.service.MsgKillRequestContextResponse"></a>
+<a name="irismod.service.MsgKillRequestContextResponse"></a>
 
 ### MsgKillRequestContextResponse
 MsgKillRequestContextResponse defines the Msg/KillRequestContext response type
@@ -14129,7 +14129,7 @@ MsgKillRequestContextResponse defines the Msg/KillRequestContext response type
 
 
 
-<a name="gridmod.service.MsgPauseRequestContext"></a>
+<a name="irismod.service.MsgPauseRequestContext"></a>
 
 ### MsgPauseRequestContext
 MsgPauseRequestContext defines an SDK message to pause a service request
@@ -14145,7 +14145,7 @@ MsgPauseRequestContext defines an SDK message to pause a service request
 
 
 
-<a name="gridmod.service.MsgPauseRequestContextResponse"></a>
+<a name="irismod.service.MsgPauseRequestContextResponse"></a>
 
 ### MsgPauseRequestContextResponse
 MsgPauseRequestContextResponse defines the Msg/PauseRequestContext response type
@@ -14155,7 +14155,7 @@ MsgPauseRequestContextResponse defines the Msg/PauseRequestContext response type
 
 
 
-<a name="gridmod.service.MsgRefundServiceDeposit"></a>
+<a name="irismod.service.MsgRefundServiceDeposit"></a>
 
 ### MsgRefundServiceDeposit
 MsgRefundServiceDeposit defines an SDK message to refund deposit from a service binding
@@ -14172,7 +14172,7 @@ MsgRefundServiceDeposit defines an SDK message to refund deposit from a service 
 
 
 
-<a name="gridmod.service.MsgRefundServiceDepositResponse"></a>
+<a name="irismod.service.MsgRefundServiceDepositResponse"></a>
 
 ### MsgRefundServiceDepositResponse
 MsgRefundServiceDepositResponse defines the Msg/RefundServiceDeposit response type
@@ -14182,7 +14182,7 @@ MsgRefundServiceDepositResponse defines the Msg/RefundServiceDeposit response ty
 
 
 
-<a name="gridmod.service.MsgRespondService"></a>
+<a name="irismod.service.MsgRespondService"></a>
 
 ### MsgRespondService
 MsgRespondService defines an SDK message to respond a service request
@@ -14200,7 +14200,7 @@ MsgRespondService defines an SDK message to respond a service request
 
 
 
-<a name="gridmod.service.MsgRespondServiceResponse"></a>
+<a name="irismod.service.MsgRespondServiceResponse"></a>
 
 ### MsgRespondServiceResponse
 MsgRespondServiceResponse defines the Msg/RespondService response type
@@ -14210,7 +14210,7 @@ MsgRespondServiceResponse defines the Msg/RespondService response type
 
 
 
-<a name="gridmod.service.MsgSetWithdrawAddress"></a>
+<a name="irismod.service.MsgSetWithdrawAddress"></a>
 
 ### MsgSetWithdrawAddress
 MsgSetWithdrawAddress defines an SDK message to set the withdrawal address for a provider
@@ -14226,7 +14226,7 @@ MsgSetWithdrawAddress defines an SDK message to set the withdrawal address for a
 
 
 
-<a name="gridmod.service.MsgSetWithdrawAddressResponse"></a>
+<a name="irismod.service.MsgSetWithdrawAddressResponse"></a>
 
 ### MsgSetWithdrawAddressResponse
 MsgSetWithdrawAddressResponse defines the Msg/SetWithdrawAddress response type
@@ -14236,7 +14236,7 @@ MsgSetWithdrawAddressResponse defines the Msg/SetWithdrawAddress response type
 
 
 
-<a name="gridmod.service.MsgStartRequestContext"></a>
+<a name="irismod.service.MsgStartRequestContext"></a>
 
 ### MsgStartRequestContext
 MsgStartRequestContext defines an SDK message to resume a service request
@@ -14252,7 +14252,7 @@ MsgStartRequestContext defines an SDK message to resume a service request
 
 
 
-<a name="gridmod.service.MsgStartRequestContextResponse"></a>
+<a name="irismod.service.MsgStartRequestContextResponse"></a>
 
 ### MsgStartRequestContextResponse
 MsgStartRequestContextResponse defines the Msg/StartRequestContext response type
@@ -14262,7 +14262,7 @@ MsgStartRequestContextResponse defines the Msg/StartRequestContext response type
 
 
 
-<a name="gridmod.service.MsgUpdateRequestContext"></a>
+<a name="irismod.service.MsgUpdateRequestContext"></a>
 
 ### MsgUpdateRequestContext
 MsgUpdateRequestContext defines an SDK message to update a service request context
@@ -14283,7 +14283,7 @@ MsgUpdateRequestContext defines an SDK message to update a service request conte
 
 
 
-<a name="gridmod.service.MsgUpdateRequestContextResponse"></a>
+<a name="irismod.service.MsgUpdateRequestContextResponse"></a>
 
 ### MsgUpdateRequestContextResponse
 MsgUpdateRequestContextResponse defines the Msg/UpdateRequestContext response type
@@ -14293,7 +14293,7 @@ MsgUpdateRequestContextResponse defines the Msg/UpdateRequestContext response ty
 
 
 
-<a name="gridmod.service.MsgUpdateServiceBinding"></a>
+<a name="irismod.service.MsgUpdateServiceBinding"></a>
 
 ### MsgUpdateServiceBinding
 MsgUpdateServiceBinding defines an SDK message for updating an existing service binding
@@ -14314,7 +14314,7 @@ MsgUpdateServiceBinding defines an SDK message for updating an existing service 
 
 
 
-<a name="gridmod.service.MsgUpdateServiceBindingResponse"></a>
+<a name="irismod.service.MsgUpdateServiceBindingResponse"></a>
 
 ### MsgUpdateServiceBindingResponse
 MsgUpdateServiceBindingResponse defines the Msg/UpdateServiceBinding response type
@@ -14324,7 +14324,7 @@ MsgUpdateServiceBindingResponse defines the Msg/UpdateServiceBinding response ty
 
 
 
-<a name="gridmod.service.MsgWithdrawEarnedFees"></a>
+<a name="irismod.service.MsgWithdrawEarnedFees"></a>
 
 ### MsgWithdrawEarnedFees
 MsgWithdrawEarnedFees defines an SDK message to withdraw the fees earned by the provider or owner
@@ -14340,7 +14340,7 @@ MsgWithdrawEarnedFees defines an SDK message to withdraw the fees earned by the 
 
 
 
-<a name="gridmod.service.MsgWithdrawEarnedFeesResponse"></a>
+<a name="irismod.service.MsgWithdrawEarnedFeesResponse"></a>
 
 ### MsgWithdrawEarnedFeesResponse
 MsgWithdrawEarnedFeesResponse defines the Msg/WithdrawEarnedFees response type
@@ -14356,27 +14356,27 @@ MsgWithdrawEarnedFeesResponse defines the Msg/WithdrawEarnedFees response type
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.service.Msg"></a>
+<a name="irismod.service.Msg"></a>
 
 ### Msg
 Msg defines the oracle Msg service
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `DefineService` | [MsgDefineService](#gridmod.service.MsgDefineService) | [MsgDefineServiceResponse](#gridmod.service.MsgDefineServiceResponse) | DefineService defines a method for define a new service | |
-| `BindService` | [MsgBindService](#gridmod.service.MsgBindService) | [MsgBindServiceResponse](#gridmod.service.MsgBindServiceResponse) | BindService defines a method for bind a server | |
-| `UpdateServiceBinding` | [MsgUpdateServiceBinding](#gridmod.service.MsgUpdateServiceBinding) | [MsgUpdateServiceBindingResponse](#gridmod.service.MsgUpdateServiceBindingResponse) | UpdateServiceBinding defines a method for update a service binding | |
-| `SetWithdrawAddress` | [MsgSetWithdrawAddress](#gridmod.service.MsgSetWithdrawAddress) | [MsgSetWithdrawAddressResponse](#gridmod.service.MsgSetWithdrawAddressResponse) | SetWithdrawAddress defines a method for setting a withdraw address | |
-| `EnableServiceBinding` | [MsgEnableServiceBinding](#gridmod.service.MsgEnableServiceBinding) | [MsgEnableServiceBindingResponse](#gridmod.service.MsgEnableServiceBindingResponse) | EnableServiceBinding defines a method for enabling a service binding | |
-| `DisableServiceBinding` | [MsgDisableServiceBinding](#gridmod.service.MsgDisableServiceBinding) | [MsgDisableServiceBindingResponse](#gridmod.service.MsgDisableServiceBindingResponse) | DisableServiceBinding defines a method for disabling a service binding | |
-| `RefundServiceDeposit` | [MsgRefundServiceDeposit](#gridmod.service.MsgRefundServiceDeposit) | [MsgRefundServiceDepositResponse](#gridmod.service.MsgRefundServiceDepositResponse) | RefundServiceDeposit defines a method for refunding a fee | |
-| `CallService` | [MsgCallService](#gridmod.service.MsgCallService) | [MsgCallServiceResponse](#gridmod.service.MsgCallServiceResponse) | CallService defines a method for calling a service | |
-| `RespondService` | [MsgRespondService](#gridmod.service.MsgRespondService) | [MsgRespondServiceResponse](#gridmod.service.MsgRespondServiceResponse) | RespondService defines a method for responding a service | |
-| `PauseRequestContext` | [MsgPauseRequestContext](#gridmod.service.MsgPauseRequestContext) | [MsgPauseRequestContextResponse](#gridmod.service.MsgPauseRequestContextResponse) | PauseRequestContext defines a method for pausing a service call | |
-| `StartRequestContext` | [MsgStartRequestContext](#gridmod.service.MsgStartRequestContext) | [MsgStartRequestContextResponse](#gridmod.service.MsgStartRequestContextResponse) | StartRequestContext defines a method for starting a service call | |
-| `KillRequestContext` | [MsgKillRequestContext](#gridmod.service.MsgKillRequestContext) | [MsgKillRequestContextResponse](#gridmod.service.MsgKillRequestContextResponse) | KillRequestContext defines a method for killing a service call | |
-| `UpdateRequestContext` | [MsgUpdateRequestContext](#gridmod.service.MsgUpdateRequestContext) | [MsgUpdateRequestContextResponse](#gridmod.service.MsgUpdateRequestContextResponse) | UpdateRequestContext defines a method for updating a service call | |
-| `WithdrawEarnedFees` | [MsgWithdrawEarnedFees](#gridmod.service.MsgWithdrawEarnedFees) | [MsgWithdrawEarnedFeesResponse](#gridmod.service.MsgWithdrawEarnedFeesResponse) | WithdrawEarnedFees defines a method for Withdrawing a earned fees | |
+| `DefineService` | [MsgDefineService](#irismod.service.MsgDefineService) | [MsgDefineServiceResponse](#irismod.service.MsgDefineServiceResponse) | DefineService defines a method for define a new service | |
+| `BindService` | [MsgBindService](#irismod.service.MsgBindService) | [MsgBindServiceResponse](#irismod.service.MsgBindServiceResponse) | BindService defines a method for bind a server | |
+| `UpdateServiceBinding` | [MsgUpdateServiceBinding](#irismod.service.MsgUpdateServiceBinding) | [MsgUpdateServiceBindingResponse](#irismod.service.MsgUpdateServiceBindingResponse) | UpdateServiceBinding defines a method for update a service binding | |
+| `SetWithdrawAddress` | [MsgSetWithdrawAddress](#irismod.service.MsgSetWithdrawAddress) | [MsgSetWithdrawAddressResponse](#irismod.service.MsgSetWithdrawAddressResponse) | SetWithdrawAddress defines a method for setting a withdraw address | |
+| `EnableServiceBinding` | [MsgEnableServiceBinding](#irismod.service.MsgEnableServiceBinding) | [MsgEnableServiceBindingResponse](#irismod.service.MsgEnableServiceBindingResponse) | EnableServiceBinding defines a method for enabling a service binding | |
+| `DisableServiceBinding` | [MsgDisableServiceBinding](#irismod.service.MsgDisableServiceBinding) | [MsgDisableServiceBindingResponse](#irismod.service.MsgDisableServiceBindingResponse) | DisableServiceBinding defines a method for disabling a service binding | |
+| `RefundServiceDeposit` | [MsgRefundServiceDeposit](#irismod.service.MsgRefundServiceDeposit) | [MsgRefundServiceDepositResponse](#irismod.service.MsgRefundServiceDepositResponse) | RefundServiceDeposit defines a method for refunding a fee | |
+| `CallService` | [MsgCallService](#irismod.service.MsgCallService) | [MsgCallServiceResponse](#irismod.service.MsgCallServiceResponse) | CallService defines a method for calling a service | |
+| `RespondService` | [MsgRespondService](#irismod.service.MsgRespondService) | [MsgRespondServiceResponse](#irismod.service.MsgRespondServiceResponse) | RespondService defines a method for responding a service | |
+| `PauseRequestContext` | [MsgPauseRequestContext](#irismod.service.MsgPauseRequestContext) | [MsgPauseRequestContextResponse](#irismod.service.MsgPauseRequestContextResponse) | PauseRequestContext defines a method for pausing a service call | |
+| `StartRequestContext` | [MsgStartRequestContext](#irismod.service.MsgStartRequestContext) | [MsgStartRequestContextResponse](#irismod.service.MsgStartRequestContextResponse) | StartRequestContext defines a method for starting a service call | |
+| `KillRequestContext` | [MsgKillRequestContext](#irismod.service.MsgKillRequestContext) | [MsgKillRequestContextResponse](#irismod.service.MsgKillRequestContextResponse) | KillRequestContext defines a method for killing a service call | |
+| `UpdateRequestContext` | [MsgUpdateRequestContext](#irismod.service.MsgUpdateRequestContext) | [MsgUpdateRequestContextResponse](#irismod.service.MsgUpdateRequestContextResponse) | UpdateRequestContext defines a method for updating a service call | |
+| `WithdrawEarnedFees` | [MsgWithdrawEarnedFees](#irismod.service.MsgWithdrawEarnedFees) | [MsgWithdrawEarnedFeesResponse](#irismod.service.MsgWithdrawEarnedFeesResponse) | WithdrawEarnedFees defines a method for Withdrawing a earned fees | |
 
  <!-- end services -->
 
@@ -14389,7 +14389,7 @@ Msg defines the oracle Msg service
 
 
 
-<a name="gridmod.token.Params"></a>
+<a name="irismod.token.Params"></a>
 
 ### Params
 Params defines token module's parameters
@@ -14406,7 +14406,7 @@ Params defines token module's parameters
 
 
 
-<a name="gridmod.token.Token"></a>
+<a name="irismod.token.Token"></a>
 
 ### Token
 Token defines a standard for the fungible token
@@ -14444,7 +14444,7 @@ Token defines a standard for the fungible token
 
 
 
-<a name="gridmod.token.GenesisState"></a>
+<a name="irismod.token.GenesisState"></a>
 
 ### GenesisState
 GenesisState defines the token module's genesis state
@@ -14452,8 +14452,8 @@ GenesisState defines the token module's genesis state
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#gridmod.token.Params) |  |  |
-| `tokens` | [Token](#gridmod.token.Token) | repeated |  |
+| `params` | [Params](#irismod.token.Params) |  |  |
+| `tokens` | [Token](#irismod.token.Token) | repeated |  |
 | `burned_coins` | [cosmos.base.v1beta1.Coin](#cosmos.base.v1beta1.Coin) | repeated |  |
 
 
@@ -14477,7 +14477,7 @@ GenesisState defines the token module's genesis state
 
 
 
-<a name="gridmod.token.QueryFeesRequest"></a>
+<a name="irismod.token.QueryFeesRequest"></a>
 
 ### QueryFeesRequest
 QueryFeesRequest is request type for the Query/Fees RPC method
@@ -14492,7 +14492,7 @@ QueryFeesRequest is request type for the Query/Fees RPC method
 
 
 
-<a name="gridmod.token.QueryFeesResponse"></a>
+<a name="irismod.token.QueryFeesResponse"></a>
 
 ### QueryFeesResponse
 QueryFeesResponse is response type for the Query/Fees RPC method
@@ -14509,7 +14509,7 @@ QueryFeesResponse is response type for the Query/Fees RPC method
 
 
 
-<a name="gridmod.token.QueryParamsRequest"></a>
+<a name="irismod.token.QueryParamsRequest"></a>
 
 ### QueryParamsRequest
 QueryParametersRequest is request type for the Query/Parameters RPC method
@@ -14519,7 +14519,7 @@ QueryParametersRequest is request type for the Query/Parameters RPC method
 
 
 
-<a name="gridmod.token.QueryParamsResponse"></a>
+<a name="irismod.token.QueryParamsResponse"></a>
 
 ### QueryParamsResponse
 QueryParametersResponse is response type for the Query/Parameters RPC method
@@ -14527,7 +14527,7 @@ QueryParametersResponse is response type for the Query/Parameters RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#gridmod.token.Params) |  |  |
+| `params` | [Params](#irismod.token.Params) |  |  |
 | `res` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  |  |
 
 
@@ -14535,7 +14535,7 @@ QueryParametersResponse is response type for the Query/Parameters RPC method
 
 
 
-<a name="gridmod.token.QueryTokenRequest"></a>
+<a name="irismod.token.QueryTokenRequest"></a>
 
 ### QueryTokenRequest
 QueryTokenRequest is request type for the Query/Token RPC method
@@ -14550,7 +14550,7 @@ QueryTokenRequest is request type for the Query/Token RPC method
 
 
 
-<a name="gridmod.token.QueryTokenResponse"></a>
+<a name="irismod.token.QueryTokenResponse"></a>
 
 ### QueryTokenResponse
 QueryTokenResponse is response type for the Query/Token RPC method
@@ -14565,7 +14565,7 @@ QueryTokenResponse is response type for the Query/Token RPC method
 
 
 
-<a name="gridmod.token.QueryTokensRequest"></a>
+<a name="irismod.token.QueryTokensRequest"></a>
 
 ### QueryTokensRequest
 QueryTokensRequest is request type for the Query/Tokens RPC method
@@ -14581,7 +14581,7 @@ QueryTokensRequest is request type for the Query/Tokens RPC method
 
 
 
-<a name="gridmod.token.QueryTokensResponse"></a>
+<a name="irismod.token.QueryTokensResponse"></a>
 
 ### QueryTokensResponse
 QueryTokensResponse is response type for the Query/Tokens RPC method
@@ -14597,7 +14597,7 @@ QueryTokensResponse is response type for the Query/Tokens RPC method
 
 
 
-<a name="gridmod.token.QueryTotalBurnRequest"></a>
+<a name="irismod.token.QueryTotalBurnRequest"></a>
 
 ### QueryTotalBurnRequest
 QueryTokenRequest is request type for the Query/TotalBurn RPC method
@@ -14607,7 +14607,7 @@ QueryTokenRequest is request type for the Query/TotalBurn RPC method
 
 
 
-<a name="gridmod.token.QueryTotalBurnResponse"></a>
+<a name="irismod.token.QueryTotalBurnResponse"></a>
 
 ### QueryTotalBurnResponse
 QueryTotalBurnResponse is response type for the Query/TotalBurn RPC method
@@ -14628,18 +14628,18 @@ QueryTotalBurnResponse is response type for the Query/TotalBurn RPC method
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.token.Query"></a>
+<a name="irismod.token.Query"></a>
 
 ### Query
 Query creates service with token as RPC
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `Token` | [QueryTokenRequest](#gridmod.token.QueryTokenRequest) | [QueryTokenResponse](#gridmod.token.QueryTokenResponse) | Token returns token with token name | GET|/gridmod/token/tokens/{denom}|
-| `Tokens` | [QueryTokensRequest](#gridmod.token.QueryTokensRequest) | [QueryTokensResponse](#gridmod.token.QueryTokensResponse) | Tokens returns the token list | GET|/gridmod/token/tokens|
-| `Fees` | [QueryFeesRequest](#gridmod.token.QueryFeesRequest) | [QueryFeesResponse](#gridmod.token.QueryFeesResponse) | Fees returns the fees to issue or mint a token | GET|/gridmod/token/tokens/{symbol}/fees|
-| `Params` | [QueryParamsRequest](#gridmod.token.QueryParamsRequest) | [QueryParamsResponse](#gridmod.token.QueryParamsResponse) | Params queries the token parameters | GET|/gridmod/token/params|
-| `TotalBurn` | [QueryTotalBurnRequest](#gridmod.token.QueryTotalBurnRequest) | [QueryTotalBurnResponse](#gridmod.token.QueryTotalBurnResponse) | TotalBurn queries all the burnt coins | GET|/gridmod/token/total_burn|
+| `Token` | [QueryTokenRequest](#irismod.token.QueryTokenRequest) | [QueryTokenResponse](#irismod.token.QueryTokenResponse) | Token returns token with token name | GET|/irismod/token/tokens/{denom}|
+| `Tokens` | [QueryTokensRequest](#irismod.token.QueryTokensRequest) | [QueryTokensResponse](#irismod.token.QueryTokensResponse) | Tokens returns the token list | GET|/irismod/token/tokens|
+| `Fees` | [QueryFeesRequest](#irismod.token.QueryFeesRequest) | [QueryFeesResponse](#irismod.token.QueryFeesResponse) | Fees returns the fees to issue or mint a token | GET|/irismod/token/tokens/{symbol}/fees|
+| `Params` | [QueryParamsRequest](#irismod.token.QueryParamsRequest) | [QueryParamsResponse](#irismod.token.QueryParamsResponse) | Params queries the token parameters | GET|/irismod/token/params|
+| `TotalBurn` | [QueryTotalBurnRequest](#irismod.token.QueryTotalBurnRequest) | [QueryTotalBurnResponse](#irismod.token.QueryTotalBurnResponse) | TotalBurn queries all the burnt coins | GET|/irismod/token/total_burn|
 
  <!-- end services -->
 
@@ -14652,7 +14652,7 @@ Query creates service with token as RPC
 
 
 
-<a name="gridmod.token.MsgBurnToken"></a>
+<a name="irismod.token.MsgBurnToken"></a>
 
 ### MsgBurnToken
 MsgBurnToken defines an SDK message for burning some tokens
@@ -14669,7 +14669,7 @@ MsgBurnToken defines an SDK message for burning some tokens
 
 
 
-<a name="gridmod.token.MsgBurnTokenResponse"></a>
+<a name="irismod.token.MsgBurnTokenResponse"></a>
 
 ### MsgBurnTokenResponse
 MsgBurnTokenResponse defines the Msg/BurnToken response type
@@ -14679,7 +14679,7 @@ MsgBurnTokenResponse defines the Msg/BurnToken response type
 
 
 
-<a name="gridmod.token.MsgEditToken"></a>
+<a name="irismod.token.MsgEditToken"></a>
 
 ### MsgEditToken
 MsgEditToken defines an SDK message for editing a new token
@@ -14698,7 +14698,7 @@ MsgEditToken defines an SDK message for editing a new token
 
 
 
-<a name="gridmod.token.MsgEditTokenResponse"></a>
+<a name="irismod.token.MsgEditTokenResponse"></a>
 
 ### MsgEditTokenResponse
 MsgEditTokenResponse defines the Msg/EditToken response type
@@ -14708,7 +14708,7 @@ MsgEditTokenResponse defines the Msg/EditToken response type
 
 
 
-<a name="gridmod.token.MsgIssueToken"></a>
+<a name="irismod.token.MsgIssueToken"></a>
 
 ### MsgIssueToken
 MsgIssueToken defines an SDK message for issuing a new token
@@ -14730,7 +14730,7 @@ MsgIssueToken defines an SDK message for issuing a new token
 
 
 
-<a name="gridmod.token.MsgIssueTokenResponse"></a>
+<a name="irismod.token.MsgIssueTokenResponse"></a>
 
 ### MsgIssueTokenResponse
 MsgIssueTokenResponse defines the Msg/IssueToken response type
@@ -14740,7 +14740,7 @@ MsgIssueTokenResponse defines the Msg/IssueToken response type
 
 
 
-<a name="gridmod.token.MsgMintToken"></a>
+<a name="irismod.token.MsgMintToken"></a>
 
 ### MsgMintToken
 MsgMintToken defines an SDK message for minting a new token
@@ -14758,7 +14758,7 @@ MsgMintToken defines an SDK message for minting a new token
 
 
 
-<a name="gridmod.token.MsgMintTokenResponse"></a>
+<a name="irismod.token.MsgMintTokenResponse"></a>
 
 ### MsgMintTokenResponse
 MsgMintTokenResponse defines the Msg/MintToken response type
@@ -14768,7 +14768,7 @@ MsgMintTokenResponse defines the Msg/MintToken response type
 
 
 
-<a name="gridmod.token.MsgTransferTokenOwner"></a>
+<a name="irismod.token.MsgTransferTokenOwner"></a>
 
 ### MsgTransferTokenOwner
 MsgTransferTokenOwner defines an SDK message for transferring the token owner
@@ -14785,7 +14785,7 @@ MsgTransferTokenOwner defines an SDK message for transferring the token owner
 
 
 
-<a name="gridmod.token.MsgTransferTokenOwnerResponse"></a>
+<a name="irismod.token.MsgTransferTokenOwnerResponse"></a>
 
 ### MsgTransferTokenOwnerResponse
 MsgTransferTokenOwnerResponse defines the Msg/TransferTokenOwner response type
@@ -14801,18 +14801,18 @@ MsgTransferTokenOwnerResponse defines the Msg/TransferTokenOwner response type
  <!-- end HasExtensions -->
 
 
-<a name="gridmod.token.Msg"></a>
+<a name="irismod.token.Msg"></a>
 
 ### Msg
 Msg defines the oracle Msg service
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `IssueToken` | [MsgIssueToken](#gridmod.token.MsgIssueToken) | [MsgIssueTokenResponse](#gridmod.token.MsgIssueTokenResponse) | IssueToken defines a method for issuing a new token | |
-| `EditToken` | [MsgEditToken](#gridmod.token.MsgEditToken) | [MsgEditTokenResponse](#gridmod.token.MsgEditTokenResponse) | EditToken defines a method for editing a token | |
-| `MintToken` | [MsgMintToken](#gridmod.token.MsgMintToken) | [MsgMintTokenResponse](#gridmod.token.MsgMintTokenResponse) | MintToken defines a method for minting some tokens | |
-| `BurnToken` | [MsgBurnToken](#gridmod.token.MsgBurnToken) | [MsgBurnTokenResponse](#gridmod.token.MsgBurnTokenResponse) | BurnToken defines a method for burning some tokens | |
-| `TransferTokenOwner` | [MsgTransferTokenOwner](#gridmod.token.MsgTransferTokenOwner) | [MsgTransferTokenOwnerResponse](#gridmod.token.MsgTransferTokenOwnerResponse) | TransferTokenOwner defines a method for minting some tokens | |
+| `IssueToken` | [MsgIssueToken](#irismod.token.MsgIssueToken) | [MsgIssueTokenResponse](#irismod.token.MsgIssueTokenResponse) | IssueToken defines a method for issuing a new token | |
+| `EditToken` | [MsgEditToken](#irismod.token.MsgEditToken) | [MsgEditTokenResponse](#irismod.token.MsgEditTokenResponse) | EditToken defines a method for editing a token | |
+| `MintToken` | [MsgMintToken](#irismod.token.MsgMintToken) | [MsgMintTokenResponse](#irismod.token.MsgMintTokenResponse) | MintToken defines a method for minting some tokens | |
+| `BurnToken` | [MsgBurnToken](#irismod.token.MsgBurnToken) | [MsgBurnTokenResponse](#irismod.token.MsgBurnTokenResponse) | BurnToken defines a method for burning some tokens | |
+| `TransferTokenOwner` | [MsgTransferTokenOwner](#irismod.token.MsgTransferTokenOwner) | [MsgTransferTokenOwnerResponse](#irismod.token.MsgTransferTokenOwnerResponse) | TransferTokenOwner defines a method for minting some tokens | |
 
  <!-- end services -->
 
