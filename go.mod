@@ -1,4 +1,4 @@
-module github.com/irisnet/irishub
+module github.com/gridiron-zone/gridiron
 
 go 1.18
 

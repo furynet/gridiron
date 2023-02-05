@@ -7,9 +7,9 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	minttestutil "github.com/irisnet/irishub/modules/mint/client/testutil"
-	minttypes "github.com/irisnet/irishub/modules/mint/types"
-	"github.com/irisnet/irishub/simapp"
+	minttestutil "github.com/gridiron-zone/gridiron/modules/mint/client/testutil"
+	minttypes "github.com/gridiron-zone/gridiron/modules/mint/types"
+	"github.com/gridiron-zone/gridiron/simapp"
 )
 
 type IntegrationTestSuite struct {

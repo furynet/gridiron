@@ -1,25 +1,25 @@
 # Oracle
 
-Oracle module allows you to manage the feed on IRIS Hub
+Oracle module allows you to manage the feed on GRID Hub
 
 ## Available Commands
 
 | Name                              | Description                                                                          |
 | --------------------------------- | ------------------------------------------------------------------------------------ |
-| [create](#iris-tx-oracle-create)  | Create a new feed, the feed will be in "paused" state                                |
-| [start](#iris-tx-oracle-start)    | Start a feed in "paused" state                                                       |
-| [pause](#iris-tx-oracle-pause)    | Pause a feed in "running" state                                                      |
-| [edit](#iris-tx-oracle-edit)      | Modify the feed information and update service invocation parameters by feed creator |
-| [feed](#iris-query-oracle-feed)   | Query the feed definition                                                            |
-| [feeds](#iris-query-oracle-feeds) | Query a group of feed definition                                                     |
-| [value](#iris-query-oracle-value) | Query the feed result                                                                |
+| [create](#grid-tx-oracle-create)  | Create a new feed, the feed will be in "paused" state                                |
+| [start](#grid-tx-oracle-start)    | Start a feed in "paused" state                                                       |
+| [pause](#grid-tx-oracle-pause)    | Pause a feed in "running" state                                                      |
+| [edit](#grid-tx-oracle-edit)      | Modify the feed information and update service invocation parameters by feed creator |
+| [feed](#grid-query-oracle-feed)   | Query the feed definition                                                            |
+| [feeds](#grid-query-oracle-feeds) | Query a group of feed definition                                                     |
+| [value](#grid-query-oracle-value) | Query the feed result                                                                |
 
-## iris tx oracle create
+## grid tx oracle create
 
 This command is used to create a new feed, the feed will be in "paused" state.
 
 ```bash
-iris tx oracle create [flags]
+grid tx oracle create [flags]
 ```
 
 **Flags:**
@@ -42,58 +42,58 @@ iris tx oracle create [flags]
 ### Create a new feed
 
 ```bash
-iris tx oracle create \
+grid tx oracle create \
     --feed-name="test-feed" \
     --latest-history=10 \
     --service-name="test-service" \
     --input=<request-data> \
     --providers=<provide1_address>,<provider2_address> \
-    --service-fee-cap=1iris \
+    --service-fee-cap=1grid \
     --timeout=2 \
     --frequency=10 \
     --total=10 \
     --threshold=1 \
     --aggregate-func="avg" \
     --value-json-path="high" \
-    --chain-id=irishub \
+    --chain-id=gridiron \
     --from=node0 \
-    --fees=0.3iris
+    --fees=0.3grid
 ```
 
-## iris tx oracle start
+## grid tx oracle start
 
 This command is used to start a feed in "paused" state
 
 ```bash
-iris tx oracle start [feed-name] [flags]
+grid tx oracle start [feed-name] [flags]
 ```
 
 ### Start a "paused" feed
 
 ```bash
-iris tx oracle start test-feed --chain-id=irishub --from=node0 --fees=0.3iris
+grid tx oracle start test-feed --chain-id=gridiron --from=node0 --fees=0.3grid
 ```
 
-## iris tx oracle pause
+## grid tx oracle pause
 
 This command is used to pause a feed in "running" state
 
 ```bash
-iris tx oracle pause [feed-name] [flags]
+grid tx oracle pause [feed-name] [flags]
 ```
 
 ### Pause a "running" feed
 
 ```bash
-iris tx oracle pause test-feed --chain-id=irishub --from=node0 --fees=0.3iris
+grid tx oracle pause test-feed --chain-id=gridiron --from=node0 --fees=0.3grid
 ```
 
-## iris tx oracle edit
+## grid tx oracle edit
 
-This command is used to edit an existing feed on IRIS Hub.
+This command is used to edit an existing feed on GRID Hub.
 
 ```bash
-iris tx oracle edit [feed-name] [flags]
+grid tx oracle edit [feed-name] [flags]
 ```
 
 **Flags:**
@@ -112,29 +112,29 @@ iris tx oracle edit [feed-name] [flags]
 ### Edit an existed feed
 
 ```bash
-iris tx oracle edit test-feed --chain-id=irishub --from=node0 --fees=0.3iris --latest-history=5
+grid tx oracle edit test-feed --chain-id=gridiron --from=node0 --fees=0.3grid --latest-history=5
 ```
 
-## iris query oracle feed
+## grid query oracle feed
 
 This command is used to query a feed
 
 ```bash
-iris query oracle feed [feed-name] [flags]
+grid query oracle feed [feed-name] [flags]
 ```
 
 ### Query an existed feed
 
 ```bash
-iris query oracle feed test-feed
+grid query oracle feed test-feed
 ```
 
-## iris query oracle feeds
+## grid query oracle feeds
 
 This command is used to query a group of feed
 
 ```bash
-iris query oracle feeds [flags]
+grid query oracle feeds [flags]
 ```
 
 **Flags:**
@@ -146,13 +146,13 @@ iris query oracle feeds [flags]
 ### Query a group of feed
 
 ```bash
-iris query oracle feeds --state=running
+grid query oracle feeds --state=running
 ```
 
-## iris query oracle value
+## grid query oracle value
 
 This command is used to query the result of a specified feed
 
 ```bash
-iris query oracle value test-feed
+grid query oracle value test-feed
 ```

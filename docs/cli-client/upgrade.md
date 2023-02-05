@@ -6,17 +6,17 @@ This module provides the basic functions of software version upgrade.
 
 | Name                                                                            | Description                                           |
 | ------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| [software-upgrade](#iris-tx-gov-submit-proposal-software-upgrade)               | Submit a software upgrade proposal                    |
-| [cancel-software-upgrade](#iris-tx-gov-submit-proposal-cancel-software-upgrade) | Cancel the current upgrade proposal                   |
-| [plan](#iris-query-upgrade-plan)                                                | Query the software upgrade plan currently in progress |
-| [applied](#iris-query-upgrade-applied)                                          | Query the executed software upgrade plan              |
+| [software-upgrade](#grid-tx-gov-submit-proposal-software-upgrade)               | Submit a software upgrade proposal                    |
+| [cancel-software-upgrade](#grid-tx-gov-submit-proposal-cancel-software-upgrade) | Cancel the current upgrade proposal                   |
+| [plan](#grid-query-upgrade-plan)                                                | Query the software upgrade plan currently in progress |
+| [applied](#grid-query-upgrade-applied)                                          | Query the executed software upgrade plan              |
 
-## iris tx gov submit-proposal software-upgrade
+## grid tx gov submit-proposal software-upgrade
 
 Initiate a software upgrade proposal through the `Gov` module.
 
 ```bash
-iris tx gov submit-proposal software-upgrade <plan-name> [flags]
+grid tx gov submit-proposal software-upgrade <plan-name> [flags]
 ```
 
 **Flags:**
@@ -36,19 +36,19 @@ If you need to support [cosmovisor](#https://github.com/cosmos/cosmos-sdk/tree/m
 ```json
 {
     "binaries": {
-        "linux/amd64":"https://example.com/irishub.zip?checksum=sha256:aec070645fe53ee3b3763059376134f058cc337247c978add178b6ccdfb0019f"
+        "linux/amd64":"https://example.com/gridiron.zip?checksum=sha256:aec070645fe53ee3b3763059376134f058cc337247c978add178b6ccdfb0019f"
     }
 }
 ```
 
 :::
 
-## iris tx gov submit-proposal cancel-software-upgrade
+## grid tx gov submit-proposal cancel-software-upgrade
 
 Submit cancellation of the currently ongoing software upgrade proposal through the `Gov` module.
 
 ```bash
-iris tx gov submit-proposal cancel-software-upgrade [flags]
+grid tx gov submit-proposal cancel-software-upgrade [flags]
 ```
 
 **Flags:**
@@ -59,18 +59,18 @@ iris tx gov submit-proposal cancel-software-upgrade [flags]
 | --title         | string |          |         | title of proposal       |
 | --description   | string |          |         | description of proposal |
 
-## iris query upgrade plan
+## grid query upgrade plan
 
 Query the currently ongoing software upgrade plan.
 
 ```bash
-iris query upgrade plan [flags]
+grid query upgrade plan [flags]
 ```
 
-## iris query upgrade applied
+## grid query upgrade applied
 
 Query the software upgrade plan that has been executed recently.
 
 ```bash
-iris query upgrade applied <upgrade-name>
+grid query upgrade applied <upgrade-name>
 ```

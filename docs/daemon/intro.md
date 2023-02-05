@@ -4,11 +4,11 @@ order: 1
 
 # Introduction
 
-The `iris` executable program is the entry point for running an IRIShub node. All the validator nodes and full nodes need to install the `iris` and launching the daemon to join the IRIShub network. You can also use `iris` to start your own test network locally.
+The `grid` executable program is the entry point for running an GRIDhub node. All the validator nodes and full nodes need to install the `grid` and launching the daemon to join the GRIDhub network. You can also use `grid` to start your own test network locally.
 
 ## Hardware Requeirment
 
-It's recommended that you run irishub nodes on Linux Server.
+It's recommended that you run gridiron nodes on Linux Server.
 
 ### Minimum Requeirment
 
@@ -21,13 +21,13 @@ It's recommended that you run irishub nodes on Linux Server.
 
 ## Home Directory
 
-The home directory is the working directory of the iris node. The home directory contains all the configuration information and all the data that the node runs.
+The home directory is the working directory of the grid node. The home directory contains all the configuration information and all the data that the node runs.
 
-In the `iris` command, you can specify the home directory of the node by using flag `--home`. If you run multiple nodes on the same machine, you need to specify different home directories for them. If the `--home` flag is not specified in the iris command, the default value `$HOME/.iris` is used as the home directory.
+In the `grid` command, you can specify the home directory of the node by using flag `--home`. If you run multiple nodes on the same machine, you need to specify different home directories for them. If the `--home` flag is not specified in the grid command, the default value `$HOME/.grid` is used as the home directory.
 
-The `iris init` command is responsible for initializing the specified `--home` directory and creating the default configuration files. Except the `iris init` command, the home directory used by any other `iris` sub commands must be initialized, otherwise an error will be reported.
+The `grid init` command is responsible for initializing the specified `--home` directory and creating the default configuration files. Except the `grid init` command, the home directory used by any other `grid` sub commands must be initialized, otherwise an error will be reported.
 
-The data of the IRIShub node is stored in the `data` directory of the home, including blockchain data, application layer data, and index data.
+The data of the GRIDhub node is stored in the `data` directory of the home, including blockchain data, application layer data, and index data.
 
 All configuration files are stored in the `<home-dir>/config` directory:
 
@@ -37,7 +37,7 @@ genesis.json defines the genesis block data, which specifies the system paramete
 
 ### node_key.json
 
-node_key.json is used to store the node's key. The node-id queried by `iris tendermint show-node-id` is derived by the key, which is used to indicate the unique identity of the node. It is used in p2p connection.
+node_key.json is used to store the node's key. The node-id queried by `grid tendermint show-node-id` is derived by the key, which is used to indicate the unique identity of the node. It is used in p2p connection.
 
 ### priv_validator.json
 
@@ -49,4 +49,4 @@ config.toml is the non-consensus configuration of the node. Different nodes can 
 
 ### app.toml
 
-app.toml provides base configuration, telemetry configuration, API configuration, gRPC configuration and state sync configuration for IRIShub.
+app.toml provides base configuration, telemetry configuration, API configuration, gRPC configuration and state sync configuration for GRIDhub.

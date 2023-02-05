@@ -5,8 +5,8 @@ import (
 
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	migratetibc "github.com/irisnet/irishub/migrate/tibc"
-	"github.com/irisnet/irishub/simapp"
+	migratetibc "github.com/gridiron-zone/gridiron/migrate/tibc"
+	"github.com/gridiron-zone/gridiron/simapp"
 )
 
 func TestLoadClient(t *testing.T) {

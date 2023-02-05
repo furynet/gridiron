@@ -10,8 +10,8 @@ package rest_test
 // 	"github.com/cosmos/cosmos-sdk/testutil/network"
 // 	"github.com/cosmos/cosmos-sdk/types/rest"
 
-// 	minttypes "github.com/irisnet/irishub/modules/mint/types"
-// 	"github.com/irisnet/irishub/simapp"
+// 	minttypes "github.com/gridiron-zone/gridiron/modules/mint/types"
+// 	"github.com/gridiron-zone/gridiron/simapp"
 // )
 
 // type IntegrationTestSuite struct {
@@ -47,7 +47,7 @@ package rest_test
 // 	val := s.network.Validators[0]
 // 	baseURL := val.APIAddress
 // 	//------test GetCmdQueryParams()-------------
-// 	url := fmt.Sprintf("%s/irishub/mint/params", baseURL)
+// 	url := fmt.Sprintf("%s/gridiron/mint/params", baseURL)
 // 	resp, err := rest.GetRequest(url)
 // 	respType := proto.Message(&minttypes.QueryParamsResponse{})
 // 	s.Require().NoError(err)

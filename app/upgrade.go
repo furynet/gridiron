@@ -56,17 +56,17 @@ import (
 	tibcclienttypes "github.com/bianjieai/tibc-go/modules/tibc/core/02-client/types"
 	tibchost "github.com/bianjieai/tibc-go/modules/tibc/core/24-host"
 
-	migratehtlc "github.com/irisnet/irishub/migrate/htlc"
-	migrateservice "github.com/irisnet/irishub/migrate/service"
-	migratetibc "github.com/irisnet/irishub/migrate/tibc"
-	"github.com/irisnet/irishub/modules/guardian"
-	guardiantypes "github.com/irisnet/irishub/modules/guardian/types"
-	"github.com/irisnet/irishub/modules/mint"
-	minttypes "github.com/irisnet/irishub/modules/mint/types"
+	migratehtlc "github.com/gridiron-zone/gridiron/migrate/htlc"
+	migrateservice "github.com/gridiron-zone/gridiron/migrate/service"
+	migratetibc "github.com/gridiron-zone/gridiron/migrate/tibc"
+	"github.com/gridiron-zone/gridiron/modules/guardian"
+	guardiantypes "github.com/gridiron-zone/gridiron/modules/guardian/types"
+	"github.com/gridiron-zone/gridiron/modules/mint"
+	minttypes "github.com/gridiron-zone/gridiron/modules/mint/types"
 )
 
 // RegisterUpgradePlan register a handler of upgrade plan
-func (app *IrisApp) RegisterUpgradePlan(cfg module.Configurator) {
+func (app *GridApp) RegisterUpgradePlan(cfg module.Configurator) {
 	app.RegisterUpgradeHandler(
 		"v1.1", &store.StoreUpgrades{},
 		func(ctx sdk.Context, plan sdkupgrade.Plan, fromVM module.VersionMap) (module.VersionMap, error) {
@@ -96,7 +96,7 @@ func (app *IrisApp) RegisterUpgradePlan(cfg module.Configurator) {
 				}},
 			)
 			tibcclienttypes.SetDefaultGenesisState(tibcclienttypes.GenesisState{
-				NativeChainName: "irishub-mainnet",
+				NativeChainName: "gridiron-mainnet",
 			})
 
 			if err := migratetibc.CreateClient(ctx,

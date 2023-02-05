@@ -1,12 +1,12 @@
 #
-# Build image: docker build -t irisnet/irishub .
+# Build image: docker build -t gridiron-zone/gridiron .
 #
 FROM golang:1.18-alpine3.16 as builder
 
 # Set up dependencies
 ENV PACKAGES make gcc git libc-dev bash linux-headers eudev-dev
 
-WORKDIR /irishub
+WORKDIR /gridiron
 
 # Add source files
 COPY . .
@@ -27,4 +27,4 @@ EXPOSE 26657
 # metrics port
 EXPOSE 26660
 
-COPY --from=builder /irishub/build/ /usr/local/bin/
+COPY --from=builder /gridiron/build/ /usr/local/bin/

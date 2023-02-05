@@ -14,7 +14,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/input"
 	"github.com/cosmos/cosmos-sdk/client/keys"
 
-	"github.com/irisnet/irishub/keystore"
+	"github.com/gridiron-zone/gridiron/keystore"
 )
 
 // Commands registers a sub-tree of commands to interact with

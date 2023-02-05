@@ -6,21 +6,21 @@ Auth module is responsible for specifying the base transaction and account types
 
 | Name                                | Description                       |
 | ----------------------------------- | --------------------------------- |
-| [account](#iris-query-auth-account) | Query for account by address      |
-| [params](#iris-query-auth-params)   | Query the current auth parameters |
+| [account](#grid-query-auth-account) | Query for account by address      |
+| [params](#grid-query-auth-params)   | Query the current auth parameters |
 
-### iris query auth account
+### grid query auth account
 
 Query for account by address.
 
 ```bash
-iris query auth account [flags]
+grid query auth account [flags]
 ```
 
-### iris query auth params
+### grid query auth params
 
 Query the current auth parameters.
 
 ```bash
-iris query auth params [flags]
+grid query auth params [flags]
 ```

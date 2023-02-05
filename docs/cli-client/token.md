@@ -1,35 +1,35 @@
 # Token
 
-Token module allows you to manage assets on IRIS Hub
+Token module allows you to manage assets on GRID Hub
 
 ## Available Commands
 
 | Name                                       | Description                                |
 | ------------------------------------------ | ------------------------------------------ |
-| [issue](#iris-tx-token-issue)              | Issue a new token                          |
-| [edit](#iris-tx-token-edit)                | Edit an existing token                     |
-| [transfer](#iris-tx-token-transfer)        | Transfer the ownership of a token          |
-| [mint](#iris-tx-token-mint)                | Mint tokens to a specified address         |
-| [burn](#iris-tx-token-burn)                | Burn some tokens                           |
-| [token](#iris-query-token-token)           | Query a token by symbol                    |
-| [tokens](#iris-query-token-tokens)         | Query tokens by owner                      |
-| [fee](#iris-query-token-fee)               | Query the token related fees               |
-| [params](#iris-query-token-params)         | Query the token related params             |
-| [total-burn](#iris-query-token-total-burn) | Query the total amount of all burn tokens. |
+| [issue](#grid-tx-token-issue)              | Issue a new token                          |
+| [edit](#grid-tx-token-edit)                | Edit an existing token                     |
+| [transfer](#grid-tx-token-transfer)        | Transfer the ownership of a token          |
+| [mint](#grid-tx-token-mint)                | Mint tokens to a specified address         |
+| [burn](#grid-tx-token-burn)                | Burn some tokens                           |
+| [token](#grid-query-token-token)           | Query a token by symbol                    |
+| [tokens](#grid-query-token-tokens)         | Query tokens by owner                      |
+| [fee](#grid-query-token-fee)               | Query the token related fees               |
+| [params](#grid-query-token-params)         | Query the token related params             |
+| [total-burn](#grid-query-token-total-burn) | Query the total amount of all burn tokens. |
 
-## iris tx token issue
+## grid tx token issue
 
 Issue a new token
 
 ```bash
-iris tx token issue [flags]
+grid tx token issue [flags]
 ```
 
 **Flags:**
 
 | Name, shorthand  | Type    | Required | Default       | Description                                                                                                                    |
 | ---------------- | ------- | -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| --name           | string  | Yes      |               | Name of the newly issued token, limited to 32 unicode characters, e.g. "IRIS Network"                                          |
+| --name           | string  | Yes      |               | Name of the newly issued token, limited to 32 unicode characters, e.g. "GRID Network"                                          |
 | --symbol         | string  | Yes      |               | The symbol of the token, length between 3 and 8, alphanumeric characters beginning with alpha, case insensitive                |
 | --initial-supply | uint64  | Yes      |               | The initial supply of this token. The amount before boosting should not exceed 100 billion.                                    |
 | --max-supply     | uint64  |          | 1000000000000 | The hard cap of this token, total supply can not exceed max supply. The amount before boosting should not exceed 1000 billion. |
@@ -40,7 +40,7 @@ iris tx token issue [flags]
 ### Issue a token
 
 ```bash
-iris tx token issue \
+grid tx token issue \
     --name="Kitty Token" \
     --symbol="kitty" \
     --min-unit="kitty" \
@@ -55,27 +55,27 @@ iris tx token issue \
 
 ### Send tokens
 
-You can send any tokens you have just like [sending iris](./bank.md#iris-tx-bank-send)
+You can send any tokens you have just like [sending grid](./bank.md#grid-tx-bank-send)
 
 #### Send tokens
 
 ```bash
-iris tx bank send [from_key_or_address] [to_address] [amount] [flags]
+grid tx bank send [from_key_or_address] [to_address] [amount] [flags]
 ```
 
-## iris tx token edit
+## grid tx token edit
 
 Edit an existing token
 
 ```bash
-iris tx token edit [symbol] [flags]
+grid tx token edit [symbol] [flags]
 ```
 
 **Flags:**
 
 | Name         | Type   | Required | Default | Description                                       |
 | ------------ | ------ | -------- | ------- | ------------------------------------------------- |
-| --name       | string |          |         | The token name, e.g. IRIS Network                 |
+| --name       | string |          |         | The token name, e.g. GRID Network                 |
 | --max-supply | uint64 |          | 0       | The max supply of the token                       |
 | --mintable   | bool   |          | false   | Whether the token can be minted, default to false |
 
@@ -84,15 +84,15 @@ iris tx token edit [symbol] [flags]
 ### Edit Token
 
 ```bash
-iris tx token edit <symbol> --name="Cat Token" --max-supply=100000000000 --mintable=true --from=<key-name> --chain-id=<chain-id> --fees=<fee>
+grid tx token edit <symbol> --name="Cat Token" --max-supply=100000000000 --mintable=true --from=<key-name> --chain-id=<chain-id> --fees=<fee>
 ```
 
-## iris tx token transfer
+## grid tx token transfer
 
 Transfer the ownership of a token
 
 ```bash
-iris tx token transfer [symbol] [flags]
+grid tx token transfer [symbol] [flags]
 ```
 
 **Flags:**
@@ -104,15 +104,15 @@ iris tx token transfer [symbol] [flags]
 ### Transfer Token Owner
 
 ```bash
-iris tx token transfer <symbol> --to=<to> --from=<key-name> --chain-id=<chain-id> --fees=<fee>
+grid tx token transfer <symbol> --to=<to> --from=<key-name> --chain-id=<chain-id> --fees=<fee>
 ```
 
-## iris tx token mint
+## grid tx token mint
 
 Mint tokens to a specified address
 
 ```bash
-iris tx token mint [symbol] [flags]
+grid tx token mint [symbol] [flags]
 ```
 
 **Flags:**
@@ -125,15 +125,15 @@ iris tx token mint [symbol] [flags]
 ### Mint Token
 
 ```bash
-iris tx token mint <symbol> --amount=<amount> --to=<to> --from=<key-name> --chain-id=<chain-id> --fees=<fee>
+grid tx token mint <symbol> --amount=<amount> --to=<to> --from=<key-name> --chain-id=<chain-id> --fees=<fee>
 ```
 
-## iris tx token burn
+## grid tx token burn
 
 Burn some tokens
 
 ```bash
-iris tx token burn [symbol] [flags]
+grid tx token burn [symbol] [flags]
 ```
 
 **Flags:**
@@ -145,81 +145,81 @@ iris tx token burn [symbol] [flags]
 ### Burn Token
 
 ```bash
-iris tx token burn <symbol> --amount=<amount> --from=<key-name> --chain-id=<chain-id> --fees=<fee>
+grid tx token burn <symbol> --amount=<amount> --from=<key-name> --chain-id=<chain-id> --fees=<fee>
 ```
 
-## iris query token token
+## grid query token token
 
 Query a token by symbol
 
 ```bash
-iris query token token [denom] [flags]
+grid query token token [denom] [flags]
 ```
 
 ### Query a token
 
 ```bash
-iris query token token <denom>
+grid query token token <denom>
 ```
 
-## iris query token tokens
+## grid query token tokens
 
 Query tokens by the owner which is optional
 
 ```bash
-iris query token tokens [owner] [flags]
+grid query token tokens [owner] [flags]
 ```
 
 ### Query all tokens
 
 ```bash
-iris query token tokens
+grid query token tokens
 ```
 
 ### Query tokens with the specified owner
 
 ```bash
-iris query token tokens <owner>
+grid query token tokens <owner>
 ```
 
-## iris query token fee
+## grid query token fee
 
 Query the token related fees, including token issuance and minting
 
 ```bash
-iris query token fee [symbol] [flags]
+grid query token fee [symbol] [flags]
 ```
 
 ### Query fees of issuing and minting a token
 
 ```bash
-iris query token fee kitty
+grid query token fee kitty
 ```
 
-## iris query token params
+## grid query token params
 
 Query token module params
 
 ```bash
-iris query token params [flags]
+grid query token params [flags]
 ```
 
 ### Query token module params
 
 ```bash
-iris query token params
+grid query token params
 ```
 
-## iris query token total-burn
+## grid query token total-burn
 
 Query the total amount of all burn tokens
 
 ```bash
-iris query token total-burn [flags]
+grid query token total-burn [flags]
 ```
 
 ### Query the total amount of all burn tokens
 
 ```bash
-iris query token total-burn
+grid query token total-burn
 ```

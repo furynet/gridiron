@@ -6,54 +6,54 @@ Staking module provides a set of subcommands to query staking state and send sta
 
 | Name                                                                         | Description                                                                                   |
 | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [validator](#iris-query-staking-validator)                                   | Query a validator                                                                             |
-| [validators](#iris-query-staking-validators)                                 | Query for all validators                                                                      |
-| [delegation](#iris-query-staking-delegation)                                 | Query a delegation based on address and validator address                                     |
-| [delegations](#iris-query-staking-delegations)                               | Query all delegations made from one delegator                                                 |
-| [delegations-to](#iris-query-staking-delegations-to)                         | Query all delegations to one validator                                                        |
-| [unbonding-delegation](#iris-query-staking-unbonding-delegation)             | Query an unbonding-delegation record based on delegator and validator address                 |
-| [unbonding-delegations](#iris-query-staking-unbonding-delegations)           | Query all unbonding-delegations records for one delegator                                     |
-| [unbonding-delegations-from](#iris-query-staking-unbonding-delegations-from) | Query all unbonding delegatations from a validator                                            |
-| [redelegations-from](#iris-query-staking-redelegations-from)                 | Query all outgoing redelegatations from a validator                                           |
-| [redelegation](#iris-query-staking-redelegation)                             | Query a redelegation record based on delegator and a source and destination validator address |
-| [redelegations](#iris-query-staking-redelegations)                           | Query all redelegations records for one delegator                                             |
-| [pool](#iris-query-staking-pool)                                             | Query the current staking pool values                                                         |
-| [params](#iris-query-staking-params)                                         | Query the current staking parameters information                                              |
-| [historical-info](#iris-query-staking-historical-info)                       | Query historical info at given height                                                         |
-| [create-validator](#iris-tx-staking-create-validator)                        | Create new validator initialized with a self-delegation to it                                 |
-| [edit-validator](#iris-tx-staking-edit-validator)                            | Edit existing validator account                                                               |
-| [delegate](#iris-tx-staking-delegate)                                        | Delegate liquid tokens to an validator                                                        |
-| [unbond](#iris-tx-staking-unbond)                                            | Unbond shares from a validator                                                                |
-| [redelegate](#iris-tx-staking-redelegate)                                    | Redelegate illiquid tokens from one validator to another                                      |
+| [validator](#grid-query-staking-validator)                                   | Query a validator                                                                             |
+| [validators](#grid-query-staking-validators)                                 | Query for all validators                                                                      |
+| [delegation](#grid-query-staking-delegation)                                 | Query a delegation based on address and validator address                                     |
+| [delegations](#grid-query-staking-delegations)                               | Query all delegations made from one delegator                                                 |
+| [delegations-to](#grid-query-staking-delegations-to)                         | Query all delegations to one validator                                                        |
+| [unbonding-delegation](#grid-query-staking-unbonding-delegation)             | Query an unbonding-delegation record based on delegator and validator address                 |
+| [unbonding-delegations](#grid-query-staking-unbonding-delegations)           | Query all unbonding-delegations records for one delegator                                     |
+| [unbonding-delegations-from](#grid-query-staking-unbonding-delegations-from) | Query all unbonding delegatations from a validator                                            |
+| [redelegations-from](#grid-query-staking-redelegations-from)                 | Query all outgoing redelegatations from a validator                                           |
+| [redelegation](#grid-query-staking-redelegation)                             | Query a redelegation record based on delegator and a source and destination validator address |
+| [redelegations](#grid-query-staking-redelegations)                           | Query all redelegations records for one delegator                                             |
+| [pool](#grid-query-staking-pool)                                             | Query the current staking pool values                                                         |
+| [params](#grid-query-staking-params)                                         | Query the current staking parameters information                                              |
+| [historical-info](#grid-query-staking-historical-info)                       | Query historical info at given height                                                         |
+| [create-validator](#grid-tx-staking-create-validator)                        | Create new validator initialized with a self-delegation to it                                 |
+| [edit-validator](#grid-tx-staking-edit-validator)                            | Edit existing validator account                                                               |
+| [delegate](#grid-tx-staking-delegate)                                        | Delegate liquid tokens to an validator                                                        |
+| [unbond](#grid-tx-staking-unbond)                                            | Unbond shares from a validator                                                                |
+| [redelegate](#grid-tx-staking-redelegate)                                    | Redelegate illiquid tokens from one validator to another                                      |
 
-## iris query staking validator
+## grid query staking validator
 
 ### Query a validator by validator address
 
 ```bash
-iris query staking validator <iva...>
+grid query staking validator <iva...>
 ```
 
-## iris query staking validators
+## grid query staking validators
 
 ### Query all validators
 
 ```bash
-iris query staking validators
+grid query staking validators
 ```
 
-## iris query staking delegation
+## grid query staking delegation
 
 Query a delegation based on delegator address and validator address.
 
 ```bash
-iris query staking delegation [delegator-addr] [validator-addr]
+grid query staking delegation [delegator-addr] [validator-addr]
 ```
 
 ### Query a delegation
 
 ```bash
-iris query staking delegation <iaa...> <iva...>
+grid query staking delegation <iaa...> <iva...>
 ```
 
 Example Output:
@@ -66,32 +66,32 @@ Delegation:
   Height:     26
 ```
 
-## iris query staking delegations
+## grid query staking delegations
 
 Query all delegations delegated from one delegator.
 
 ```bash
-iris query staking delegations [delegator-address] [flags]
+grid query staking delegations [delegator-address] [flags]
 ```
 
 ### Query all delegations of a delegator
 
 ```bash
-iris query staking delegations <iaa...>
+grid query staking delegations <iaa...>
 ```
 
-## iris query staking delegations-to
+## grid query staking delegations-to
 
 Query all delegations to one validator.
 
 ```bash
-iris query staking delegations-to [validator-address] [flags]
+grid query staking delegations-to [validator-address] [flags]
 ```
 
 ### Query all delegations to one validator
 
 ```bash
-iris query staking delegations-to <iva...>
+grid query staking delegations-to <iva...>
 ```
 
 Example Output:
@@ -109,78 +109,78 @@ Delegation:
   Height:     26
 ```
 
-## iris query staking unbonding-delegation
+## grid query staking unbonding-delegation
 
 Query an unbonding-delegation record based on delegator and validator address.
 
 ```bash
-iris query staking unbonding-delegation [delegator-addr] [validator-addr] [flags]
+grid query staking unbonding-delegation [delegator-addr] [validator-addr] [flags]
 ```
 
 ### Query an unbonding delegation record
 
 ```bash
-iris query staking unbonding-delegation <iaa...> <iva...>
+grid query staking unbonding-delegation <iaa...> <iva...>
 ```
 
-## iris query staking unbonding-delegations
+## grid query staking unbonding-delegations
 
 ### Query all unbonding delegations records of a delegator
 
 ```bash
-iris query staking unbonding-delegations <iaa...>
+grid query staking unbonding-delegations <iaa...>
 ```
 
-## iris query staking unbonding-delegations-from
+## grid query staking unbonding-delegations-from
 
 ### Query all unbonding delegations from a validator
 
 ```bash
-iris query staking unbonding-delegations-from <iva...>
+grid query staking unbonding-delegations-from <iva...>
 ```
 
-## iris query staking redelegations-from
+## grid query staking redelegations-from
 
 Query all outgoing redelegations of a validator
 
 ```bash
-iris query staking redelegations-from [validator-address] [flags]
+grid query staking redelegations-from [validator-address] [flags]
 ```
 
 ### Query all outgoing redelegatations of a validator
 
 ```bash
-iris query staking redelegations-from <iva...>
+grid query staking redelegations-from <iva...>
 ```
 
-## iris query staking redelegation
+## grid query staking redelegation
 
 Query a redelegation record based on delegator and source validator address and destination validator address.
 
 ```bash
-iris query staking redelegation [delegator-addr] [src-validator-addr] [dst-validator-addr] [flags]
+grid query staking redelegation [delegator-addr] [src-validator-addr] [dst-validator-addr] [flags]
 ```
 
 ### Query a redelegation record
 
 ```bash
-iris query staking redelegation <iaa...> <iva...> <iva...>
+grid query staking redelegation <iaa...> <iva...> <iva...>
 ```
 
-## iris query staking redelegations
+## grid query staking redelegations
 
 ### Query all redelegations records of a delegator
 
 ```bash
-iris query staking redelegations <iaa...>
+grid query staking redelegations <iaa...>
 ```
 
-## iris query staking pool
+## grid query staking pool
 
 ### Query the current staking pool values
 
 ```bash
-iris query staking pool
+grid query staking pool
 ```
 
 Example Output:
@@ -193,28 +193,28 @@ Pool:
   Bonded Ratio:   0.2952602076
 ```
 
-## iris query staking params
+## grid query staking params
 
 ### Query the current staking parameters information
 
 ```bash
-iris query staking params
+grid query staking params
 ```
 
-## iris query staking historical-info
+## grid query staking historical-info
 
 ### Query historical info at given height
 
 ```bash
-iris query staking historical-info <height>
+grid query staking historical-info <height>
 ```
 
-## iris tx staking create-validator
+## grid tx staking create-validator
 
-Send a transaction to apply to be a validator and delegate a certain amount of iris to it.
+Send a transaction to apply to be a validator and delegate a certain amount of grid to it.
 
 ```bash
-iris tx staking create-validator [flags]
+grid tx staking create-validator [flags]
 ```
 
 **Flags:**
@@ -239,19 +239,19 @@ iris tx staking create-validator [flags]
 ### Create a validator
 
 ```bash
-iris tx staking create-validator --chain-id=irishub --from=<key-name> --fees=0.3iris --pubkey=<validator-pubKey> --commission-rate=0.1 --amount=100iris --moniker=<validator-name>
+grid tx staking create-validator --chain-id=gridiron --from=<key-name> --fees=0.3grid --pubkey=<validator-pubKey> --commission-rate=0.1 --amount=100grid --moniker=<validator-name>
 ```
 
 :::tip
 Follow the [Mainnet](../get-started/mainnet.md#create-validator) instructions to learn more.
 :::
 
-## iris tx staking edit-validator
+## grid tx staking edit-validator
 
 Edit an existing validator's settings, such as commission rate, name, etc.
 
 ```bash
-iris tx staking edit-validator [flags]
+grid tx staking edit-validator [flags]
 ```
 
 **Flags:**
@@ -269,40 +269,40 @@ iris tx staking edit-validator [flags]
 ### Edit validator information
 
 ```bash
-iris tx staking edit-validator --from=<key-name> --chain-id=irishub --fees=0.3iris --commission-rate=0.10 --moniker=<validator-name>
+grid tx staking edit-validator --from=<key-name> --chain-id=gridiron --fees=0.3grid --commission-rate=0.10 --moniker=<validator-name>
 ```
 
 ### Upload validator avatar
 
 Please refer to [How to upload my validator's logo to the Explorers](../concepts/validator-faq.md#how-to-upload-my-validator-s-logo-to-the-explorers)
 
-## iris tx staking delegate
+## grid tx staking delegate
 
 Delegate tokens to a validator.
 
 ```bash
-iris tx staking delegate [validator-addr] [amount] [flags]
+grid tx staking delegate [validator-addr] [amount] [flags]
 ```
 
 ```bash
-iris tx staking delegate <iva...> <amount> --chain-id=irishub --from=<key-name> --fees=0.3iris
+grid tx staking delegate <iva...> <amount> --chain-id=gridiron --from=<key-name> --fees=0.3grid
 ```
 
-## iris tx staking unbond
+## grid tx staking unbond
 
 Unbond tokens from a validator.
 
 ```bash
-iris tx staking unbond [validator-addr] [amount] [flags]
+grid tx staking unbond [validator-addr] [amount] [flags]
 ```
 
 ### Unbond some tokens from a validator
 
 ```bash
-iris tx staking unbond <iva...> 10iris --from=<key-name> --chain-id=irishub --fees=0.3iris
+grid tx staking unbond <iva...> 10grid --from=<key-name> --chain-id=gridiron --fees=0.3grid
 ```
 
-## iris tx staking redelegate
+## grid tx staking redelegate
 
 Transfer delegation from one validator to another.
 
@@ -311,11 +311,11 @@ There is no `unbonding time` during the redelegation, so you will not miss the r
 :::
 
 ```bash
-iris tx staking redelegate [src-validator-addr] [dst-validator-addr] [amount] [flags]
+grid tx staking redelegate [src-validator-addr] [dst-validator-addr] [amount] [flags]
 ```
 
 ### Redelegate some tokens to another validator
 
 ```bash
-iris tx staking redelegate <iva...> <iva...> 10iris --chain-id=irishub --from=<key-name> --fees=0.3iris
+grid tx staking redelegate <iva...> <iva...> 10grid --chain-id=gridiron --from=<key-name> --fees=0.3grid
 ```

@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  title: IRIShub - REST and gRPC Gateway docs
+  title: GRIDhub - REST and gRPC Gateway docs
   description: A REST interface for state queries, legacy transactions
   version: 1.4.1
 paths:
@@ -32005,7 +32005,7 @@ paths:
           type: boolean
       tags:
         - Query
-  /irismod/token/params:
+  /gridmod/token/params:
     get:
       summary: Params queries the token parameters
       operationId: TokenParams
@@ -32263,7 +32263,7 @@ paths:
                         }
       tags:
         - Query
-  /irismod/token/tokens:
+  /gridmod/token/tokens:
     get:
       summary: Tokens returns the token list
       operationId: Tokens
@@ -32739,7 +32739,7 @@ paths:
           type: boolean
       tags:
         - Query
-  /irismod/token/tokens/{denom}:
+  /gridmod/token/tokens/{denom}:
     get:
       summary: Token returns token with token name
       operationId: Token
@@ -33123,7 +33123,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/token/tokens/{symbol}/fees:
+  /gridmod/token/tokens/{symbol}/fees:
     get:
       summary: Fees returns the fees to issue or mint a token
       operationId: Fees
@@ -33365,7 +33365,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/token/total_burn:
+  /gridmod/token/total_burn:
     get:
       summary: TotalBurn queries all the burnt coins
       operationId: TotalBurn
@@ -33589,7 +33589,7 @@ paths:
                         }
       tags:
         - Query
-  /irismod/htlc/htlcs/{id}:
+  /gridmod/htlc/htlcs/{id}:
     get:
       summary: HTLC queries the HTLC by the specified hash lock
       operationId: HTLC
@@ -33701,7 +33701,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/htlc/params:
+  /gridmod/htlc/params:
     get:
       summary: Params queries the htlc parameters
       operationId: HTLCParams
@@ -33776,7 +33776,7 @@ paths:
                       format: byte
       tags:
         - Query
-  /irismod/htlc/supplies:
+  /gridmod/htlc/supplies:
     get:
       summary: AssetSupplies queries the supplies of all assets
       operationId: AssetSupplies
@@ -33882,7 +33882,7 @@ paths:
                       format: byte
       tags:
         - Query
-  /irismod/htlc/supplies/{denom}:
+  /gridmod/htlc/supplies/{denom}:
     get:
       summary: AssetSupply queries the supply of an asset
       operationId: AssetSupply
@@ -33991,7 +33991,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/coinswap/pools:
+  /gridmod/coinswap/pools:
     get:
       summary: LiquidityPools returns all the liquidity pools available
       operationId: LiquidityPools
@@ -34176,7 +34176,7 @@ paths:
           type: boolean
       tags:
         - Query
-  /irismod/coinswap/pools/{lpt_denom}:
+  /gridmod/coinswap/pools/{lpt_denom}:
     get:
       summary: |-
         LiquidityPool returns the liquidity pool for the provided
@@ -34281,7 +34281,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/farm/farmers/{farmer}:
+  /gridmod/farm/farmers/{farmer}:
     get:
       operationId: Farmer
       responses:
@@ -34366,7 +34366,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/farm/params:
+  /gridmod/farm/params:
     get:
       summary: Params queries the htlc parameters
       operationId: FarmParams
@@ -34423,7 +34423,7 @@ paths:
                       format: byte
       tags:
         - Query
-  /irismod/farm/pool/{id}:
+  /gridmod/farm/pool/{id}:
     get:
       operationId: FarmPool
       responses:
@@ -34546,7 +34546,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/farm/pools:
+  /gridmod/farm/pools:
     get:
       operationId: FarmPools
       responses:
@@ -34754,7 +34754,7 @@ paths:
           type: boolean
       tags:
         - Query
-  /irismod/nft/collections/{denom_id}:
+  /gridmod/nft/collections/{denom_id}:
     get:
       summary: Collection queries the NFTs of the specified denom
       operationId: Collection
@@ -34930,7 +34930,7 @@ paths:
           type: boolean
       tags:
         - Query
-  /irismod/nft/collections/{denom_id}/supply:
+  /gridmod/nft/collections/{denom_id}/supply:
     get:
       summary: Supply queries the total supply of a given denom or owner
       operationId: Supply
@@ -34979,7 +34979,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/nft/denoms:
+  /gridmod/nft/denoms:
     get:
       summary: Denoms queries all the denoms
       operationId: Denoms
@@ -35129,7 +35129,7 @@ paths:
           type: boolean
       tags:
         - Query
-  /irismod/nft/denoms/{denom_id}:
+  /gridmod/nft/denoms/{denom_id}:
     get:
       summary: Denom queries the definition of a given denom
       operationId: Denom
@@ -35197,7 +35197,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/nft/nfts:
+  /gridmod/nft/nfts:
     get:
       summary: NFTsOfOwner queries the NFTs of the specified owner
       operationId: NFTsOfOwner
@@ -35349,7 +35349,7 @@ paths:
           type: boolean
       tags:
         - Query
-  /irismod/nft/nfts/{denom_id}/{token_id}:
+  /gridmod/nft/nfts/{denom_id}/{token_id}:
     get:
       summary: NFT queries the NFT for the given denom and token ID
       operationId: NFT
@@ -35409,7 +35409,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/service/bindings/{service_name}:
+  /gridmod/service/bindings/{service_name}:
     get:
       summary: Bindings returns all service Bindings with service name and owner
       operationId: Bindings
@@ -35581,7 +35581,7 @@ paths:
           type: boolean
       tags:
         - Query
-  /irismod/service/bindings/{service_name}/{provider}:
+  /gridmod/service/bindings/{service_name}/{provider}:
     get:
       summary: Binding returns service Binding with service name and provider
       operationId: Binding
@@ -35666,7 +35666,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/service/contexts/{request_context_id}:
+  /gridmod/service/contexts/{request_context_id}:
     get:
       summary: RequestContext returns the request context
       operationId: RequestContext
@@ -35801,7 +35801,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/service/definitions/{service_name}:
+  /gridmod/service/definitions/{service_name}:
     get:
       summary: Definition returns service definition
       operationId: Definition
@@ -35861,7 +35861,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/service/fees/{provider}:
+  /gridmod/service/fees/{provider}:
     get:
       summary: EarnedFees returns the earned service fee of one provider
       operationId: EarnedFees
@@ -35920,7 +35920,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/service/owners/{owner}/withdraw-address:
+  /gridmod/service/owners/{owner}/withdraw-address:
     get:
       summary: WithdrawAddress returns the withdraw address of the binding owner
       operationId: WithdrawAddress
@@ -35966,7 +35966,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/service/params:
+  /gridmod/service/params:
     get:
       summary: Params queries the service parameters
       operationId: ServiceParams
@@ -36073,7 +36073,7 @@ paths:
                       format: byte
       tags:
         - Query
-  /irismod/service/requests/{request_context_id}/{batch_counter}:
+  /gridmod/service/requests/{request_context_id}/{batch_counter}:
     get:
       summary: RequestsByReqCtx returns all requests of one service call batch
       operationId: RequestsByReqCtx
@@ -36251,7 +36251,7 @@ paths:
           type: boolean
       tags:
         - Query
-  /irismod/service/requests/{request_id}:
+  /gridmod/service/requests/{request_id}:
     get:
       summary: Request returns the request
       operationId: Request
@@ -36335,7 +36335,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/service/requests/{service_name}/{provider}:
+  /gridmod/service/requests/{service_name}/{provider}:
     get:
       summary: Request returns all requests of one service with provider
       operationId: Requests
@@ -36510,7 +36510,7 @@ paths:
           type: boolean
       tags:
         - Query
-  /irismod/service/responses/{request_context_id}/{batch_counter}:
+  /gridmod/service/responses/{request_context_id}/{batch_counter}:
     get:
       summary: Responses returns all responses of one service call batch
       operationId: Responses
@@ -36660,7 +36660,7 @@ paths:
           type: boolean
       tags:
         - Query
-  /irismod/service/responses/{request_id}:
+  /gridmod/service/responses/{request_id}:
     get:
       summary: Response returns the response of request
       operationId: Response
@@ -36719,7 +36719,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/service/schemas/{schema_name}:
+  /gridmod/service/schemas/{schema_name}:
     get:
       summary: Schema returns the schema
       operationId: Schema
@@ -36763,7 +36763,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/oracle/feeds:
+  /gridmod/oracle/feeds:
     get:
       summary: Feeds queries the feed list
       operationId: Feeds
@@ -36965,7 +36965,7 @@ paths:
           type: boolean
       tags:
         - Query
-  /irismod/oracle/feeds/{feed_name}:
+  /gridmod/oracle/feeds/{feed_name}:
     get:
       summary: Feed queries the feed
       operationId: Feed
@@ -37079,7 +37079,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/oracle/feeds/{feed_name}/values:
+  /gridmod/oracle/feeds/{feed_name}/values:
     get:
       summary: FeedValue queries the feed value
       operationId: FeedValue
@@ -37132,7 +37132,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/random/queue:
+  /gridmod/random/queue:
     get:
       summary: RandomRequestQueue queries the random request queue
       operationId: RandomRequestQueue
@@ -37210,7 +37210,7 @@ paths:
           format: int64
       tags:
         - Query
-  /irismod/random/randoms/{req_id}:
+  /gridmod/random/randoms/{req_id}:
     get:
       summary: Random queries the random result
       operationId: Random
@@ -37263,7 +37263,7 @@ paths:
           type: string
       tags:
         - Query
-  /irismod/record/records/{record_id}:
+  /gridmod/record/records/{record_id}:
     get:
       summary: Record queries the record by the given record ID
       operationId: Record
@@ -37327,7 +37327,7 @@ paths:
           type: string
       tags:
         - Query
-  /irishub/mint/params:
+  /gridiron/mint/params:
     get:
       summary: Params queries the mint parameters
       operationId: MintParams
@@ -37402,7 +37402,7 @@ paths:
                       format: byte
       tags:
         - Query
-  /irishub/guardian/supers:
+  /gridiron/guardian/supers:
     get:
       summary: Supers returns all Supers
       operationId: Supers
@@ -71066,7 +71066,7 @@ definitions:
        - VOTE_OPTION_ABSTAIN: VOTE_OPTION_ABSTAIN defines an abstain vote option.
        - VOTE_OPTION_NO: VOTE_OPTION_NO defines a no vote option.
        - VOTE_OPTION_NO_WITH_VETO: VOTE_OPTION_NO_WITH_VETO defines a no with veto vote option.
-  irismod.token.Params:
+  gridmod.token.Params:
     type: object
     properties:
       token_tax_rate:
@@ -71086,7 +71086,7 @@ definitions:
       mint_token_fee_ratio:
         type: string
     title: Params defines token module's parameters
-  irismod.token.QueryFeesResponse:
+  gridmod.token.QueryFeesResponse:
     type: object
     properties:
       exist:
@@ -71116,7 +71116,7 @@ definitions:
           NOTE: The amount field is an Int which implements the custom method
           signatures required by gogoproto.
     title: QueryFeesResponse is response type for the Query/Fees RPC method
-  irismod.token.QueryParamsResponse:
+  gridmod.token.QueryParamsResponse:
     type: object
     properties:
       params:
@@ -71171,7 +71171,7 @@ definitions:
     title: >-
       QueryParametersResponse is response type for the Query/Parameters RPC
       method
-  irismod.token.QueryTokenResponse:
+  gridmod.token.QueryTokenResponse:
     type: object
     properties:
       Token:
@@ -71337,7 +71337,7 @@ definitions:
                 "value": "1.212s"
               }
     title: QueryTokenResponse is response type for the Query/Token RPC method
-  irismod.token.QueryTokensResponse:
+  gridmod.token.QueryTokensResponse:
     type: object
     properties:
       Tokens:
@@ -71534,7 +71534,7 @@ definitions:
                    PageResponse page = 2;
            }
     title: QueryTokensResponse is response type for the Query/Tokens RPC method
-  irismod.token.QueryTotalBurnResponse:
+  gridmod.token.QueryTotalBurnResponse:
     type: object
     properties:
       burned_coins:
@@ -71552,7 +71552,7 @@ definitions:
             NOTE: The amount field is an Int which implements the custom method
             signatures required by gogoproto.
     title: QueryTotalBurnResponse is response type for the Query/TotalBurn RPC method
-  irismod.htlc.AssetParam:
+  gridmod.htlc.AssetParam:
     type: object
     properties:
       denom:
@@ -71584,7 +71584,7 @@ definitions:
       max_block_lock:
         type: string
         format: uint64
-  irismod.htlc.AssetSupply:
+  gridmod.htlc.AssetSupply:
     type: object
     properties:
       incoming_supply:
@@ -71637,7 +71637,7 @@ definitions:
           signatures required by gogoproto.
       time_elapsed:
         type: string
-  irismod.htlc.HTLC:
+  gridmod.htlc.HTLC:
     type: object
     properties:
       id:
@@ -71704,7 +71704,7 @@ definitions:
            - OUTGOING: OUTGOING defines an htlt outgoing direction.
         title: SwapDirection defines the direction of an HTLT
     title: HTLC defines the struct of an HTLC
-  irismod.htlc.HTLCState:
+  gridmod.htlc.HTLCState:
     type: string
     enum:
       - HTLC_STATE_OPEN
@@ -71716,7 +71716,7 @@ definitions:
        - HTLC_STATE_COMPLETED: HTLC_STATE_COMPLETED defines a completed state.
        - HTLC_STATE_REFUNDED: HTLC_STATE_REFUNDED defines a refunded state.
     title: HTLCState defines the state of an HTLC
-  irismod.htlc.Params:
+  gridmod.htlc.Params:
     type: object
     properties:
       asset_params:
@@ -71754,7 +71754,7 @@ definitions:
               type: string
               format: uint64
     title: Params defines token module's parameters
-  irismod.htlc.QueryAssetSuppliesResponse:
+  gridmod.htlc.QueryAssetSuppliesResponse:
     type: object
     properties:
       asset_supplies:
@@ -71829,7 +71829,7 @@ definitions:
       RPC
 
       method
-  irismod.htlc.QueryAssetSupplyResponse:
+  gridmod.htlc.QueryAssetSupplyResponse:
     type: object
     properties:
       asset_supply:
@@ -71900,7 +71900,7 @@ definitions:
     title: |-
       QueryAssetSupplyResponse is response type for the Query/AssetSupply RPC
       method
-  irismod.htlc.QueryHTLCResponse:
+  gridmod.htlc.QueryHTLCResponse:
     type: object
     properties:
       htlc:
@@ -71974,7 +71974,7 @@ definitions:
             title: SwapDirection defines the direction of an HTLT
         title: HTLC defines the struct of an HTLC
     title: QueryBalanceResponse is the response type for the Query/HTLC RPC method
-  irismod.htlc.QueryParamsResponse:
+  gridmod.htlc.QueryParamsResponse:
     type: object
     properties:
       params:
@@ -72016,7 +72016,7 @@ definitions:
                   format: uint64
         title: Params defines token module's parameters
     title: QueryParamsResponse is response type for the Query/Parameters RPC method
-  irismod.htlc.SupplyLimit:
+  gridmod.htlc.SupplyLimit:
     type: object
     properties:
       limit:
@@ -72027,7 +72027,7 @@ definitions:
         type: string
       time_based_limit:
         type: string
-  irismod.htlc.SwapDirection:
+  gridmod.htlc.SwapDirection:
     type: string
     enum:
       - NONE
@@ -72039,7 +72039,7 @@ definitions:
        - INCOMING: INCOMING defines an htlt incoming direction.
        - OUTGOING: OUTGOING defines an htlt outgoing direction.
     title: SwapDirection defines the direction of an HTLT
-  irismod.coinswap.PoolInfo:
+  gridmod.coinswap.PoolInfo:
     type: object
     properties:
       id:
@@ -72089,7 +72089,7 @@ definitions:
       fee:
         type: string
         title: liquidity pool fee
-  irismod.coinswap.QueryLiquidityPoolResponse:
+  gridmod.coinswap.QueryLiquidityPoolResponse:
     type: object
     properties:
       pool:
@@ -72156,7 +72156,7 @@ definitions:
       RPC
 
       method
-  irismod.coinswap.QueryLiquidityPoolsResponse:
+  gridmod.coinswap.QueryLiquidityPoolsResponse:
     type: object
     properties:
       pools:
@@ -72251,7 +72251,7 @@ definitions:
       RPC
 
       method
-  irismod.farm.FarmPoolEntry:
+  gridmod.farm.FarmPoolEntry:
     type: object
     properties:
       id:
@@ -72324,7 +72324,7 @@ definitions:
 
             NOTE: The amount field is an Int which implements the custom method
             signatures required by gogoproto.
-  irismod.farm.LockedInfo:
+  gridmod.farm.LockedInfo:
     type: object
     properties:
       pool_id:
@@ -72355,7 +72355,7 @@ definitions:
 
             NOTE: The amount field is an Int which implements the custom method
             signatures required by gogoproto.
-  irismod.farm.Params:
+  gridmod.farm.Params:
     type: object
     properties:
       pool_creation_fee:
@@ -72375,7 +72375,7 @@ definitions:
         format: int64
       tax_rate:
         type: string
-  irismod.farm.QueryFarmPoolResponse:
+  gridmod.farm.QueryFarmPoolResponse:
     type: object
     properties:
       pool:
@@ -72463,7 +72463,7 @@ definitions:
                 method
 
                 signatures required by gogoproto.
-  irismod.farm.QueryFarmPoolsResponse:
+  gridmod.farm.QueryFarmPoolsResponse:
     type: object
     properties:
       pools:
@@ -72579,7 +72579,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  irismod.farm.QueryFarmerResponse:
+  gridmod.farm.QueryFarmerResponse:
     type: object
     properties:
       list:
@@ -72624,7 +72624,7 @@ definitions:
       height:
         type: string
         format: int64
-  irismod.farm.QueryParamsResponse:
+  gridmod.farm.QueryParamsResponse:
     type: object
     properties:
       params:
@@ -72650,7 +72650,7 @@ definitions:
             format: int64
           tax_rate:
             type: string
-  irismod.nft.BaseNFT:
+  gridmod.nft.BaseNFT:
     type: object
     properties:
       id:
@@ -72666,7 +72666,7 @@ definitions:
       uri_hash:
         type: string
     title: BaseNFT defines a non-fungible token
-  irismod.nft.Collection:
+  gridmod.nft.Collection:
     type: object
     properties:
       denom:
@@ -72714,7 +72714,7 @@ definitions:
               type: string
           title: BaseNFT defines a non-fungible token
     title: Collection defines a type of collection
-  irismod.nft.Denom:
+  gridmod.nft.Denom:
     type: object
     properties:
       id:
@@ -72740,7 +72740,7 @@ definitions:
       data:
         type: string
     title: Denom defines a type of NFT
-  irismod.nft.IDCollection:
+  gridmod.nft.IDCollection:
     type: object
     properties:
       denom_id:
@@ -72750,7 +72750,7 @@ definitions:
         items:
           type: string
     title: IDCollection defines a type of collection with specified ID
-  irismod.nft.Owner:
+  gridmod.nft.Owner:
     type: object
     properties:
       address:
@@ -72768,7 +72768,7 @@ definitions:
                 type: string
           title: IDCollection defines a type of collection with specified ID
     title: Owner defines a type of owner
-  irismod.nft.QueryCollectionResponse:
+  gridmod.nft.QueryCollectionResponse:
     type: object
     properties:
       collection:
@@ -72848,7 +72848,7 @@ definitions:
     title: |-
       QueryCollectionResponse is the response type for the Query/Collection RPC
       method
-  irismod.nft.QueryDenomResponse:
+  gridmod.nft.QueryDenomResponse:
     type: object
     properties:
       denom:
@@ -72878,7 +72878,7 @@ definitions:
             type: string
         title: Denom defines a type of NFT
     title: QueryDenomResponse is the response type for the Query/Denom RPC method
-  irismod.nft.QueryDenomsResponse:
+  gridmod.nft.QueryDenomsResponse:
     type: object
     properties:
       denoms:
@@ -72936,7 +72936,7 @@ definitions:
                    PageResponse page = 2;
            }
     title: QueryDenomsResponse is the response type for the Query/Denoms RPC method
-  irismod.nft.QueryNFTResponse:
+  gridmod.nft.QueryNFTResponse:
     type: object
     properties:
       nft:
@@ -72956,7 +72956,7 @@ definitions:
             type: string
         title: BaseNFT defines a non-fungible token
     title: QueryNFTResponse is the response type for the Query/NFT RPC method
-  irismod.nft.QueryNFTsOfOwnerResponse:
+  gridmod.nft.QueryNFTsOfOwnerResponse:
     type: object
     properties:
       owner:
@@ -73008,14 +73008,14 @@ definitions:
       RPC
 
       method
-  irismod.nft.QuerySupplyResponse:
+  gridmod.nft.QuerySupplyResponse:
     type: object
     properties:
       amount:
         type: string
         format: uint64
     title: QuerySupplyResponse is the response type for the Query/Supply RPC method
-  irismod.service.Params:
+  gridmod.service.Params:
     type: object
     properties:
       max_request_timeout:
@@ -73054,7 +73054,7 @@ definitions:
       restricted_service_fee_denom:
         type: boolean
     title: Params defines service module's parameters
-  irismod.service.QueryBindingResponse:
+  gridmod.service.QueryBindingResponse:
     type: object
     properties:
       service_binding:
@@ -73097,7 +73097,7 @@ definitions:
             type: string
         title: ServiceBinding defines a standard for service binding
     title: QueryDefinitionResponse is response type for the Query/Binding RPC method
-  irismod.service.QueryBindingsResponse:
+  gridmod.service.QueryBindingsResponse:
     type: object
     properties:
       service_bindings:
@@ -73170,7 +73170,7 @@ definitions:
     title: >-
       QueryDefinitionsResponse is response type for the Query/Bindings RPC
       method
-  irismod.service.QueryDefinitionResponse:
+  gridmod.service.QueryDefinitionResponse:
     type: object
     properties:
       service_definition:
@@ -73194,7 +73194,7 @@ definitions:
     title: >-
       QueryDefinitionResponse is response type for the Query/Definition RPC
       method
-  irismod.service.QueryEarnedFeesResponse:
+  gridmod.service.QueryEarnedFeesResponse:
     type: object
     properties:
       fees:
@@ -73214,7 +73214,7 @@ definitions:
     title: >-
       QueryEarnedFeesResponse is response type for the Query/EarnedFees RPC
       method
-  irismod.service.QueryParamsResponse:
+  gridmod.service.QueryParamsResponse:
     type: object
     properties:
       params:
@@ -73288,7 +73288,7 @@ definitions:
     title: >-
       QueryParametersResponse is response type for the Query/Parameters RPC
       method
-  irismod.service.QueryRequestContextResponse:
+  gridmod.service.QueryRequestContextResponse:
     type: object
     properties:
       request_context:
@@ -73385,7 +73385,7 @@ definitions:
       RPC
 
       method
-  irismod.service.QueryRequestResponse:
+  gridmod.service.QueryRequestResponse:
     type: object
     properties:
       request:
@@ -73431,7 +73431,7 @@ definitions:
             format: uint64
         title: Request defines a standard for request
     title: QueryRequestResponse is response type for the Query/Request RPC method
-  irismod.service.QueryRequestsByReqCtxResponse:
+  gridmod.service.QueryRequestsByReqCtxResponse:
     type: object
     properties:
       requests:
@@ -73509,7 +73509,7 @@ definitions:
       Query/RequestsByReqCtx
 
       RPC method
-  irismod.service.QueryRequestsResponse:
+  gridmod.service.QueryRequestsResponse:
     type: object
     properties:
       requests:
@@ -73583,7 +73583,7 @@ definitions:
                    PageResponse page = 2;
            }
     title: QueryRequestsResponse is response type for the Query/Requests RPC method
-  irismod.service.QueryResponseResponse:
+  gridmod.service.QueryResponseResponse:
     type: object
     properties:
       response:
@@ -73604,7 +73604,7 @@ definitions:
             format: uint64
         title: Response defines a standard for response
     title: QueryResponseResponse is response type for the Query/Response RPC method
-  irismod.service.QueryResponsesResponse:
+  gridmod.service.QueryResponsesResponse:
     type: object
     properties:
       responses:
@@ -73653,13 +73653,13 @@ definitions:
                    PageResponse page = 2;
            }
     title: QueryResponsesResponse is response type for the Query/Responses RPC method
-  irismod.service.QuerySchemaResponse:
+  gridmod.service.QuerySchemaResponse:
     type: object
     properties:
       schema:
         type: string
     title: QuerySchemaResponse is response type for the Query/Schema RPC method
-  irismod.service.QueryWithdrawAddressResponse:
+  gridmod.service.QueryWithdrawAddressResponse:
     type: object
     properties:
       withdraw_address:
@@ -73669,7 +73669,7 @@ definitions:
       Query/WithdrawAddress
 
       RPC method
-  irismod.service.Request:
+  gridmod.service.Request:
     type: object
     properties:
       id:
@@ -73708,7 +73708,7 @@ definitions:
         type: string
         format: uint64
     title: Request defines a standard for request
-  irismod.service.RequestContext:
+  gridmod.service.RequestContext:
     type: object
     properties:
       service_name:
@@ -73794,7 +73794,7 @@ definitions:
 
           byte
     title: RequestContext defines a standard for request context
-  irismod.service.RequestContextBatchState:
+  gridmod.service.RequestContextBatchState:
     type: string
     enum:
       - BATCH_RUNNING
@@ -73806,7 +73806,7 @@ definitions:
     title: |-
       RequestContextBatchState is a type alias that represents a request batch
       status as a byte
-  irismod.service.RequestContextState:
+  gridmod.service.RequestContextState:
     type: string
     enum:
       - RUNNING
@@ -73820,7 +73820,7 @@ definitions:
     title: |-
       RequestContextState is a type alias that represents a request status as a
       byte
-  irismod.service.Response:
+  gridmod.service.Response:
     type: object
     properties:
       provider:
@@ -73837,7 +73837,7 @@ definitions:
         type: string
         format: uint64
     title: Response defines a standard for response
-  irismod.service.ServiceBinding:
+  gridmod.service.ServiceBinding:
     type: object
     properties:
       service_name:
@@ -73873,7 +73873,7 @@ definitions:
       owner:
         type: string
     title: ServiceBinding defines a standard for service binding
-  irismod.service.ServiceDefinition:
+  gridmod.service.ServiceDefinition:
     type: object
     properties:
       name:
@@ -73891,7 +73891,7 @@ definitions:
       schemas:
         type: string
     title: ServiceDefinition defines a standard for service definition
-  irismod.oracle.Feed:
+  gridmod.oracle.Feed:
     type: object
     properties:
       feed_name:
@@ -73910,7 +73910,7 @@ definitions:
       creator:
         type: string
     title: Feed defines the feed standard
-  irismod.oracle.FeedContext:
+  gridmod.oracle.FeedContext:
     type: object
     properties:
       feed:
@@ -73980,7 +73980,7 @@ definitions:
 
           byte
     title: FeedContext defines the feed context struct
-  irismod.oracle.FeedValue:
+  gridmod.oracle.FeedValue:
     type: object
     properties:
       data:
@@ -73989,7 +73989,7 @@ definitions:
         type: string
         format: date-time
     title: FeedValue defines the feed result standard
-  irismod.oracle.QueryFeedResponse:
+  gridmod.oracle.QueryFeedResponse:
     type: object
     properties:
       feed:
@@ -74066,7 +74066,7 @@ definitions:
               byte
         title: FeedContext defines the feed context struct
     title: QueryFeedResponse is response type for the Query/Feed RPC method
-  irismod.oracle.QueryFeedValueResponse:
+  gridmod.oracle.QueryFeedValueResponse:
     type: object
     properties:
       feed_values:
@@ -74081,7 +74081,7 @@ definitions:
               format: date-time
           title: FeedValue defines the feed result standard
     title: QueryFeedValueResponse is response type for the Query/FeedValue RPC method
-  irismod.oracle.QueryFeedsResponse:
+  gridmod.oracle.QueryFeedsResponse:
     type: object
     properties:
       feeds:
@@ -74187,7 +74187,7 @@ definitions:
                    PageResponse page = 2;
            }
     title: QueryFeedsResponse is response type for the Query/Feeds RPC method
-  irismod.random.QueryRandomRequestQueueResponse:
+  gridmod.random.QueryRandomRequestQueueResponse:
     type: object
     properties:
       requests:
@@ -74227,7 +74227,7 @@ definitions:
     title: |-
       QueryRandomRequestQueueResponse is response type for the
       Query/RandomRequestQueue RPC method
-  irismod.random.QueryRandomResponse:
+  gridmod.random.QueryRandomResponse:
     type: object
     properties:
       random:
@@ -74242,7 +74242,7 @@ definitions:
             type: string
         title: Random defines the feed standard
     title: QueryParametersResponse is response type for the Query/Random RPC method
-  irismod.random.Random:
+  gridmod.random.Random:
     type: object
     properties:
       request_tx_hash:
@@ -74253,7 +74253,7 @@ definitions:
       value:
         type: string
     title: Random defines the feed standard
-  irismod.random.Request:
+  gridmod.random.Request:
     type: object
     properties:
       height:
@@ -74282,7 +74282,7 @@ definitions:
       service_context_id:
         type: string
     title: Request defines the random request standard
-  irismod.record.Content:
+  gridmod.record.Content:
     type: object
     properties:
       digest:
@@ -74294,7 +74294,7 @@ definitions:
       meta:
         type: string
     title: Content defines the detailed information for a record
-  irismod.record.QueryRecordResponse:
+  gridmod.record.QueryRecordResponse:
     type: object
     properties:
       record:
@@ -74320,7 +74320,7 @@ definitions:
             type: string
         title: Record defines the record standard
     title: QueryRecordResponse is the response type for the Query/Record RPC method
-  irismod.record.Record:
+  gridmod.record.Record:
     type: object
     properties:
       tx_hash:
@@ -74342,7 +74342,7 @@ definitions:
       creator:
         type: string
     title: Record defines the record standard
-  irishub.mint.Params:
+  gridiron.mint.Params:
     type: object
     properties:
       mint_denom:
@@ -74352,7 +74352,7 @@ definitions:
         type: string
         title: inflation rate
     title: Params defines mint module's parameters
-  irishub.mint.QueryParamsResponse:
+  gridiron.mint.QueryParamsResponse:
     type: object
     properties:
       params:
@@ -74392,7 +74392,7 @@ definitions:
                    PageResponse page = 2;
            }
     title: QueryParamsResponse is response type for the Query/Parameters RPC method
-  irishub.guardian.AccountType:
+  gridiron.guardian.AccountType:
     type: string
     enum:
       - GENESIS
@@ -74402,7 +74402,7 @@ definitions:
       - GENESIS: GENESIS defines a genesis account type
        - ORDINARY: ORDINARY defines a ordinary account type
     title: AccountType defines the super account type
-  irishub.guardian.QuerySupersResponse:
+  gridiron.guardian.QuerySupersResponse:
     type: object
     properties:
       supers:
@@ -74454,7 +74454,7 @@ definitions:
                    PageResponse page = 2;
            }
     title: QuerySupersResponse is response type for the Query/Supers RPC method
-  irishub.guardian.Super:
+  gridiron.guardian.Super:
     type: object
     properties:
       description:

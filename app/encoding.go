@@ -3,7 +3,7 @@ package app
 import (
 	"github.com/cosmos/cosmos-sdk/std"
 
-	"github.com/irisnet/irishub/app/params"
+	"github.com/gridiron-zone/gridiron/app/params"
 )
 
 // MakeEncodingConfig creates an EncodingConfig for testing

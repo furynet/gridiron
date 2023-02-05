@@ -14,9 +14,9 @@ import (
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/irisnet/irishub/modules/guardian/keeper"
-	"github.com/irisnet/irishub/modules/guardian/types"
-	"github.com/irisnet/irishub/simapp"
+	"github.com/gridiron-zone/gridiron/modules/guardian/keeper"
+	"github.com/gridiron-zone/gridiron/modules/guardian/types"
+	"github.com/gridiron-zone/gridiron/simapp"
 )
 
 var (
