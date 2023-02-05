@@ -27,6 +27,7 @@ require (
 	google.golang.org/genproto v0.0.0-20221014213838-99cd37c6964a
 	google.golang.org/grpc v1.50.1
 	gopkg.in/yaml.v2 v2.4.0
+	
 )
 
 require (

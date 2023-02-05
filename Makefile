@@ -179,18 +179,45 @@ test-race:
 test-cover:
 	@go test -mod=readonly -timeout 30m -race -coverprofile=coverage.txt -covermode=atomic -tags='ledger test_ledger_mock' ./...
 
-lint: golangci-lint
-	golangci-lint run
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs gofmt -d -s
-	go mod verify
+###############################################################################
+###                                Linting                                  ###
+###############################################################################
 
-format:
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs gofmt -w -s
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs misspell -w
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs goimports -w -local github.com/gridiron-zone/gridiron
+golangci_lint_cmd=golangci-lint
 
-benchmark:
-	@go test -mod=readonly -bench=. ./...
+lint:
+	@echo "--> Running linter with revive"
+	@go install github.com/mgechev/revive
+	@revive -config .revive.toml -formatter friendly ./...
+# note: on new OSX, might require brew install diffutils
+	@echo "--> Running regular linter"
+	@go install mvdan.cc/gofumpt
+	@go install github.com/golangci/golangci-lint/cmd/golangci-lint
+	@$(golangci_lint_cmd) run
+	@cd price-feeder && $(golangci_lint_cmd) run
+
+lint-fix:
+	@echo "--> Running linter to fix the lint issues"
+	@go install mvdan.cc/gofumpt
+	@go install github.com/golangci/golangci-lint/cmd/golangci-lint
+	@$(golangci_lint_cmd) run --fix --out-format=tab --issues-exit-code=0 --timeout=8m
+	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./client/docs/statik/statik.go" -not -path "./tests/mocks/*" -not -name "*.pb.go" -not -name "*.pb.gw.go" -not -name "*.pulsar.go" -not -path "./crypto/keys/secp256k1/*" | xargs gofumpt -w -l
+	@cd price-feeder && $(golangci_lint_cmd) run --fix --out-format=tab --issues-exit-code=0 --timeout=8m
+
+.PHONY: lint lint-fix
+
+
+###############################################################################
+##                                  Docker                                   ##
+###############################################################################
+
+docker-build:
+	@docker build -t furygridiron/gridiron:latest -f contrib/images/grid.e2e.dockerfile .
+
+
+.PHONY: docker-build 
+
+
 
 
 ########################################
