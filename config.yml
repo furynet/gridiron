@@ -1,43 +1,43 @@
-init:
-  home: "./defund"
-build:
-  main: "./app"
-accounts:
+validators: # note that we're deprecating the `validator` top level field and converting it to an array.
   - name: alice
-    coins: ["2000000000000000ugrid"]
-    mnemonic: "alley afraid soup fall idea toss can goose become valve initial strong forward bright dish figure check leopard decide warfare hub unusual join cart"
+    bonded: 1000stake # note that we're renaming `staked` as `bonded`.
+
+    # we're now deprecating the `host` field from the top level,
+    # and directly using 'app' and 'config' fields to configure addresses.
+
+    # `validators[].app` was `init.app` before and moved under validator info.
+    # yml representation of ~/.marsd/config/app.toml
+    app:
+      grpc:
+        address: ""
+      grpc-web:
+        address: ""
+      api:
+        address: ""
+        
+    # validators[].config was `init.config` before and moved under validator info.
+    # yml representation of ~/.marsd/config/config.toml
+    config: 
+      rpc:
+        laddr: ""
+      p2p:
+        laddr: ""
+      pprof_laddr: ""
+
+    # validators[].client was `init.client` before and moved under validator info.
+    # yml representation of ~/.marsd/config/client.toml
+    client: 
+
+    # 'gentx' is a new field to introduce under the validator info,
+    # when this is provided we should use it to overwrite defaults while creating a gentx.
+    # we need to create a struct for gentx.
+    gentx:
+      amount: 1000stake # this should overwrite if `validators[].bonded` was also set.
+      moniker: mymoniker # if this isn't provided we can default to `moniker-alice`,
+                        # `alice` stands for whatever the name of the validator is: `validators[].name`
+      commission-max-change-rate:
+      # ... and other fields needed. Run 'marsd gentx -h' and
+      # check the Example section in the printed docs to see all available configuration
+
   - name: bob
-    coins: ["100000000000000000ugrid"]
-    mnemonic: "alpha crisp zoo letter pepper subway crew drum illegal powder input shuffle team east village nurse captain mule token ice drive act boy punch"
-  - name: faucet
-    coins: ["50000000000000ugrid",]
-    mnemonic: "bomb choose medal limb place hip axis pave reject rack recipe cover family vivid humble kingdom exhibit limit snow biology special swing emotion call"
-validator:
-  name: alice
-  staked: "100000000ugrid"
-client:
-  openapi:
-    path: "docs/static/openapi.yml"
-faucet:
-  name: faucet
-  coins: ["50000000000000ugrid"]
-genesis:
-  chain_id: "gridtestnet-1000"
-  app_state:
-    staking:
-      params:
-        bond_denom: "ugrid"
-    mint:
-      params:
-        mint_denom: "ugrid"
-    crisis:
-      constant_fee:
-        denom: "ugrid"
-    gov:
-      deposit_params:
-        min_deposit:
-          - amount: "10000000"
-            denom: "ugrid"
-    broker:
-      brokers:
-    minimum-gas-prices: "0.0000025ugrid"
+    bonded: 500stake
