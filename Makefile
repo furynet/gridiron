@@ -68,8 +68,7 @@ BUILD_FLAGS := -tags "$(build_tags)" -ldflags '$(ldflags)'
 
 # The below include contains the tools target.
 
-all: proto-gen lint test install
-
+all: tools install lint
 
 # The below include contains the tools.
 include contrib/devtools/Makefile
@@ -99,7 +98,15 @@ endif
 install: go.sum
 	go install $(BUILD_FLAGS) ./cmd/grid
 
-
+update-swagger-docs: statik proto-swagger-gen
+	$(BINDIR)/statik -src=lite/swagger-ui -dest=lite -f -m
+	@if [ -n "$(git status --porcelain)" ]; then \
+        echo "\033[91mSwagger docs are out of sync!!!\033[0m";\
+        exit 1;\
+    else \
+    	echo "\033[92mSwagger docs are in sync\033[0m";\
+    fi
+.PHONY: update-swagger-docs
 
 ########################################
 ### Tools & dependencies
@@ -127,28 +134,21 @@ distclean: clean
 ###                                Protobuf                                 ###
 ###############################################################################
 
-# We use osmolabs' docker image instead of tendermintdev/sdk-proto-gen.
-# The only difference is that the Osmosis version uses Go 1.19 while the
-# tendermintdev one uses 1.18.
-protoVer=v0.8
-protoImageName=osmolabs/osmo-proto-gen:$(protoVer)
-containerProtoGenGo=grid-proto-gen-go-$(protoVer)
-containerProtoGenSwagger=grid-proto-gen-swagger-$(protoVer)
+protoVer=v0.7
+protoImageName=tendermintdev/sdk-proto-gen:$(protoVer)
+containerProtoGen=$(PROJECT_NAME)-proto-gen-$(protoVer)
+containerProtoGenAny=$(PROJECT_NAME)-proto-gen-any-$(protoVer)
+containerProtoGenSwagger=$(PROJECT_NAME)-proto-gen-swagger-$(protoVer)
+containerProtoFmt=$(PROJECT_NAME)-proto-fmt-$(protoVer)
+proto-all: proto-tools proto-gen proto-swagger-gen
 
-proto-gen: proto-go-gen proto-swagger-gen
-
-proto-go-gen:
-	@echo "🤖 Generating Go code from protobuf..."
-	@if docker ps -a --format '{{.Names}}' | grep -Eq "^${containerProtoGenGo}$$"; then docker start -a $(containerProtoGenGo); else docker run --name $(containerProtoGenGo) -v $(CURDIR):/workspace --workdir /workspace $(protoImageName) \
-		sh ./scripts/protocgen.sh; fi
-	@echo "✅ Completed Go code generation!"
+proto-gen:
+	@./scripts/protocgen.sh
 
 proto-swagger-gen:
-	@echo "🤖 Generating Swagger code from protobuf..."
+	@echo "Generating Protobuf Swagger"
 	@if docker ps -a --format '{{.Names}}' | grep -Eq "^${containerProtoGenSwagger}$$"; then docker start -a $(containerProtoGenSwagger); else docker run --name $(containerProtoGenSwagger) -v $(CURDIR):/workspace --workdir /workspace $(protoImageName) \
 		sh ./scripts/protoc-swagger-gen.sh; fi
-	@echo "✅ Completed Swagger code generation!"
-
 
 ########################################
 ### Testing
@@ -179,6 +179,10 @@ test-race:
 test-cover:
 	@go test -mod=readonly -timeout 30m -race -coverprofile=coverage.txt -covermode=atomic -tags='ledger test_ledger_mock' ./...
 
+format:
+	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs gofmt -w -s
+	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs misspell -w
+	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs goimports -w -local github.com/gridnet/gridhub
 
 benchmark:
 	@go test -mod=readonly -bench=. ./...
@@ -188,7 +192,7 @@ benchmark:
 ### Local validator nodes using docker and docker-compose
 
 testnet-init:
-	@if ! [ -f build/nodecluster/node0/grid/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/home gridiron-zone/gridiron grid testnet --v 4 --output-dir /home/nodecluster --chain-id gridiron-test --keyring-backend test --starting-ip-address 192.168.10.2 ; fi
+	@if ! [ -f build/nodecluster/node0/grid/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/home gridnet/gridhub grid testnet --v 4 --output-dir /home/nodecluster --chain-id gridhub-test --keyring-backend test --starting-ip-address 192.168.10.2 ; fi
 	@echo "To install jq command, please refer to this page: https://stedolan.github.io/jq/download/"
 	@jq '.app_state.auth.accounts+= [{"@type":"/cosmos.auth.v1beta1.BaseAccount","address":"iaa1ljemm0yznz58qxxs8xyak7fashcfxf5lgl4zjx","pub_key":null,"account_number":"0","sequence":"0"}] | .app_state.bank.balances+= [{"address":"iaa1ljemm0yznz58qxxs8xyak7fashcfxf5lgl4zjx","coins":[{"denom":"ugrid","amount":"1000000000000"}]}]' build/nodecluster/node0/grid/config/genesis.json > build/genesis_temp.json ;
 	@sudo cp build/genesis_temp.json build/nodecluster/node0/grid/config/genesis.json
@@ -209,14 +213,3 @@ testnet-stop:
 testnet-clean:
 	docker-compose down
 	sudo rm -rf build/*
-	
-###############################################################################
-###                                Linting                                  ###
-###############################################################################
-
-golangci_lint_cmd=github.com/golangci/golangci-lint/cmd/golangci-lint
-
-lint:
-	@echo "🤖 Running linter..."
-	go run $(golangci_lint_cmd) run --timeout=10m
-	@echo "✅ Completed linting!"
