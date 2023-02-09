@@ -27,6 +27,8 @@ require (
 	google.golang.org/grpc v1.51.0
 	google.golang.org/protobuf v1.28.2-0.20220831092852-f930b1dc76e8
 	gopkg.in/yaml.v2 v2.4.0
+	github.com/golangci/golangci-lint v1.50.1
+
 
 )
 

@@ -179,9 +179,12 @@ test-race:
 test-cover:
 	@go test -mod=readonly -timeout 30m -race -coverprofile=coverage.txt -covermode=atomic -tags='ledger test_ledger_mock' ./...
 
-lint: golangci-lint
-	golangci-lint run
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs gofmt -d -s
+golangci_lint_cmd=github.com/golangci/golangci-lint/cmd/golangci-lint
+
+lint:
+	@echo "🤖 Running linter..."
+	go run $(golangci_lint_cmd) run --timeout=10m
+	@echo "✅ Completed linting!"
 	go mod verify
 
 format:
