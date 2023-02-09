@@ -187,35 +187,25 @@ lint: golangci-lint
 format:
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs gofmt -w -s
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs misspell -w
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs goimports -w -local github.com/gridiron-zone/gridiron
+	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs goimports -w -local github.com/gridnet/gridhub
 
 benchmark:
 	@go test -mod=readonly -bench=. ./...
-
-###############################################################################
-##                                  Docker                                   ##
-###############################################################################
-
-docker-build:
-	@docker build -t furygridiron/gridiron:grid.1
-
-
-.PHONY: docker-build 
 
 
 ########################################
 ### Local validator nodes using docker and docker-compose
 
 testnet-init:
-	@if ! [ -f build/nodecluster/node0/grid/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/home gridiron-zone/gridiron grid testnet --v 4 --output-dir /home/nodecluster --chain-id gridiron-test --keyring-backend test --starting-ip-address 192.168.10.2 ; fi
+	@if ! [ -f build/nodecluster/node0/grid/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/home gridnet/gridhub grid testnet --v 4 --output-dir /home/nodecluster --chain-id gridhub-test --keyring-backend test --starting-ip-address 192.168.10.2 ; fi
 	@echo "To install jq command, please refer to this page: https://stedolan.github.io/jq/download/"
-	@jq '.app_state.auth.accounts+= [{"@type":"/cosmos.auth.v1beta1.BaseAccount","address":"gridaa1ljemm0yznz58qxxs8xyak7fashcfxf5lgl4zjx","pub_key":null,"account_number":"0","sequence":"0"}] | .app_state.bank.balances+= [{"address":"gridaa1ljemm0yznz58qxxs8xyak7fashcfxf5lgl4zjx","coins":[{"denom":"ugrid","amount":"1000000000000"}]}]' build/nodecluster/node0/grid/config/genesis.json > build/genesis_temp.json ;
+	@jq '.app_state.auth.accounts+= [{"@type":"/cosmos.auth.v1beta1.BaseAccount","address":"iaa1ljemm0yznz58qxxs8xyak7fashcfxf5lgl4zjx","pub_key":null,"account_number":"0","sequence":"0"}] | .app_state.bank.balances+= [{"address":"iaa1ljemm0yznz58qxxs8xyak7fashcfxf5lgl4zjx","coins":[{"denom":"ugrid","amount":"1000000000000"}]}]' build/nodecluster/node0/grid/config/genesis.json > build/genesis_temp.json ;
 	@sudo cp build/genesis_temp.json build/nodecluster/node0/grid/config/genesis.json
 	@sudo cp build/genesis_temp.json build/nodecluster/node1/grid/config/genesis.json
 	@sudo cp build/genesis_temp.json build/nodecluster/node2/grid/config/genesis.json
 	@sudo cp build/genesis_temp.json build/nodecluster/node3/grid/config/genesis.json
 	@rm build/genesis_temp.json
-	@echo "Faucet address: gridaa1ljemm0yznz58qxxs8xyak7fashcfxf5lgl4zjx" ;
+	@echo "Faucet address: iaa1ljemm0yznz58qxxs8xyak7fashcfxf5lgl4zjx" ;
 	@echo "Faucet coin amount: 1000000000000ugrid"
 	@echo "Faucet key seed: tube lonely pause spring gym veteran know want grid tired taxi such same mesh charge orient bracket ozone concert once good quick dry boss"
 
