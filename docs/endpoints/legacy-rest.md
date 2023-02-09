@@ -344,7 +344,7 @@ The same code as integrating with gridiron-v0.16.3 mainnet. The transaction stru
 }
 ```
 
-Where the GRIDhub address prefix uses `iaa` instead, which affects the fields:
+Where the GRIDhub address prefix uses `did:fury:aa` instead, which affects the fields:
 
 - value.msg.value.from_adress
 - value.msg.value.to_address

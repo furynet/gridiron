@@ -214,7 +214,7 @@ grid query tx [hash] [flags]
 ## grid query txs
 
 ```bash
-grid query txs --events 'message.sender=<iaa...>&message.action=xxxx' --page 1 --limit 30
+grid query txs --events 'message.sender=<did:fury:aa...>&message.action=xxxx' --page 1 --limit 30
 ```
 
 Among the possible values of `message.action`:

@@ -63,7 +63,7 @@ grid query gov proposals
 ### Query proposals by conditions
 
 ```bash
-grid query gov proposals --limit=3 --status=Passed --depositor=<iaa...>
+grid query gov proposals --limit=3 --status=Passed --depositor=<did:fury:aa...>
 ```
 
 ## grid query gov vote
@@ -77,7 +77,7 @@ grid query gov vote [proposal-id] [voter-addr] [flags]
 ### Query a vote
 
 ```bash
-grid query gov vote <proposal-id> <iaa...>
+grid query gov vote <proposal-id> <did:fury:aa...>
 ```
 
 ## grid query gov votes
@@ -105,7 +105,7 @@ grid query gov deposit [proposal-id] [depositer-addr] [flags]
 ### Query a deposit of a proposal
 
 ```bash
-grid query gov deposit <proposal-id> <iaa...>
+grid query gov deposit <proposal-id> <did:fury:aa...>
 ```
 
 ## grid query gov deposits

@@ -10,7 +10,7 @@ Bech32 is a new Bitcoin address format proposed by Pieter Wuille and Greg Maxwel
 
 | HRP | Definition                              |
 | --- | --------------------------------------- |
-| iaa | GRIDhub Account Address                 |
+| did:fury:aa | GRIDhub Account Address                 |
 | iap | GRIDhub Account Public Key              |
 | iva | GRIDhub Validator's Operator Address    |
 | ivp | GRIDhub Validator's Operator Public Key |
@@ -32,7 +32,7 @@ NAME:    TYPE:           ADDRESS:                                PUBKEY:
 test1    local    gridaa18ekc4dswwrh2a6lfyev4tr25h5y76jkpclyxkz    iap1addwnpepqgxa40ww28uy9q46gg48g6ulqdzwupyjcwfumgfjpvz7krmg5mrnwk5xq9l
 ```
 
-This means you have created a new address `gridaa18ekc4dswwrh2a6lfyev4tr25h5y76jkpclyxkz`, with the HRP `iaa`. And its public key could be encoded into `iap1addwnpepqgxa40ww28uy9q46gg48g6ulqdzwupyjcwfumgfjpvz7krmg5mrnwk5xq9l`, with the HRP `iap`.
+This means you have created a new address `gridaa18ekc4dswwrh2a6lfyev4tr25h5y76jkpclyxkz`, with the HRP `did:fury:aa`. And its public key could be encoded into `iap1addwnpepqgxa40ww28uy9q46gg48g6ulqdzwupyjcwfumgfjpvz7krmg5mrnwk5xq9l`, with the HRP `iap`.
 
 ## Validator Key Example
 

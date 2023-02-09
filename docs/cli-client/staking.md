@@ -53,7 +53,7 @@ grid query staking delegation [delegator-addr] [validator-addr]
 ### Query a delegation
 
 ```bash
-grid query staking delegation <iaa...> <iva...>
+grid query staking delegation <did:fury:aa...> <iva...>
 ```
 
 Example Output:
@@ -77,7 +77,7 @@ grid query staking delegations [delegator-address] [flags]
 ### Query all delegations of a delegator
 
 ```bash
-grid query staking delegations <iaa...>
+grid query staking delegations <did:fury:aa...>
 ```
 
 ## grid query staking delegations-to
@@ -120,7 +120,7 @@ grid query staking unbonding-delegation [delegator-addr] [validator-addr] [flags
 ### Query an unbonding delegation record
 
 ```bash
-grid query staking unbonding-delegation <iaa...> <iva...>
+grid query staking unbonding-delegation <did:fury:aa...> <iva...>
 ```
 
 ## grid query staking unbonding-delegations
@@ -128,7 +128,7 @@ grid query staking unbonding-delegation <iaa...> <iva...>
 ### Query all unbonding delegations records of a delegator
 
 ```bash
-grid query staking unbonding-delegations <iaa...>
+grid query staking unbonding-delegations <did:fury:aa...>
 ```
 
 ## grid query staking unbonding-delegations-from
@@ -164,7 +164,7 @@ grid query staking redelegation [delegator-addr] [src-validator-addr] [dst-valid
 ### Query a redelegation record
 
 ```bash
-grid query staking redelegation <iaa...> <iva...> <iva...>
+grid query staking redelegation <did:fury:aa...> <iva...> <iva...>
 ```
 
 ## grid query staking redelegations
@@ -172,7 +172,7 @@ grid query staking redelegation <iaa...> <iva...> <iva...>
 ### Query all redelegations records of a delegator
 
 ```bash
-grid query staking redelegations <iaa...>
+grid query staking redelegations <did:fury:aa...>
 ```
 
 ## grid query staking pool
