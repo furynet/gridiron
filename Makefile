@@ -68,7 +68,8 @@ BUILD_FLAGS := -tags "$(build_tags)" -ldflags '$(ldflags)'
 
 # The below include contains the tools target.
 
-all: tools install lint
+all: proto-gen lint test install
+
 
 # The below include contains the tools.
 include contrib/devtools/Makefile
@@ -134,21 +135,28 @@ distclean: clean
 ###                                Protobuf                                 ###
 ###############################################################################
 
-protoVer=v0.7
-protoImageName=tendermintdev/sdk-proto-gen:$(protoVer)
-containerProtoGen=$(PROJECT_NAME)-proto-gen-$(protoVer)
-containerProtoGenAny=$(PROJECT_NAME)-proto-gen-any-$(protoVer)
-containerProtoGenSwagger=$(PROJECT_NAME)-proto-gen-swagger-$(protoVer)
-containerProtoFmt=$(PROJECT_NAME)-proto-fmt-$(protoVer)
-proto-all: proto-tools proto-gen proto-swagger-gen
+# We use osmolabs' docker image instead of tendermintdev/sdk-proto-gen.
+# The only difference is that the Osmosis version uses Go 1.19 while the
+# tendermintdev one uses 1.18.
+protoVer=v0.8
+protoImageName=osmolabs/osmo-proto-gen:$(protoVer)
+containerProtoGenGo=grid-proto-gen-go-$(protoVer)
+containerProtoGenSwagger=grid-proto-gen-swagger-$(protoVer)
 
-proto-gen:
-	@./scripts/protocgen.sh
+proto-gen: proto-go-gen proto-swagger-gen
+
+proto-go-gen:
+	@echo "🤖 Generating Go code from protobuf..."
+	@if docker ps -a --format '{{.Names}}' | grep -Eq "^${containerProtoGenGo}$$"; then docker start -a $(containerProtoGenGo); else docker run --name $(containerProtoGenGo) -v $(CURDIR):/workspace --workdir /workspace $(protoImageName) \
+		sh ./scripts/protocgen.sh; fi
+	@echo "✅ Completed Go code generation!"
 
 proto-swagger-gen:
-	@echo "Generating Protobuf Swagger"
+	@echo "🤖 Generating Swagger code from protobuf..."
 	@if docker ps -a --format '{{.Names}}' | grep -Eq "^${containerProtoGenSwagger}$$"; then docker start -a $(containerProtoGenSwagger); else docker run --name $(containerProtoGenSwagger) -v $(CURDIR):/workspace --workdir /workspace $(protoImageName) \
 		sh ./scripts/protoc-swagger-gen.sh; fi
+	@echo "✅ Completed Swagger code generation!"
+
 
 ########################################
 ### Testing
@@ -179,22 +187,6 @@ test-race:
 test-cover:
 	@go test -mod=readonly -timeout 30m -race -coverprofile=coverage.txt -covermode=atomic -tags='ledger test_ledger_mock' ./...
 
-###############################################################################
-###                                Linting                                  ###
-###############################################################################
-
-golangci_lint_cmd=github.com/golangci/golangci-lint/cmd/golangci-lint
-
-lint:
-	@echo "🤖 Running linter..."
-	go run $(golangci_lint_cmd) run --timeout=10m
-	@echo "✅ Completed linting!"
-
-
-format:
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs gofmt -w -s
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs misspell -w
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs goimports -w -local github.com/gridiron-zone/gridiron
 
 benchmark:
 	@go test -mod=readonly -bench=. ./...
@@ -225,3 +217,14 @@ testnet-stop:
 testnet-clean:
 	docker-compose down
 	sudo rm -rf build/*
+	
+###############################################################################
+###                                Linting                                  ###
+###############################################################################
+
+golangci_lint_cmd=github.com/golangci/golangci-lint/cmd/golangci-lint
+
+lint:
+	@echo "🤖 Running linter..."
+	go run $(golangci_lint_cmd) run --timeout=10m
+	@echo "✅ Completed linting!"
