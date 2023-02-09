@@ -179,18 +179,22 @@ test-race:
 test-cover:
 	@go test -mod=readonly -timeout 30m -race -coverprofile=coverage.txt -covermode=atomic -tags='ledger test_ledger_mock' ./...
 
+###############################################################################
+###                                Linting                                  ###
+###############################################################################
+
 golangci_lint_cmd=github.com/golangci/golangci-lint/cmd/golangci-lint
 
 lint:
 	@echo "🤖 Running linter..."
 	go run $(golangci_lint_cmd) run --timeout=10m
 	@echo "✅ Completed linting!"
-	go mod verify
+
 
 format:
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs gofmt -w -s
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs misspell -w
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs goimports -w -local github.com/gridnet/gridhub
+	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs goimports -w -local github.com/gridiron-zone/gridiron
 
 benchmark:
 	@go test -mod=readonly -bench=. ./...
@@ -200,7 +204,7 @@ benchmark:
 ### Local validator nodes using docker and docker-compose
 
 testnet-init:
-	@if ! [ -f build/nodecluster/node0/grid/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/home gridnet/gridhub grid testnet --v 4 --output-dir /home/nodecluster --chain-id gridhub-test --keyring-backend test --starting-ip-address 192.168.10.2 ; fi
+	@if ! [ -f build/nodecluster/node0/grid/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/home gridiron-zone/gridiron grid testnet --v 4 --output-dir /home/nodecluster --chain-id gridiron-test --keyring-backend test --starting-ip-address 192.168.10.2 ; fi
 	@echo "To install jq command, please refer to this page: https://stedolan.github.io/jq/download/"
 	@jq '.app_state.auth.accounts+= [{"@type":"/cosmos.auth.v1beta1.BaseAccount","address":"iaa1ljemm0yznz58qxxs8xyak7fashcfxf5lgl4zjx","pub_key":null,"account_number":"0","sequence":"0"}] | .app_state.bank.balances+= [{"address":"iaa1ljemm0yznz58qxxs8xyak7fashcfxf5lgl4zjx","coins":[{"denom":"ugrid","amount":"1000000000000"}]}]' build/nodecluster/node0/grid/config/genesis.json > build/genesis_temp.json ;
 	@sudo cp build/genesis_temp.json build/nodecluster/node0/grid/config/genesis.json
