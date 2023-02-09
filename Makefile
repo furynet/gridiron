@@ -197,7 +197,7 @@ benchmark:
 ###############################################################################
 
 docker-build:
-	@docker build -t furygridiron/gridiron:latest -f contrib/images/grid.e2e.dockerfile .
+	@docker build -t furygridiron/gridiron:grid.1
 
 
 .PHONY: docker-build 
