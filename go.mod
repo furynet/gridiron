@@ -9,6 +9,7 @@ require (
 	github.com/cosmos/ibc-go/v5 v5.0.1
 	github.com/gogo/protobuf v1.3.3
 	github.com/golang/protobuf v1.5.2
+	github.com/golangci/golangci-lint v1.50.1
 	github.com/gorilla/mux v1.8.0
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
 	github.com/irisnet/irismod v1.7.2
@@ -27,6 +28,8 @@ require (
 	google.golang.org/grpc v1.51.0
 	google.golang.org/protobuf v1.28.2-0.20220831092852-f930b1dc76e8
 	gopkg.in/yaml.v2 v2.4.0
+	
+
 
 )
 
@@ -158,8 +161,8 @@ require (
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/tjfoc/gmsm v1.4.0 // indirect
-	github.com/tklauser/go-sysconf v0.3.10 // indirect
-	github.com/tklauser/numcpus v0.4.0 // indirect
+	github.com/tklauser/go-sysconf v0.3.9 // indirect
+	github.com/tklauser/numcpus v0.3.0 // indirect
 	github.com/ulikunitz/xz v0.5.8 // indirect
 	github.com/xeipuuv/gojsonpointer v0.0.0-20180127040702-4e3ac2762d5f // indirect
 	github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
@@ -184,7 +187,7 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
+github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 
 replace github.com/tendermint/tendermint => github.com/bianjieai/tendermint v0.34.23-irita-221118
 
