@@ -104,7 +104,7 @@ AssetParam参数如下：
 | `AssetParam.Denom`         | The name  of asset                | "htltbcbnb"                                  |
 | `AssetParam.SupplyLimit`   | The supply limit of  asset        | 100000                                       |
 | `AssetParam.Active`        | Asset state: live or paused       | true                                         |
-| `AssetParam.DeputyAddress` | Deputy's GRIDHub address          | “gridaa18n3x722r4jpwmshlxnw3ehlpfzywupzefthcz5” |
+| `AssetParam.DeputyAddress` | Deputy's GRIDHub address          | “fury:grid:aa18n3x722r4jpwmshlxnw3ehlpfzywupzefthcz5” |
 | `AssetParam.FixedFee`      | Deputy's fixed fee on other chain | 1000                                         |
 | `AssetParam.MinSwapAmount` | Minimum swap amount               | 1                                            |
 | `AssetParam.MaxSwapAmount` | Maximum swap amount               | 10000                                        |

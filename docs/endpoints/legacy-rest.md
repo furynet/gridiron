@@ -318,8 +318,8 @@ The same code as integrating with gridiron-v0.16.3 mainnet. The transaction stru
             {
                 "type": "cosmos-sdk/MsgSend",
                 "value": {
-                    "from_address": "gridaa1rkgdpj6fyyyu7pnhmc3v7gw9uls4mnajvzdwkt",
-                    "to_address": "gridaa1q6t5439f0rkvkzl38m0f43e0kpv3mx7x2shlq8",
+                    "from_address": "fury:grid:aa1rkgdpj6fyyyu7pnhmc3v7gw9uls4mnajvzdwkt",
+                    "to_address": "fury:grid:aa1q6t5439f0rkvkzl38m0f43e0kpv3mx7x2shlq8",
                     "amount": [
                         {
                             "denom": "ugrid",
@@ -359,7 +359,7 @@ Denom uses `ugrid` instead (1grid = 10<sup>6</sup>ugrid), which affects fields:
 The same code as integrating with gridiron mainnet, call `POST` `/txs` to send a transaction, as the example below:
 
 ```bash
-curl -X POST "http://localhost:1317/txs" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"tx\": {\"msg\":[{\"type\":\"cosmos-sdk/MsgSend\",\"value\":{\"from_address\":\"gridaa1rkgdpj6fyyyu7pnhmc3v7gw9uls4mnajvzdwkt\",\"to_address\":\"gridaa1q6t5439f0rkvkzl38m0f43e0kpv3mx7x2shlq8\",\"amount\":[{\"denom\":\"ugrid\",\"amount\":\"1000000\"}]}}],\"fee\":{\"amount\":[{\"denom\":\"ugrid\",\"amount\":\"30000\"}],\"gas\":\"200000\"},\"signatures\":[{\"pub_key\":{\"type\":\"tendermint/PubKeySecp256k1\",\"value\":\"AxGagdsRTKni/h1+vCFzTpNltwoiU7SwIR2dg6Jl5a//\"},\"signature\":\"Pu8yiRVO8oB2YDDHyB047dXNArbVImasmKBrm8Kr+6B08y8QQ7YG1eVgHi5OIYYclccCf3Ju/BQ78qsMWMniNQ==\"}],\"memo\":\"Sent via gridiron client\"}, \"mode\": \"block\"}"
+curl -X POST "http://localhost:1317/txs" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"tx\": {\"msg\":[{\"type\":\"cosmos-sdk/MsgSend\",\"value\":{\"from_address\":\"fury:grid:aa1rkgdpj6fyyyu7pnhmc3v7gw9uls4mnajvzdwkt\",\"to_address\":\"fury:grid:aa1q6t5439f0rkvkzl38m0f43e0kpv3mx7x2shlq8\",\"amount\":[{\"denom\":\"ugrid\",\"amount\":\"1000000\"}]}}],\"fee\":{\"amount\":[{\"denom\":\"ugrid\",\"amount\":\"30000\"}],\"gas\":\"200000\"},\"signatures\":[{\"pub_key\":{\"type\":\"tendermint/PubKeySecp256k1\",\"value\":\"AxGagdsRTKni/h1+vCFzTpNltwoiU7SwIR2dg6Jl5a//\"},\"signature\":\"Pu8yiRVO8oB2YDDHyB047dXNArbVImasmKBrm8Kr+6B08y8QQ7YG1eVgHi5OIYYclccCf3Ju/BQ78qsMWMniNQ==\"}],\"memo\":\"Sent via gridiron client\"}, \"mode\": \"block\"}"
 ```
 
 ## Breaking Changes in Querying Transactions
@@ -380,7 +380,7 @@ curl -X POST "http://localhost:1317/txs" -H "accept: application/json" -H "Conte
       "height": "5",
       "txhash": "E663768B616B1ACD2912E47C36FEBC7DB0E0974D6DB3823D4C656E0EAB8C679D",
       "data": "0A060A0473656E64",
-      "raw_log": "[{\"events\":[{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"send\"},{\"key\":\"sender\",\"value\":\"gridaa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn\"},{\"key\":\"module\",\"value\":\"bank\"}]},{\"type\":\"transfer\",\"attributes\":[{\"key\":\"recipient\",\"value\":\"gridaa1w976a5jrhsj06dqmrh2x9qxzel74qtcmapklxc\"},{\"key\":\"sender\",\"value\":\"gridaa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn\"},{\"key\":\"amount\",\"value\":\"1000000ugrid\"}]}]}]",
+      "raw_log": "[{\"events\":[{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"send\"},{\"key\":\"sender\",\"value\":\"fury:grid:aa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn\"},{\"key\":\"module\",\"value\":\"bank\"}]},{\"type\":\"transfer\",\"attributes\":[{\"key\":\"recipient\",\"value\":\"fury:grid:aa1w976a5jrhsj06dqmrh2x9qxzel74qtcmapklxc\"},{\"key\":\"sender\",\"value\":\"fury:grid:aa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn\"},{\"key\":\"amount\",\"value\":\"1000000ugrid\"}]}]}]",
       "logs": [
           {
               "events": [
@@ -393,7 +393,7 @@ curl -X POST "http://localhost:1317/txs" -H "accept: application/json" -H "Conte
                           },
                           {
                               "key": "sender",
-                              "value": "gridaa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn"
+                              "value": "fury:grid:aa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn"
                           },
                           {
                               "key": "module",
@@ -406,11 +406,11 @@ curl -X POST "http://localhost:1317/txs" -H "accept: application/json" -H "Conte
                       "attributes": [
                           {
                               "key": "recipient",
-                              "value": "gridaa1w976a5jrhsj06dqmrh2x9qxzel74qtcmapklxc"
+                              "value": "fury:grid:aa1w976a5jrhsj06dqmrh2x9qxzel74qtcmapklxc"
                           },
                           {
                               "key": "sender",
-                              "value": "gridaa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn"
+                              "value": "fury:grid:aa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn"
                           },
                           {
                               "key": "amount",
@@ -430,8 +430,8 @@ curl -X POST "http://localhost:1317/txs" -H "accept: application/json" -H "Conte
                   {
                       "type": "cosmos-sdk/MsgSend",
                       "value": {
-                          "from_address": "gridaa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn",
-                          "to_address": "gridaa1w976a5jrhsj06dqmrh2x9qxzel74qtcmapklxc",
+                          "from_address": "fury:grid:aa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn",
+                          "to_address": "fury:grid:aa1w976a5jrhsj06dqmrh2x9qxzel74qtcmapklxc",
                           "amount": [
                               {
                                   "denom": "ugrid",

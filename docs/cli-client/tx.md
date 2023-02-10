@@ -39,7 +39,7 @@ You can generate any type of txs offline by appending the flag `--generate-only`
 We use a transfer tx in the following examples:
 
 ```bash
-grid tx bank send gridaa1w9lvhwlvkwqvg08q84n2k4nn896u9pqx93velx gridaa15uys54epmd2xzhcn32szps56wvev40tt908h62 10grid --chain-id=gridiron --generate-only
+grid tx bank send fury:grid:aa1w9lvhwlvkwqvg08q84n2k4nn896u9pqx93velx fury:grid:aa15uys54epmd2xzhcn32szps56wvev40tt908h62 10grid --chain-id=gridiron --generate-only
 ```
 
 The `unsigned.json` should look like:
@@ -52,8 +52,8 @@ The `unsigned.json` should look like:
             {
                 "type": "cosmos-sdk/MsgSend",
                 "value": {
-                    "from_address": "gridaa1w9lvhwlvkwqvg08q84n2k4nn896u9pqx93velx",
-                    "to_address": "gridaa15uys54epmd2xzhcn32szps56wvev40tt908h62",
+                    "from_address": "fury:grid:aa1w9lvhwlvkwqvg08q84n2k4nn896u9pqx93velx",
+                    "to_address": "fury:grid:aa15uys54epmd2xzhcn32szps56wvev40tt908h62",
                     "amount": [
                         {
                             "denom": "grid",
@@ -91,7 +91,7 @@ The `signed.json` should look like:
                 "value": {
                     "inputs": [
                         {
-                            "address": "gridaa106nhdckyf996q69v3qdxwe6y7408pvyvyxzhxh",
+                            "address": "fury:grid:aa106nhdckyf996q69v3qdxwe6y7408pvyvyxzhxh",
                             "coins": [
                                 {
                                     "denom": "ugrid",
@@ -102,7 +102,7 @@ The `signed.json` should look like:
                     ],
                     "outputs": [
                         {
-                            "address": "gridaa1893x4l2rdshytfzvfpduecpswz7qtpstevr742",
+                            "address": "fury:grid:aa1893x4l2rdshytfzvfpduecpswz7qtpstevr742",
                             "coins": [
                                 {
                                     "denom": "ugrid",
