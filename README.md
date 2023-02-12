@@ -1,4 +1,4 @@
-# GRIDhub
+# GRID
 
 ![Banner](https://raw.githubusercontent.com/gridiron-zone/gridiron/master/docs/pics/grid.jpg)
 
@@ -7,12 +7,13 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/gridiron-zone/gridiron)](https://goreportcard.com/report/github.com/gridiron-zone/gridiron)
 [![Forum](https://img.shields.io/discourse/https/forum.irisnet.org/topics.svg)](https://forum.irisnet.org/)
 
-GRID network (a.k.a. GRIDnet) aims to establish a technology foundation to facilitate construction of next-generation distributed applications. By incorporating a comprehensive service infrastructure and an enhanced IBC protocol into the Tendermint & Cosmos stack, GRIDnet enables service interoperability as well as token transfers across an internet of blockchains.
-As the centerpiece of GRIDnet, GRID Hub (a.k.a. GRIDhub) will be the first regional hub connecting to the main Cosmos Hub, thus making GRIDnet an inseparable part of the whole Cosmos network.
+GRID aims to establish a technology foundation for the FURY Network, to facilitate the construction of the next-generation of distributed sports and gaming applications. By incorporating a comprehensive service infrastructure and an enhanced IBC protocol into the Tendermint & Cosmos stack, GRID enables service interoperability as well as token transfers across an internet of blockchains.
 
-## GRID Hub Mainnet
+As the centerpiece of the FURY Network, GRID (a.k.a. GRIDhub) will be the first dedicated sports and gaming hub connecting to the main Cosmos Hub, thus making GRID and the FURY Network an inseparable part of the whole Cosmos network.
 
-To join the mainnet, follow [this guide](https://www.irisnet.org/docs/get-started/mainnet.html).
+## GRID Testnet
+
+To join the mainnet, follow [this guide](https://www.irisnet.org/docs/get-started/testnet.html).
 
 ## Install
 
