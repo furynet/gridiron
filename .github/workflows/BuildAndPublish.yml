@@ -54,8 +54,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           
 #       - name: Build gridiron image
-#         run: source ~/.bashrc; sudo docker build -t furygridiron/gridiron:latest .
+#         run: source ~/.bashrc; sudo docker build -t gridironhub/gridiron:latest .
 #       - name: Login dockerhub
 #         run: sudo docker login -u ${{secrets.DOCKER_USER}} -p ${{secrets.DOCKER_PASS}}
 #       - name: Publish gridiron image
-#         run: sudo docker push furygridiron/gridiron:latest
+#         run: sudo docker push gridironhub/gridiron:latest
